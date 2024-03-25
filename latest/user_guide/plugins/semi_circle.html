@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>SemiCircle &#8212; Folium 0.1.dev1+g226ba52 documentation</title>
+    <title>SemiCircle &#8212; Folium 0.1.dev1+g12b8807 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=a3f0335b"></script>
+    <script src="../../_static/documentation_options.js?v=945e5ea2"></script>
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -422,6 +422,7 @@ document.write(`
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../plugins.html">Plugins</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="antpath.html">Antpath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="boat_marker.html">BoatMarker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="beautify_icon.html">BeautifyIcon</a></li>
 <li class="toctree-l2"><a class="reference internal" href="draw.html">Draw</a></li>
@@ -440,7 +441,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="mouse_position.html">MousePosition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pattern.html">Pattern plugins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyline_offset.html">PolylineOffset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="polyline_textpath_and_antpath.html">PolylineTextPath and AntPath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyline_textpath.html">PolyLineTextPath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="realtime.html">Realtime plugin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scroll_zoom_toggler.html">ScrollZoomToggler</a></li>
 <li class="toctree-l2"><a class="reference internal" href="search.html">Search</a></li>
@@ -582,7 +583,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_3bbec0685ace2719241111a5d9c2cd1b {
+                #map_205b9eda190ff3aab5426f7925c1953a {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -597,14 +598,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_3bbec0685ace2719241111a5d9c2cd1b&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_205b9eda190ff3aab5426f7925c1953a&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_3bbec0685ace2719241111a5d9c2cd1b = L.map(
-                &quot;map_3bbec0685ace2719241111a5d9c2cd1b&quot;,
+            var map_205b9eda190ff3aab5426f7925c1953a = L.map(
+                &quot;map_205b9eda190ff3aab5426f7925c1953a&quot;,
                 {
                     center: [45.0, 3.0],
                     crs: L.CRS.EPSG3857,
@@ -618,55 +619,55 @@ document.write(`
 
 
 
-            var tile_layer_18bd5e2902780c8232dffa6b0ab8068e = L.tileLayer(
+            var tile_layer_382799963bfa037ad9968536833758fb = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_18bd5e2902780c8232dffa6b0ab8068e.addTo(map_3bbec0685ace2719241111a5d9c2cd1b);
+            tile_layer_382799963bfa037ad9968536833758fb.addTo(map_205b9eda190ff3aab5426f7925c1953a);
 
 
-            var semi_circle_c15d8271d6dd369b9f0864039115515c = L.semiCircle(
+            var semi_circle_bb0a8758304cb294d94aed9bfe34e1be = L.semiCircle(
                 [45.0, 3.0],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 0, &quot;radius&quot;: 400000, &quot;startAngle&quot;: 50, &quot;stopAngle&quot;: 200, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
                 )
-                .addTo(map_3bbec0685ace2719241111a5d9c2cd1b);
+                .addTo(map_205b9eda190ff3aab5426f7925c1953a);
 
 
-        var popup_345eb808a73a99355b9aae9ba06c3c30 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_a35a0cb29e8da1a75b07023b540708d2 = $(`&lt;div id=&quot;html_a35a0cb29e8da1a75b07023b540708d2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;start angle - 50 degrees, stop angle - 200 degrees&lt;/div&gt;`)[0];
-                popup_345eb808a73a99355b9aae9ba06c3c30.setContent(html_a35a0cb29e8da1a75b07023b540708d2);
+        var popup_598cea97d6bddeece22b1a4ddf4b965e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        semi_circle_c15d8271d6dd369b9f0864039115515c.bindPopup(popup_345eb808a73a99355b9aae9ba06c3c30)
+                var html_284092e851a3aa5938cfe67999af9161 = $(`&lt;div id=&quot;html_284092e851a3aa5938cfe67999af9161&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;start angle - 50 degrees, stop angle - 200 degrees&lt;/div&gt;`)[0];
+                popup_598cea97d6bddeece22b1a4ddf4b965e.setContent(html_284092e851a3aa5938cfe67999af9161);
+
+
+
+        semi_circle_bb0a8758304cb294d94aed9bfe34e1be.bindPopup(popup_598cea97d6bddeece22b1a4ddf4b965e)
         ;
 
 
 
 
-            var semi_circle_ac183fff99b6733ed93ee52d0e4d029d = L.semiCircle(
+            var semi_circle_2f01da422c6cdb23ed4357f018820020 = L.semiCircle(
                 [46.5, 9.5],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 0, &quot;radius&quot;: 200000, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
                 )
                     .setDirection(360, 90)
-                .addTo(map_3bbec0685ace2719241111a5d9c2cd1b);
+                .addTo(map_205b9eda190ff3aab5426f7925c1953a);
 
 
-        var popup_ee5ac255d5c380c1675982c98b2c6cc1 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_becd487c49921617297422a79a0c83cd = $(`&lt;div id=&quot;html_becd487c49921617297422a79a0c83cd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Direction - 0 degrees, arc 90 degrees&lt;/div&gt;`)[0];
-                popup_ee5ac255d5c380c1675982c98b2c6cc1.setContent(html_becd487c49921617297422a79a0c83cd);
+        var popup_c36d1d656b5f3f63c5765225edb3e5df = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        semi_circle_ac183fff99b6733ed93ee52d0e4d029d.bindPopup(popup_ee5ac255d5c380c1675982c98b2c6cc1)
+                var html_aad3c51fd4e7d25fa3bea9e776f58216 = $(`&lt;div id=&quot;html_aad3c51fd4e7d25fa3bea9e776f58216&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Direction - 0 degrees, arc 90 degrees&lt;/div&gt;`)[0];
+                popup_c36d1d656b5f3f63c5765225edb3e5df.setContent(html_aad3c51fd4e7d25fa3bea9e776f58216);
+
+
+
+        semi_circle_2f01da422c6cdb23ed4357f018820020.bindPopup(popup_c36d1d656b5f3f63c5765225edb3e5df)
         ;
 
 
@@ -745,7 +746,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1.dev+g226ba52</div>
+Folium version 0.1.dev1.dev+g12b8807</div>
       
         <div class="footer-item">
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>BoatMarker &#8212; Folium 0.1.dev1+g226ba52 documentation</title>
+    <title>BoatMarker &#8212; Folium 0.1.dev1+g12b8807 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=a3f0335b"></script>
+    <script src="../../_static/documentation_options.js?v=945e5ea2"></script>
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -53,7 +53,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="BeautifyIcon" href="beautify_icon.html" />
-    <link rel="prev" title="Plugins" href="../plugins.html" />
+    <link rel="prev" title="Antpath" href="antpath.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -422,6 +422,7 @@ document.write(`
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../plugins.html">Plugins</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="antpath.html">Antpath</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">BoatMarker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="beautify_icon.html">BeautifyIcon</a></li>
 <li class="toctree-l2"><a class="reference internal" href="draw.html">Draw</a></li>
@@ -440,7 +441,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="mouse_position.html">MousePosition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pattern.html">Pattern plugins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyline_offset.html">PolylineOffset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="polyline_textpath_and_antpath.html">PolylineTextPath and AntPath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyline_textpath.html">PolyLineTextPath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="realtime.html">Realtime plugin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scroll_zoom_toggler.html">ScrollZoomToggler</a></li>
 <li class="toctree-l2"><a class="reference internal" href="search.html">Search</a></li>
@@ -566,7 +567,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_4945214cca2174452be922d2a627ae25 {
+                #map_7ec163a1f7bf5e62103ce35a564cf2f0 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -581,14 +582,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_4945214cca2174452be922d2a627ae25&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_7ec163a1f7bf5e62103ce35a564cf2f0&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_4945214cca2174452be922d2a627ae25 = L.map(
-                &quot;map_4945214cca2174452be922d2a627ae25&quot;,
+            var map_7ec163a1f7bf5e62103ce35a564cf2f0 = L.map(
+                &quot;map_7ec163a1f7bf5e62103ce35a564cf2f0&quot;,
                 {
                     center: [30.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -602,31 +603,31 @@ document.write(`
 
 
 
-            var tile_layer_a6d7a6090e23de84e6987808ce105127 = L.tileLayer(
+            var tile_layer_483ecbb71e6f4c124fbeb7c3cb5c47cd = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_a6d7a6090e23de84e6987808ce105127.addTo(map_4945214cca2174452be922d2a627ae25);
+            tile_layer_483ecbb71e6f4c124fbeb7c3cb5c47cd.addTo(map_7ec163a1f7bf5e62103ce35a564cf2f0);
 
 
-            var boat_marker_1f62b5fa34e019e868f3c46f4d49b2db = L.boatMarker(
+            var boat_marker_3fb7e5948ee28c6cf42d2ad19cac1d0c = L.boatMarker(
                 [34.0, -43.0],
                 {&quot;color&quot;: &quot;#8f8&quot;}
-            ).addTo(map_4945214cca2174452be922d2a627ae25);
-            boat_marker_1f62b5fa34e019e868f3c46f4d49b2db.setHeadingWind(
+            ).addTo(map_7ec163a1f7bf5e62103ce35a564cf2f0);
+            boat_marker_3fb7e5948ee28c6cf42d2ad19cac1d0c.setHeadingWind(
                 45,
                 45,
                 150
             );
 
 
-            var boat_marker_2c786a403f35690be7b5b3917bfc1b4a = L.boatMarker(
+            var boat_marker_1379a92f7b92eb38e9e4040c7072755c = L.boatMarker(
                 [46.0, -30.0],
                 {&quot;color&quot;: &quot;#88f&quot;}
-            ).addTo(map_4945214cca2174452be922d2a627ae25);
-            boat_marker_2c786a403f35690be7b5b3917bfc1b4a.setHeadingWind(
+            ).addTo(map_7ec163a1f7bf5e62103ce35a564cf2f0);
+            boat_marker_1379a92f7b92eb38e9e4040c7072755c.setHeadingWind(
                 -20,
                 25,
                 46
@@ -648,12 +649,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../plugins.html"
+       href="antpath.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Plugins</p>
+        <p class="prev-next-title">Antpath</p>
       </div>
     </a>
     <a class="right-next"
@@ -706,7 +707,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1.dev+g226ba52</div>
+Folium version 0.1.dev1.dev+g12b8807</div>
       
         <div class="footer-item">
 
