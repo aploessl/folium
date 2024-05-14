@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Circle and CircleMarker &#8212; Folium 0.1.dev1+g12b8807 documentation</title>
+    <title>Circle and CircleMarker &#8212; Folium 0.1.dev1851+g5086929 documentation</title>
   
   
   
@@ -37,8 +37,8 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=945e5ea2"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/documentation_options.js?v=e885c205"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -433,24 +433,28 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../plugins/geocoder.html">Geocoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/grouped_layer_control.html">GroupedLayerControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/heatmap.html">Heatmap</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../plugins/heatmap_with_time.html">HeatMapWithTime Plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/heatmap_with_time.html">HeatMapWithTime</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/locate_control.html">LocateControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/marker_cluster.html">MarkerCluster</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/mini_map.html">MiniMap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/measure_control.html">MeasureControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/mouse_position.html">MousePosition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/pattern.html">Pattern plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/polygon_encoded.html">PolygonFromEncoded</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/polyline_encoded.html">PolyLineFromEncoded</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/polyline_offset.html">PolylineOffset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/polyline_textpath.html">PolyLineTextPath</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../plugins/realtime.html">Realtime plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/realtime.html">Realtime</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/scroll_zoom_toggler.html">ScrollZoomToggler</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/search.html">Search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/semi_circle.html">SemiCircle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/side_by_side_layers.html">SideBySideLayers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/tag_filter_button.html">TagFilterButton</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/terminator.html">Terminator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/timeline.html">Timeline and TimelineSlider</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/timeslider_choropleth.html">TimeSliderChoropleth</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/timestamped_geojson.html">TimestampedGeoJson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/treelayercontrol.html">TreeLayerControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/vector_tiles.html">Vector tiles using VectorGridProtobuf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/WmsTimeDimension.html">TimestampedWmsTileLayers</a></li>
 </ul>
@@ -592,7 +596,7 @@ document.write(`
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
@@ -600,7 +604,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_632fc0e244c658676ba2b22cdb1952db {
+                #map_b578836bb004df534251ae51f5f9fdb4 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -614,14 +618,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_632fc0e244c658676ba2b22cdb1952db&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_b578836bb004df534251ae51f5f9fdb4&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_632fc0e244c658676ba2b22cdb1952db = L.map(
-                &quot;map_632fc0e244c658676ba2b22cdb1952db&quot;,
+            var map_b578836bb004df534251ae51f5f9fdb4 = L.map(
+                &quot;map_b578836bb004df534251ae51f5f9fdb4&quot;,
                 {
                     center: [-27.5717, -48.6256],
                     crs: L.CRS.EPSG3857,
@@ -635,37 +639,37 @@ document.write(`
 
 
 
-            var tile_layer_a199c63b54143a8d8c465d461cddef60 = L.tileLayer(
+            var tile_layer_f3d9e4492f9f2c06b6a3a9b460e00f79 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_a199c63b54143a8d8c465d461cddef60.addTo(map_632fc0e244c658676ba2b22cdb1952db);
+            tile_layer_f3d9e4492f9f2c06b6a3a9b460e00f79.addTo(map_b578836bb004df534251ae51f5f9fdb4);
 
 
-            var circle_marker_29ceaf2337528eae3f1f2edaabfc7e69 = L.circleMarker(
+            var circle_marker_72185052a954fbb97e7d2e614ee0b88f = L.circleMarker(
                 [-27.55, -48.8],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;cornflowerblue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;cornflowerblue&quot;, &quot;fillOpacity&quot;: 0.6, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 50, &quot;stroke&quot;: false, &quot;weight&quot;: 3}
-            ).addTo(map_632fc0e244c658676ba2b22cdb1952db);
+            ).addTo(map_b578836bb004df534251ae51f5f9fdb4);
 
 
-        var popup_b7a4d61a3409327acf285465c93b5bc1 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_c1ac420a2d0c35f7eda5aba171024694 = $(`&lt;div id=&quot;html_c1ac420a2d0c35f7eda5aba171024694&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;50 pixels&lt;/div&gt;`)[0];
-                popup_b7a4d61a3409327acf285465c93b5bc1.setContent(html_c1ac420a2d0c35f7eda5aba171024694);
+        var popup_22179de9827a9e53b0d6156c99a70916 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        circle_marker_29ceaf2337528eae3f1f2edaabfc7e69.bindPopup(popup_b7a4d61a3409327acf285465c93b5bc1)
+                var html_522af14b66d7c05b2c461b8c9ff2c145 = $(`&lt;div id=&quot;html_522af14b66d7c05b2c461b8c9ff2c145&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;50 pixels&lt;/div&gt;`)[0];
+                popup_22179de9827a9e53b0d6156c99a70916.setContent(html_522af14b66d7c05b2c461b8c9ff2c145);
+
+
+
+        circle_marker_72185052a954fbb97e7d2e614ee0b88f.bindPopup(popup_22179de9827a9e53b0d6156c99a70916)
         ;
 
 
 
 
-            circle_marker_29ceaf2337528eae3f1f2edaabfc7e69.bindTooltip(
+            circle_marker_72185052a954fbb97e7d2e614ee0b88f.bindTooltip(
                 `&lt;div&gt;
                      I am in pixels
                  &lt;/div&gt;`,
@@ -673,34 +677,34 @@ document.write(`
             );
 
 
-            var circle_marker_8919dd1bc56e84168a3c4c4a2222df1a = L.circleMarker(
+            var circle_marker_ef0b88078281c3103d4649f3d2c0e008 = L.circleMarker(
                 [-27.35, -48.8],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;black&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;black&quot;, &quot;fillOpacity&quot;: 0.6, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 25, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_632fc0e244c658676ba2b22cdb1952db);
+            ).addTo(map_b578836bb004df534251ae51f5f9fdb4);
 
 
-            var circle_4ad206c368762b064151dd4e77c2e7ac = L.circle(
+            var circle_f29a6bc7695aea051bc5dd0b73805be0 = L.circle(
                 [-27.551667, -48.478889],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;black&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.6, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10000, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_632fc0e244c658676ba2b22cdb1952db);
+            ).addTo(map_b578836bb004df534251ae51f5f9fdb4);
 
 
-        var popup_301df28e1b43d4571db28b69f63c6066 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_61c2caf34a5441d88d79acfeb893abd6 = $(`&lt;div id=&quot;html_61c2caf34a5441d88d79acfeb893abd6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;10000 meters&lt;/div&gt;`)[0];
-                popup_301df28e1b43d4571db28b69f63c6066.setContent(html_61c2caf34a5441d88d79acfeb893abd6);
+        var popup_4bc814430eef202a8716e21d9b9f2cbf = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        circle_4ad206c368762b064151dd4e77c2e7ac.bindPopup(popup_301df28e1b43d4571db28b69f63c6066)
+                var html_7fc1bd104bdb1d1667b5bab9e7d33ea1 = $(`&lt;div id=&quot;html_7fc1bd104bdb1d1667b5bab9e7d33ea1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;10000 meters&lt;/div&gt;`)[0];
+                popup_4bc814430eef202a8716e21d9b9f2cbf.setContent(html_7fc1bd104bdb1d1667b5bab9e7d33ea1);
+
+
+
+        circle_f29a6bc7695aea051bc5dd0b73805be0.bindPopup(popup_4bc814430eef202a8716e21d9b9f2cbf)
         ;
 
 
 
 
-            circle_4ad206c368762b064151dd4e77c2e7ac.bindTooltip(
+            circle_f29a6bc7695aea051bc5dd0b73805be0.bindTooltip(
                 `&lt;div&gt;
                      I am in meters
                  &lt;/div&gt;`,
@@ -781,13 +785,13 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1.dev+g12b8807</div>
+Folium version 0.1.dev1851+g5086929</div>
       
         <div class="footer-item">
 
   <p class="copyright">
     
-      © Copyright 2013, Rob Story.
+      © Copyright 2013-2024, Rob Story.
       <br/>
     
   </p>
@@ -796,7 +800,7 @@ Folium version 0.1.dev1.dev+g12b8807</div>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
     <br/>
   </p>
 </div>

@@ -22,6 +22,8 @@ Plugins
   plugins/measure_control
   plugins/mouse_position
   plugins/pattern
+  plugins/polygon_encoded
+  plugins/polyline_encoded
   plugins/polyline_offset
   plugins/polyline_textpath
   plugins/realtime
@@ -31,8 +33,10 @@ Plugins
   plugins/side_by_side_layers
   plugins/tag_filter_button
   plugins/terminator
+  plugins/timeline
   plugins/timeslider_choropleth
   plugins/timestamped_geojson
+  plugins/treelayercontrol
   plugins/vector_tiles
   plugins/WmsTimeDimension
 
@@ -78,6 +82,10 @@ Plugins
       - A control that displays geographic coordinates of the mouse pointer, as it is moved over the map.
     * - :doc:`Pattern <plugins/pattern>`
       - Add support for pattern fills on Paths.
+    * - :doc:`Polygon Encoded <plugins/polygon_encoded>`
+      - Draw a polygon directly from an encoded string.
+    * - :doc:`Polyline Encoded <plugins/polyline_encoded>`
+      - Draw a polyline directly from an encoded string.
     * - :doc:`Polyline Offset <plugins/polyline_offset>`
       - Shift relative pixel offset, without actually changing the actual latitude longitude values.
     * - :doc:`Polyline Textpath <plugins/polyline_textpath>`
@@ -96,10 +104,14 @@ Plugins
       - Creates a Tag Filter Button to filter elements based on different criteria.
     * - :doc:`Terminator <plugins/terminator>`
       - Overlay day and night regions on a map.
+    * - :doc:`Timeline <plugins/timeline>`
+      - Create a timeline with a time slider for geojson data with start and end times.
     * - :doc:`Timeslider Choropleth <plugins/timeslider_choropleth>`
       - Create a choropleth with a timeslider for timestamped data.
     * - :doc:`Timestamped GeoJSON <plugins/timestamped_geojson>`
-      - Add time-aware GeoJSON into the map.
+      - Add GeoJSON data with timestamps to a map.
+    * - :doc:`TreeLayerControl <plugins/treelayercontrol>`
+      - Add a control for a tree of layers with checkboxes for visibility control.
     * - :doc:`Vector Tiles using VectorGridProtobuf <plugins/vector_tiles>`
       - Display gridded vector data (GeoJSON or TopoJSON sliced with geojson-vt, or protobuf vector tiles).
     * - :doc:`WMS Time Dimension <plugins/WmsTimeDimension>`
