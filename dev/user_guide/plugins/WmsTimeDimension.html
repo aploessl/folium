@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>TimestampedWmsTileLayers &#8212; Folium 0.1.dev2019+g4615898 documentation</title>
+    <title>TimestampedWmsTileLayers &#8212; Folium 0.1.dev2019+g461589856 documentation</title>
   
   
   
@@ -40,7 +40,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=1923e342"></script>
+    <script src="../../_static/documentation_options.js?v=d6a35ffb"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -58,7 +58,7 @@
     <link rel="prev" title="Vector tiles using VectorGridProtobuf" href="vector_tiles.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev2019+g4615898" />
+  <meta name="docsearch:version" content="0.1.dev2019+g461589856" />
   </head>
   
   
@@ -625,7 +625,7 @@ CRW_SST
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_5ec5652038b1a6b603b6462e2fa4e2d2 {
+                #map_c5157dafa6eba53c26aee31340f595eb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -668,14 +668,14 @@ CRW_SST
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_5ec5652038b1a6b603b6462e2fa4e2d2&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_c5157dafa6eba53c26aee31340f595eb&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_5ec5652038b1a6b603b6462e2fa4e2d2 = L.map(
-                &quot;map_5ec5652038b1a6b603b6462e2fa4e2d2&quot;,
+            var map_c5157dafa6eba53c26aee31340f595eb = L.map(
+                &quot;map_c5157dafa6eba53c26aee31340f595eb&quot;,
                 {
                     center: [-40.0, -50.0],
                     crs: L.CRS.EPSG3857,
@@ -692,7 +692,7 @@ CRW_SST
 
 
 
-            var tile_layer_f9b0657deb2cae9e7919f595fc75f7a2 = L.tileLayer(
+            var tile_layer_c69ac4fcc92f627b818b82d216022969 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -709,25 +709,25 @@ CRW_SST
             );
 
 
-            tile_layer_f9b0657deb2cae9e7919f595fc75f7a2.addTo(map_5ec5652038b1a6b603b6462e2fa4e2d2);
+            tile_layer_c69ac4fcc92f627b818b82d216022969.addTo(map_c5157dafa6eba53c26aee31340f595eb);
 
 
-            var macro_element_8ec87bff920d3f86874ff6248a280c06 = L.tileLayer.wms(
+            var macro_element_fa7e49b2d96dd3a3473a53678bcaf90b = L.tileLayer.wms(
                 &quot;https://pae-paha.pacioos.hawaii.edu/thredds/wms/dhw_5km?service=WMS&quot;,
                 {&quot;COLORSCALERANGE&quot;: &quot;1.2,28&quot;, &quot;attribution&quot;: &quot;&quot;, &quot;format&quot;: &quot;image/png&quot;, &quot;layers&quot;: &quot;CRW_SST&quot;, &quot;styles&quot;: &quot;boxfill/sst_36&quot;, &quot;transparent&quot;: true, &quot;version&quot;: &quot;1.1.1&quot;}
             );
 
 
-            macro_element_8ec87bff920d3f86874ff6248a280c06.addTo(map_5ec5652038b1a6b603b6462e2fa4e2d2);
+            macro_element_fa7e49b2d96dd3a3473a53678bcaf90b.addTo(map_c5157dafa6eba53c26aee31340f595eb);
 
 
-            map_5ec5652038b1a6b603b6462e2fa4e2d2.timeDimension = L.timeDimension(
+            map_c5157dafa6eba53c26aee31340f595eb.timeDimension = L.timeDimension(
                 {
   &quot;period&quot;: &quot;PT1H&quot;,
-  &quot;timeInterval&quot;: &quot;2022-08-03T12:00:00.000Z/2025-08-02T12:00:00.000Z&quot;,
+  &quot;timeInterval&quot;: &quot;2022-08-04T12:00:00.000Z/2025-08-03T12:00:00.000Z&quot;,
 }
             );
-            map_5ec5652038b1a6b603b6462e2fa4e2d2.timeDimensionControl =
+            map_c5157dafa6eba53c26aee31340f595eb.timeDimensionControl =
                 L.control.timeDimension(
                     {
   &quot;position&quot;: &quot;bottomleft&quot;,
@@ -738,38 +738,38 @@ CRW_SST
 },
 }
                 );
-            map_5ec5652038b1a6b603b6462e2fa4e2d2.addControl(
-                map_5ec5652038b1a6b603b6462e2fa4e2d2.timeDimensionControl
+            map_c5157dafa6eba53c26aee31340f595eb.addControl(
+                map_c5157dafa6eba53c26aee31340f595eb.timeDimensionControl
             );
 
 
-            var macro_element_8ec87bff920d3f86874ff6248a280c06 = L.timeDimension.layer.wms(
-                macro_element_8ec87bff920d3f86874ff6248a280c06,
+            var macro_element_fa7e49b2d96dd3a3473a53678bcaf90b = L.timeDimension.layer.wms(
+                macro_element_fa7e49b2d96dd3a3473a53678bcaf90b,
                 {
                     updateTimeDimension: false,
                     wmsVersion: &quot;1.1.1&quot;,
                 }
-            ).addTo(map_5ec5652038b1a6b603b6462e2fa4e2d2);
+            ).addTo(map_c5157dafa6eba53c26aee31340f595eb);
 
 
 
-            var layer_control_88e3f3b6fc1ec24167617aa3f57e151c_layers = {
+            var layer_control_2ccc18450ccc6e0a6186d4ce58c6f5d2_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_f9b0657deb2cae9e7919f595fc75f7a2,
+                    &quot;openstreetmap&quot; : tile_layer_c69ac4fcc92f627b818b82d216022969,
                 },
                 overlays :  {
-                    &quot;sea_surface_temperature&quot; : macro_element_8ec87bff920d3f86874ff6248a280c06,
+                    &quot;sea_surface_temperature&quot; : macro_element_fa7e49b2d96dd3a3473a53678bcaf90b,
                 },
             };
-            let layer_control_88e3f3b6fc1ec24167617aa3f57e151c = L.control.layers(
-                layer_control_88e3f3b6fc1ec24167617aa3f57e151c_layers.base_layers,
-                layer_control_88e3f3b6fc1ec24167617aa3f57e151c_layers.overlays,
+            let layer_control_2ccc18450ccc6e0a6186d4ce58c6f5d2 = L.control.layers(
+                layer_control_2ccc18450ccc6e0a6186d4ce58c6f5d2_layers.base_layers,
+                layer_control_2ccc18450ccc6e0a6186d4ce58c6f5d2_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_5ec5652038b1a6b603b6462e2fa4e2d2);
+            ).addTo(map_c5157dafa6eba53c26aee31340f595eb);
 
 
 &lt;/script&gt;
@@ -862,7 +862,7 @@ CRW_SST
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev2019+g4615898</div>
+Folium version 0.1.dev2019+g461589856</div>
       
         <div class="footer-item">
 
