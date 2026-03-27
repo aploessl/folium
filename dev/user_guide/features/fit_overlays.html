@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>FitOverlays &#8212; Folium 0.1.dev2019+g461589856 documentation</title>
+    <title>FitOverlays &#8212; Folium 0.1.dev2114+gf9bd4988e documentation</title>
   
   
   
@@ -40,10 +40,12 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=d6a35ffb"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/documentation_options.js?v=d3cb42ee"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/features/fit_overlays';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
@@ -58,7 +60,7 @@
     <link rel="prev" title="Features" href="../features.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev2019+g461589856" />
+  <meta name="docsearch:version" content="0.1.dev2114+gf9bd4988e" />
   </head>
   
   
@@ -390,6 +392,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../geojson/choropleth.html">Using <code class="docutils literal notranslate"><span class="pre">Choropleth</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_marker.html">GeoJSON point features with markers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_popup_and_tooltip.html">GeoJSON popup and tooltip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_advanced_on_each_feature.html">Advanced GeoJSON Customization with on_each_feature</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geopandas_and_geo_interface.html">Using GeoPandas.GeoDataFrame in folium</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/smoothing.html">Smoothing</a></li>
 </ul>
@@ -409,6 +412,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../plugins/float_image.html">FloatImage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/fullscreen.html">Fullscreen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/geocoder.html">Geocoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/geoman.html">Geoman</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/grouped_layer_control.html">GroupedLayerControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/heatmap.html">Heatmap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/heatmap_with_time.html">HeatMapWithTime</a></li>
@@ -550,7 +554,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_9caabf3a621358b7867fe03546cdb33f {
+                #map_f1a68f1ab3772aea8ec8ead79a618ce4 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -587,14 +591,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_9caabf3a621358b7867fe03546cdb33f&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_f1a68f1ab3772aea8ec8ead79a618ce4&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_9caabf3a621358b7867fe03546cdb33f = L.map(
-                &quot;map_9caabf3a621358b7867fe03546cdb33f&quot;,
+            var map_f1a68f1ab3772aea8ec8ead79a618ce4 = L.map(
+                &quot;map_f1a68f1ab3772aea8ec8ead79a618ce4&quot;,
                 {
                     center: [52.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -611,7 +615,7 @@
 
 
 
-            var tile_layer_9c3b7d56fbd8e14a218dcfaa407fece0 = L.tileLayer(
+            var tile_layer_8454e52baf23509c774c951fd3190799 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -628,73 +632,73 @@
             );
 
 
-            tile_layer_9c3b7d56fbd8e14a218dcfaa407fece0.addTo(map_9caabf3a621358b7867fe03546cdb33f);
+            tile_layer_8454e52baf23509c774c951fd3190799.addTo(map_f1a68f1ab3772aea8ec8ead79a618ce4);
 
 
-            var feature_group_ccdf990a97cda30281c80c36cd34204e = L.featureGroup(
+            var feature_group_7cc40e885ebe9f6cfee3b7c3f2d22616 = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_fd23647468a84f3fb25a8e1d100aed26 = L.marker(
+            var marker_1ea4f7f00ee7ef132ae830d232c38485 = L.marker(
                 [52.0, 5.0],
                 {
 }
-            ).addTo(feature_group_ccdf990a97cda30281c80c36cd34204e);
+            ).addTo(feature_group_7cc40e885ebe9f6cfee3b7c3f2d22616);
 
 
-            feature_group_ccdf990a97cda30281c80c36cd34204e.addTo(map_9caabf3a621358b7867fe03546cdb33f);
+            feature_group_7cc40e885ebe9f6cfee3b7c3f2d22616.addTo(map_f1a68f1ab3772aea8ec8ead79a618ce4);
 
 
-            var feature_group_e3d9e9d534a59810c8bcc3c7b3df78d9 = L.featureGroup(
+            var feature_group_d5a578856773d7f620130abdf41a788e = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_2eed670f750a81fe10bb4f668c05332c = L.marker(
+            var marker_6632a3682616182907f135cee84edec6 = L.marker(
                 [52.0, 5.1],
                 {
 }
-            ).addTo(feature_group_e3d9e9d534a59810c8bcc3c7b3df78d9);
+            ).addTo(feature_group_d5a578856773d7f620130abdf41a788e);
 
 
         function customFlyToBounds() {
             let bounds = L.latLngBounds([]);
-            map_9caabf3a621358b7867fe03546cdb33f.eachLayer(function(layer) {
+            map_f1a68f1ab3772aea8ec8ead79a618ce4.eachLayer(function(layer) {
                 if (typeof layer.getBounds === &#x27;function&#x27;) {
                     bounds.extend(layer.getBounds());
                 }
             });
             if (bounds.isValid()) {
-                map_9caabf3a621358b7867fe03546cdb33f.fitBounds(bounds, {
+                map_f1a68f1ab3772aea8ec8ead79a618ce4.fitBounds(bounds, {
   &quot;padding&quot;: [0, 0],
 });
             }
         }
-        map_9caabf3a621358b7867fe03546cdb33f.on(&#x27;overlayadd&#x27;, customFlyToBounds);
+        map_f1a68f1ab3772aea8ec8ead79a618ce4.on(&#x27;overlayadd&#x27;, customFlyToBounds);
         customFlyToBounds();
 
 
-            var layer_control_d7477dac41e8f3b451d31e30fe1fc17b_layers = {
+            var layer_control_a51839040696122ff89e6b208b7ee877_layers = {
                 base_layers : {
-                    &quot;cartodbpositron&quot; : tile_layer_9c3b7d56fbd8e14a218dcfaa407fece0,
+                    &quot;cartodbpositron&quot; : tile_layer_8454e52baf23509c774c951fd3190799,
                 },
                 overlays :  {
-                    &quot;macro_element_ccdf990a97cda30281c80c36cd34204e&quot; : feature_group_ccdf990a97cda30281c80c36cd34204e,
-                    &quot;macro_element_e3d9e9d534a59810c8bcc3c7b3df78d9&quot; : feature_group_e3d9e9d534a59810c8bcc3c7b3df78d9,
+                    &quot;macro_element_7cc40e885ebe9f6cfee3b7c3f2d22616&quot; : feature_group_7cc40e885ebe9f6cfee3b7c3f2d22616,
+                    &quot;macro_element_d5a578856773d7f620130abdf41a788e&quot; : feature_group_d5a578856773d7f620130abdf41a788e,
                 },
             };
-            let layer_control_d7477dac41e8f3b451d31e30fe1fc17b = L.control.layers(
-                layer_control_d7477dac41e8f3b451d31e30fe1fc17b_layers.base_layers,
-                layer_control_d7477dac41e8f3b451d31e30fe1fc17b_layers.overlays,
+            let layer_control_a51839040696122ff89e6b208b7ee877 = L.control.layers(
+                layer_control_a51839040696122ff89e6b208b7ee877_layers.base_layers,
+                layer_control_a51839040696122ff89e6b208b7ee877_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_9caabf3a621358b7867fe03546cdb33f);
+            ).addTo(map_f1a68f1ab3772aea8ec8ead79a618ce4);
 
 
 &lt;/script&gt;
@@ -780,13 +784,13 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev2019+g461589856</div>
+Folium version 0.1.dev2114+gf9bd4988e</div>
       
         <div class="footer-item">
 
   <p class="copyright">
     
-      © Copyright 2013-2025, Rob Story.
+      © Copyright 2013-2026, Rob Story.
       <br/>
     
   </p>
@@ -795,7 +799,7 @@ Folium version 0.1.dev2019+g461589856</div>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.3.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     <br/>
   </p>
 </div>

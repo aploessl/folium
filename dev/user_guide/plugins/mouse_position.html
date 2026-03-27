@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>MousePosition &#8212; Folium 0.1.dev2019+g461589856 documentation</title>
+    <title>MousePosition &#8212; Folium 0.1.dev2114+gf9bd4988e documentation</title>
   
   
   
@@ -40,10 +40,12 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=d6a35ffb"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/documentation_options.js?v=d3cb42ee"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/plugins/mouse_position';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
@@ -58,7 +60,7 @@
     <link rel="prev" title="MeasureControl" href="measure_control.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev2019+g461589856" />
+  <meta name="docsearch:version" content="0.1.dev2114+gf9bd4988e" />
   </head>
   
   
@@ -390,6 +392,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../geojson/choropleth.html">Using <code class="docutils literal notranslate"><span class="pre">Choropleth</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_marker.html">GeoJSON point features with markers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_popup_and_tooltip.html">GeoJSON popup and tooltip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_advanced_on_each_feature.html">Advanced GeoJSON Customization with on_each_feature</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geopandas_and_geo_interface.html">Using GeoPandas.GeoDataFrame in folium</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/smoothing.html">Smoothing</a></li>
 </ul>
@@ -409,6 +412,7 @@
 <li class="toctree-l2"><a class="reference internal" href="float_image.html">FloatImage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fullscreen.html">Fullscreen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="geocoder.html">Geocoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geoman.html">Geoman</a></li>
 <li class="toctree-l2"><a class="reference internal" href="grouped_layer_control.html">GroupedLayerControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heatmap.html">Heatmap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heatmap_with_time.html">HeatMapWithTime</a></li>
@@ -544,7 +548,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_706e19ba625e01be42eb62c335702d78 {
+                #map_7cbe14077ac816b56f6b36325f8e25da {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -583,14 +587,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_706e19ba625e01be42eb62c335702d78&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_7cbe14077ac816b56f6b36325f8e25da&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_706e19ba625e01be42eb62c335702d78 = L.map(
-                &quot;map_706e19ba625e01be42eb62c335702d78&quot;,
+            var map_7cbe14077ac816b56f6b36325f8e25da = L.map(
+                &quot;map_7cbe14077ac816b56f6b36325f8e25da&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -607,7 +611,7 @@
 
 
 
-            var tile_layer_7be647b701823897b4179134ce213505 = L.tileLayer(
+            var tile_layer_518a068eecf7336186d7b4cd8d30a192 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -624,10 +628,10 @@
             );
 
 
-            tile_layer_7be647b701823897b4179134ce213505.addTo(map_706e19ba625e01be42eb62c335702d78);
+            tile_layer_518a068eecf7336186d7b4cd8d30a192.addTo(map_7cbe14077ac816b56f6b36325f8e25da);
 
 
-            var mouse_position_884c8a71d992fd73690aa0e210a537c6 = new L.Control.MousePosition(
+            var mouse_position_018e04f47ff8b4bd005fcf86545f5509 = new L.Control.MousePosition(
                 {
   &quot;position&quot;: &quot;bottomright&quot;,
   &quot;separator&quot;: &quot; : &quot;,
@@ -637,11 +641,11 @@
   &quot;prefix&quot;: &quot;&quot;,
 }
             );
-            mouse_position_884c8a71d992fd73690aa0e210a537c6.options[&quot;latFormatter&quot;] =
+            mouse_position_018e04f47ff8b4bd005fcf86545f5509.options[&quot;latFormatter&quot;] =
                 undefined;
-            mouse_position_884c8a71d992fd73690aa0e210a537c6.options[&quot;lngFormatter&quot;] =
+            mouse_position_018e04f47ff8b4bd005fcf86545f5509.options[&quot;lngFormatter&quot;] =
                 undefined;
-            map_706e19ba625e01be42eb62c335702d78.addControl(mouse_position_884c8a71d992fd73690aa0e210a537c6);
+            map_7cbe14077ac816b56f6b36325f8e25da.addControl(mouse_position_018e04f47ff8b4bd005fcf86545f5509);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -695,7 +699,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_c974bd7ed5f2930d811b5e1feae47826 {
+                #map_c4d10a7f990e1cd597054a092c2d7a7f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -734,14 +738,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_c974bd7ed5f2930d811b5e1feae47826&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_c4d10a7f990e1cd597054a092c2d7a7f&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_c974bd7ed5f2930d811b5e1feae47826 = L.map(
-                &quot;map_c974bd7ed5f2930d811b5e1feae47826&quot;,
+            var map_c4d10a7f990e1cd597054a092c2d7a7f = L.map(
+                &quot;map_c4d10a7f990e1cd597054a092c2d7a7f&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -758,7 +762,7 @@
 
 
 
-            var tile_layer_14622b6ca6def7c692545e33e2fff582 = L.tileLayer(
+            var tile_layer_aec29b29dce09051bdf4f6ea3e258123 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -775,10 +779,10 @@
             );
 
 
-            tile_layer_14622b6ca6def7c692545e33e2fff582.addTo(map_c974bd7ed5f2930d811b5e1feae47826);
+            tile_layer_aec29b29dce09051bdf4f6ea3e258123.addTo(map_c4d10a7f990e1cd597054a092c2d7a7f);
 
 
-            var mouse_position_bdd93dde3d1d21686c7902e855cbb02c = new L.Control.MousePosition(
+            var mouse_position_6c389e01c50d0c5d45b5feb97904bc52 = new L.Control.MousePosition(
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;separator&quot;: &quot; | &quot;,
@@ -788,11 +792,11 @@
   &quot;prefix&quot;: &quot;Coordinates:&quot;,
 }
             );
-            mouse_position_bdd93dde3d1d21686c7902e855cbb02c.options[&quot;latFormatter&quot;] =
+            mouse_position_6c389e01c50d0c5d45b5feb97904bc52.options[&quot;latFormatter&quot;] =
                 function(num) {return L.Util.formatNum(num, 3) + &#x27; &amp;deg; &#x27;;};;
-            mouse_position_bdd93dde3d1d21686c7902e855cbb02c.options[&quot;lngFormatter&quot;] =
+            mouse_position_6c389e01c50d0c5d45b5feb97904bc52.options[&quot;lngFormatter&quot;] =
                 function(num) {return L.Util.formatNum(num, 3) + &#x27; &amp;deg; &#x27;;};;
-            map_c974bd7ed5f2930d811b5e1feae47826.addControl(mouse_position_bdd93dde3d1d21686c7902e855cbb02c);
+            map_c4d10a7f990e1cd597054a092c2d7a7f.addControl(mouse_position_6c389e01c50d0c5d45b5feb97904bc52);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -882,13 +886,13 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev2019+g461589856</div>
+Folium version 0.1.dev2114+gf9bd4988e</div>
       
         <div class="footer-item">
 
   <p class="copyright">
     
-      © Copyright 2013-2025, Rob Story.
+      © Copyright 2013-2026, Rob Story.
       <br/>
     
   </p>
@@ -897,7 +901,7 @@ Folium version 0.1.dev2019+g461589856</div>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.3.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     <br/>
   </p>
 </div>

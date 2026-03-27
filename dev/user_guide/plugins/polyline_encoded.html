@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>PolyLineFromEncoded &#8212; Folium 0.1.dev2019+g461589856 documentation</title>
+    <title>PolyLineFromEncoded &#8212; Folium 0.1.dev2114+gf9bd4988e documentation</title>
   
   
   
@@ -40,10 +40,12 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=d6a35ffb"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/documentation_options.js?v=d3cb42ee"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/plugins/polyline_encoded';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
@@ -58,7 +60,7 @@
     <link rel="prev" title="PolygonFromEncoded" href="polygon_encoded.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev2019+g461589856" />
+  <meta name="docsearch:version" content="0.1.dev2114+gf9bd4988e" />
   </head>
   
   
@@ -390,6 +392,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../geojson/choropleth.html">Using <code class="docutils literal notranslate"><span class="pre">Choropleth</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_marker.html">GeoJSON point features with markers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_popup_and_tooltip.html">GeoJSON popup and tooltip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_advanced_on_each_feature.html">Advanced GeoJSON Customization with on_each_feature</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geopandas_and_geo_interface.html">Using GeoPandas.GeoDataFrame in folium</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/smoothing.html">Smoothing</a></li>
 </ul>
@@ -409,6 +412,7 @@
 <li class="toctree-l2"><a class="reference internal" href="float_image.html">FloatImage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fullscreen.html">Fullscreen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="geocoder.html">Geocoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geoman.html">Geoman</a></li>
 <li class="toctree-l2"><a class="reference internal" href="grouped_layer_control.html">GroupedLayerControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heatmap.html">Heatmap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heatmap_with_time.html">HeatMapWithTime</a></li>
@@ -541,7 +545,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_37833ab441e36d8fd133ee5b369138d8 {
+                #map_6525fa32cdd7025ee16d58d32ceb40e8 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -579,14 +583,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_37833ab441e36d8fd133ee5b369138d8&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_6525fa32cdd7025ee16d58d32ceb40e8&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_37833ab441e36d8fd133ee5b369138d8 = L.map(
-                &quot;map_37833ab441e36d8fd133ee5b369138d8&quot;,
+            var map_6525fa32cdd7025ee16d58d32ceb40e8 = L.map(
+                &quot;map_6525fa32cdd7025ee16d58d32ceb40e8&quot;,
                 {
                     center: [40.0, -120.0],
                     crs: L.CRS.EPSG3857,
@@ -603,7 +607,7 @@
 
 
 
-            var tile_layer_c1eb16e197ec4c42a6727a184ff9f060 = L.tileLayer(
+            var tile_layer_5877ff84da6ae248a94a416d02ef02d1 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -620,11 +624,11 @@
             );
 
 
-            tile_layer_c1eb16e197ec4c42a6727a184ff9f060.addTo(map_37833ab441e36d8fd133ee5b369138d8);
+            tile_layer_5877ff84da6ae248a94a416d02ef02d1.addTo(map_6525fa32cdd7025ee16d58d32ceb40e8);
 
 
 
-            var macro_element_47382eee5a877a7db0430302685d128a = L.Polyline.fromEncoded(
+            var macro_element_cea14336493f14d8feb91c389f83d42c = L.Polyline.fromEncoded(
                 &quot;_p~iF~cn~U_ulLn{vA_mqNvxq`@&quot;,
                 {
   &quot;stroke&quot;: true,
@@ -643,7 +647,7 @@
   &quot;smoothFactor&quot;: 1.0,
   &quot;noClip&quot;: false,
 }
-            ).addTo(map_37833ab441e36d8fd133ee5b369138d8);
+            ).addTo(map_6525fa32cdd7025ee16d58d32ceb40e8);
 
 
 &lt;/script&gt;
@@ -721,13 +725,13 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev2019+g461589856</div>
+Folium version 0.1.dev2114+gf9bd4988e</div>
       
         <div class="footer-item">
 
   <p class="copyright">
     
-      © Copyright 2013-2025, Rob Story.
+      © Copyright 2013-2026, Rob Story.
       <br/>
     
   </p>
@@ -736,7 +740,7 @@ Folium version 0.1.dev2019+g461589856</div>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.3.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     <br/>
   </p>
 </div>

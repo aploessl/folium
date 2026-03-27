@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Customizing javascript or css resources &#8212; Folium 0.1.dev2019+g461589856 documentation</title>
+    <title>Customizing javascript or css resources &#8212; Folium 0.1.dev2114+gf9bd4988e documentation</title>
   
   
   
@@ -40,10 +40,12 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=d6a35ffb"></script>
-    <script src="../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/documentation_options.js?v=d3cb42ee"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'advanced_guide/customize_javascript_and_css';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
@@ -58,7 +60,7 @@
     <link rel="prev" title="Creating a polygon from a list of points" href="polygons_from_list_of_points.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev2019+g461589856" />
+  <meta name="docsearch:version" content="0.1.dev2114+gf9bd4988e" />
   </head>
   
   
@@ -539,7 +541,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_f16b397ba27328def5da0d2c495488cf {
+                #map_968a222456c6c5745b40a14425afc9e1 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -578,14 +580,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_f16b397ba27328def5da0d2c495488cf&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_968a222456c6c5745b40a14425afc9e1&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_f16b397ba27328def5da0d2c495488cf = L.map(
-                &quot;map_f16b397ba27328def5da0d2c495488cf&quot;,
+            var map_968a222456c6c5745b40a14425afc9e1 = L.map(
+                &quot;map_968a222456c6c5745b40a14425afc9e1&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -602,7 +604,7 @@
 
 
 
-            var tile_layer_3fa13d0692c9d4d942a831b1faf7481c = L.tileLayer(
+            var tile_layer_40c47f661f73054e4e6fe5dcc474cd0d = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -619,10 +621,10 @@
             );
 
 
-            tile_layer_3fa13d0692c9d4d942a831b1faf7481c.addTo(map_f16b397ba27328def5da0d2c495488cf);
+            tile_layer_40c47f661f73054e4e6fe5dcc474cd0d.addTo(map_968a222456c6c5745b40a14425afc9e1);
 
 
-            var realtime_3bff134ea96cad3ada43de28cfcfef9c = L.realtime(
+            var realtime_f9d88d7255df3c6957a7d9ab2f908335 = L.realtime(
 
 function(responseHandler, errorHandler) {
     var url = &#x27;https://api.wheretheiss.at/v1/satellites/25544&#x27;;
@@ -665,12 +667,12 @@ function(f, l) {
   &quot;removeMissing&quot;: false,
 }
             );
-            map_f16b397ba27328def5da0d2c495488cf.addLayer(
-                realtime_3bff134ea96cad3ada43de28cfcfef9c._container
+            map_968a222456c6c5745b40a14425afc9e1.addLayer(
+                realtime_f9d88d7255df3c6957a7d9ab2f908335._container
             );
 
 
-            realtime_3bff134ea96cad3ada43de28cfcfef9c.addTo(map_f16b397ba27328def5da0d2c495488cf);
+            realtime_f9d88d7255df3c6957a7d9ab2f908335.addTo(map_968a222456c6c5745b40a14425afc9e1);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -765,13 +767,13 @@ function(f, l) {
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev2019+g461589856</div>
+Folium version 0.1.dev2114+gf9bd4988e</div>
       
         <div class="footer-item">
 
   <p class="copyright">
     
-      © Copyright 2013-2025, Rob Story.
+      © Copyright 2013-2026, Rob Story.
       <br/>
     
   </p>
@@ -780,7 +782,7 @@ Folium version 0.1.dev2019+g461589856</div>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.3.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     <br/>
   </p>
 </div>

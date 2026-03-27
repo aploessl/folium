@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Rectangle &#8212; Folium 0.1.dev2019+g461589856 documentation</title>
+    <title>Rectangle &#8212; Folium 0.1.dev2114+gf9bd4988e documentation</title>
   
   
   
@@ -40,10 +40,12 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=d6a35ffb"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/documentation_options.js?v=d3cb42ee"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/vector_layers/rectangle';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
@@ -58,7 +60,7 @@
     <link rel="prev" title="PolyLine" href="polyline.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev2019+g461589856" />
+  <meta name="docsearch:version" content="0.1.dev2114+gf9bd4988e" />
   </head>
   
   
@@ -390,6 +392,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../geojson/choropleth.html">Using <code class="docutils literal notranslate"><span class="pre">Choropleth</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_marker.html">GeoJSON point features with markers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_popup_and_tooltip.html">GeoJSON popup and tooltip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_advanced_on_each_feature.html">Advanced GeoJSON Customization with on_each_feature</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geopandas_and_geo_interface.html">Using GeoPandas.GeoDataFrame in folium</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/smoothing.html">Smoothing</a></li>
 </ul>
@@ -409,6 +412,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../plugins/float_image.html">FloatImage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/fullscreen.html">Fullscreen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/geocoder.html">Geocoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/geoman.html">Geoman</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/grouped_layer_control.html">GroupedLayerControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/heatmap.html">Heatmap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/heatmap_with_time.html">HeatMapWithTime</a></li>
@@ -569,7 +573,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_42aa88820f28f0d639ae4833aaba885b {
+                #map_1d64260adf5aa232e2e88499e3abbbce {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -606,14 +610,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_42aa88820f28f0d639ae4833aaba885b&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_1d64260adf5aa232e2e88499e3abbbce&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_42aa88820f28f0d639ae4833aaba885b = L.map(
-                &quot;map_42aa88820f28f0d639ae4833aaba885b&quot;,
+            var map_1d64260adf5aa232e2e88499e3abbbce = L.map(
+                &quot;map_1d64260adf5aa232e2e88499e3abbbce&quot;,
                 {
                     center: [35.685, 139.76],
                     crs: L.CRS.EPSG3857,
@@ -630,7 +634,7 @@
 
 
 
-            var tile_layer_c72d241d1f2a1d2bca6b44519e3a0d32 = L.tileLayer(
+            var tile_layer_06f7d3cc154f6ebfc4a62ca2ab57d371 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -647,33 +651,33 @@
             );
 
 
-            tile_layer_c72d241d1f2a1d2bca6b44519e3a0d32.addTo(map_42aa88820f28f0d639ae4833aaba885b);
+            tile_layer_06f7d3cc154f6ebfc4a62ca2ab57d371.addTo(map_1d64260adf5aa232e2e88499e3abbbce);
 
 
-            var rectangle_e17c77d4c5a8cfb9bea0e6984b740925 = L.rectangle(
+            var rectangle_910b72fa8e6e6274fc9e77137c4d5f48 = L.rectangle(
                 [[35.681, 139.766], [35.691, 139.776]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: &quot;5, 5&quot;, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-            ).addTo(map_42aa88820f28f0d639ae4833aaba885b);
+            ).addTo(map_1d64260adf5aa232e2e88499e3abbbce);
 
 
-        var popup_c7a48e58656d6a7fdf30b6cf4df7fa78 = L.popup({
+        var popup_69a54558937f655f9ab7e5696d0e421b = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
 
 
-                var html_33bf2d6287f8012573914d0f9cf84710 = $(`&lt;div id=&quot;html_33bf2d6287f8012573914d0f9cf84710&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
-                popup_c7a48e58656d6a7fdf30b6cf4df7fa78.setContent(html_33bf2d6287f8012573914d0f9cf84710);
+                var html_9477e4ba48182c04b6ca5a9f73bdfddb = $(`&lt;div id=&quot;html_9477e4ba48182c04b6ca5a9f73bdfddb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
+                popup_69a54558937f655f9ab7e5696d0e421b.setContent(html_9477e4ba48182c04b6ca5a9f73bdfddb);
 
 
 
-        rectangle_e17c77d4c5a8cfb9bea0e6984b740925.bindPopup(popup_c7a48e58656d6a7fdf30b6cf4df7fa78)
+        rectangle_910b72fa8e6e6274fc9e77137c4d5f48.bindPopup(popup_69a54558937f655f9ab7e5696d0e421b)
         ;
 
 
 
 
-            rectangle_e17c77d4c5a8cfb9bea0e6984b740925.bindTooltip(
+            rectangle_910b72fa8e6e6274fc9e77137c4d5f48.bindTooltip(
                 `&lt;div&gt;
                      &lt;strong&gt;Click me!&lt;/strong&gt;
                  &lt;/div&gt;`,
@@ -683,30 +687,30 @@
             );
 
 
-            var rectangle_af83727a74c4898aca898a339b273a8e = L.rectangle(
+            var rectangle_9133004c2b70e06b2b157a0f7d145a20 = L.rectangle(
                 [[35.681, 139.754], [35.691, 139.764]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: &quot;5, 10&quot;, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;mitter&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-            ).addTo(map_42aa88820f28f0d639ae4833aaba885b);
+            ).addTo(map_1d64260adf5aa232e2e88499e3abbbce);
 
 
-        var popup_8bfc2c36ae1b1654b5fe27bf8f8baca7 = L.popup({
+        var popup_78b2e4c80b535be01acd8b79f759a6ea = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
 
 
-                var html_baa815dbd5860dc804a1e00cfa3283ba = $(`&lt;div id=&quot;html_baa815dbd5860dc804a1e00cfa3283ba&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
-                popup_8bfc2c36ae1b1654b5fe27bf8f8baca7.setContent(html_baa815dbd5860dc804a1e00cfa3283ba);
+                var html_0eab45eb38b79e777950bf2969d4b36e = $(`&lt;div id=&quot;html_0eab45eb38b79e777950bf2969d4b36e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
+                popup_78b2e4c80b535be01acd8b79f759a6ea.setContent(html_0eab45eb38b79e777950bf2969d4b36e);
 
 
 
-        rectangle_af83727a74c4898aca898a339b273a8e.bindPopup(popup_8bfc2c36ae1b1654b5fe27bf8f8baca7)
+        rectangle_9133004c2b70e06b2b157a0f7d145a20.bindPopup(popup_78b2e4c80b535be01acd8b79f759a6ea)
         ;
 
 
 
 
-            rectangle_af83727a74c4898aca898a339b273a8e.bindTooltip(
+            rectangle_9133004c2b70e06b2b157a0f7d145a20.bindTooltip(
                 `&lt;div&gt;
                      &lt;strong&gt;Click me!&lt;/strong&gt;
                  &lt;/div&gt;`,
@@ -716,30 +720,30 @@
             );
 
 
-            var rectangle_c90eacd579c3198e075f720788dbb235 = L.rectangle(
+            var rectangle_2017ef1eff39b71cee3c8d811ce51bf0 = L.rectangle(
                 [[35.681, 139.742], [35.691, 139.7522]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: &quot;15, 10, 5, 10, 15&quot;, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;bevel&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-            ).addTo(map_42aa88820f28f0d639ae4833aaba885b);
+            ).addTo(map_1d64260adf5aa232e2e88499e3abbbce);
 
 
-        var popup_bc93ce090c4daa7e6e4ae7fdecfc7154 = L.popup({
+        var popup_b739721f741357d4033b88874e00fc9d = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
 
 
-                var html_9a558b6ae26dbbb7a27f7d4f3bfa4687 = $(`&lt;div id=&quot;html_9a558b6ae26dbbb7a27f7d4f3bfa4687&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
-                popup_bc93ce090c4daa7e6e4ae7fdecfc7154.setContent(html_9a558b6ae26dbbb7a27f7d4f3bfa4687);
+                var html_f44b4695345d273a184f2ef041dbd1e5 = $(`&lt;div id=&quot;html_f44b4695345d273a184f2ef041dbd1e5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
+                popup_b739721f741357d4033b88874e00fc9d.setContent(html_f44b4695345d273a184f2ef041dbd1e5);
 
 
 
-        rectangle_c90eacd579c3198e075f720788dbb235.bindPopup(popup_bc93ce090c4daa7e6e4ae7fdecfc7154)
+        rectangle_2017ef1eff39b71cee3c8d811ce51bf0.bindPopup(popup_b739721f741357d4033b88874e00fc9d)
         ;
 
 
 
 
-            rectangle_c90eacd579c3198e075f720788dbb235.bindTooltip(
+            rectangle_2017ef1eff39b71cee3c8d811ce51bf0.bindTooltip(
                 `&lt;div&gt;
                      &lt;strong&gt;Click me!&lt;/strong&gt;
                  &lt;/div&gt;`,
@@ -823,13 +827,13 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev2019+g461589856</div>
+Folium version 0.1.dev2114+gf9bd4988e</div>
       
         <div class="footer-item">
 
   <p class="copyright">
     
-      © Copyright 2013-2025, Rob Story.
+      © Copyright 2013-2026, Rob Story.
       <br/>
     
   </p>
@@ -838,7 +842,7 @@ Folium version 0.1.dev2019+g461589856</div>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.3.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     <br/>
   </p>
 </div>

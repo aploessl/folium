@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>WmsTileLayer &#8212; Folium 0.1.dev2019+g461589856 documentation</title>
+    <title>WmsTileLayer &#8212; Folium 0.1.dev2114+gf9bd4988e documentation</title>
   
   
   
@@ -40,10 +40,12 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=d6a35ffb"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/documentation_options.js?v=d3cb42ee"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/raster_layers/wms_tile_layer';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
@@ -58,7 +60,7 @@
     <link rel="prev" title="VideoOverlay" href="video_overlay.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev2019+g461589856" />
+  <meta name="docsearch:version" content="0.1.dev2114+gf9bd4988e" />
   </head>
   
   
@@ -390,6 +392,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../geojson/choropleth.html">Using <code class="docutils literal notranslate"><span class="pre">Choropleth</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_marker.html">GeoJSON point features with markers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_popup_and_tooltip.html">GeoJSON popup and tooltip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_advanced_on_each_feature.html">Advanced GeoJSON Customization with on_each_feature</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geopandas_and_geo_interface.html">Using GeoPandas.GeoDataFrame in folium</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/smoothing.html">Smoothing</a></li>
 </ul>
@@ -409,6 +412,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../plugins/float_image.html">FloatImage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/fullscreen.html">Fullscreen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/geocoder.html">Geocoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/geoman.html">Geoman</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/grouped_layer_control.html">GroupedLayerControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/heatmap.html">Heatmap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/heatmap_with_time.html">HeatMapWithTime</a></li>
@@ -550,7 +554,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_53929c8b68f909827043c3c8f1244462 {
+                #map_14a1c5e4324b73cc43f7d5e75f7fd9df {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -587,14 +591,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_53929c8b68f909827043c3c8f1244462&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_14a1c5e4324b73cc43f7d5e75f7fd9df&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_53929c8b68f909827043c3c8f1244462 = L.map(
-                &quot;map_53929c8b68f909827043c3c8f1244462&quot;,
+            var map_14a1c5e4324b73cc43f7d5e75f7fd9df = L.map(
+                &quot;map_14a1c5e4324b73cc43f7d5e75f7fd9df&quot;,
                 {
                     center: [41.0, -70.0],
                     crs: L.CRS.EPSG3857,
@@ -611,7 +615,7 @@
 
 
 
-            var tile_layer_85933c3d4d44ec1a7aa692f06f90c1a1 = L.tileLayer(
+            var tile_layer_e7e466f3c11ca9d83be4dc75843893fe = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -628,35 +632,35 @@
             );
 
 
-            tile_layer_85933c3d4d44ec1a7aa692f06f90c1a1.addTo(map_53929c8b68f909827043c3c8f1244462);
+            tile_layer_e7e466f3c11ca9d83be4dc75843893fe.addTo(map_14a1c5e4324b73cc43f7d5e75f7fd9df);
 
 
-            var macro_element_e295565d420ad149f0c8e2baddbc66c6 = L.tileLayer.wms(
+            var macro_element_e7ebf5ad7968b4fbfd30ac2027489a95 = L.tileLayer.wms(
                 &quot;https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi&quot;,
                 {&quot;attribution&quot;: &quot;Weather data \u00a9 2012 IEM Nexrad&quot;, &quot;format&quot;: &quot;image/png&quot;, &quot;layers&quot;: &quot;nexrad-n0r-900913&quot;, &quot;styles&quot;: &quot;&quot;, &quot;transparent&quot;: true, &quot;version&quot;: &quot;1.1.1&quot;}
             );
 
 
-            macro_element_e295565d420ad149f0c8e2baddbc66c6.addTo(map_53929c8b68f909827043c3c8f1244462);
+            macro_element_e7ebf5ad7968b4fbfd30ac2027489a95.addTo(map_14a1c5e4324b73cc43f7d5e75f7fd9df);
 
 
-            var layer_control_b0545dc434bd4982a5347b6d6b4647ce_layers = {
+            var layer_control_4c77e8baab43d023b0cba611c98844cb_layers = {
                 base_layers : {
-                    &quot;cartodbpositron&quot; : tile_layer_85933c3d4d44ec1a7aa692f06f90c1a1,
+                    &quot;cartodbpositron&quot; : tile_layer_e7e466f3c11ca9d83be4dc75843893fe,
                 },
                 overlays :  {
-                    &quot;test&quot; : macro_element_e295565d420ad149f0c8e2baddbc66c6,
+                    &quot;test&quot; : macro_element_e7ebf5ad7968b4fbfd30ac2027489a95,
                 },
             };
-            let layer_control_b0545dc434bd4982a5347b6d6b4647ce = L.control.layers(
-                layer_control_b0545dc434bd4982a5347b6d6b4647ce_layers.base_layers,
-                layer_control_b0545dc434bd4982a5347b6d6b4647ce_layers.overlays,
+            let layer_control_4c77e8baab43d023b0cba611c98844cb = L.control.layers(
+                layer_control_4c77e8baab43d023b0cba611c98844cb_layers.base_layers,
+                layer_control_4c77e8baab43d023b0cba611c98844cb_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_53929c8b68f909827043c3c8f1244462);
+            ).addTo(map_14a1c5e4324b73cc43f7d5e75f7fd9df);
 
 
 &lt;/script&gt;
@@ -734,13 +738,13 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev2019+g461589856</div>
+Folium version 0.1.dev2114+gf9bd4988e</div>
       
         <div class="footer-item">
 
   <p class="copyright">
     
-      © Copyright 2013-2025, Rob Story.
+      © Copyright 2013-2026, Rob Story.
       <br/>
     
   </p>
@@ -749,7 +753,7 @@ Folium version 0.1.dev2019+g461589856</div>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.3.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     <br/>
   </p>
 </div>
