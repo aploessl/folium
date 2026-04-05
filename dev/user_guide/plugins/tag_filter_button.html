@@ -27,18 +27,18 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/nbsphinx-code-cells.css?v=2aa19091" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=924e9346" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../../_static/scripts/fontawesome.js?digest=7f76b32a3354e82990f2"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2" />
 
     <script src="../../_static/documentation_options.js?v=d3cb42ee"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
@@ -48,12 +48,13 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/plugins/tag_filter_button';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_version = '0.17.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://python-visualization.github.io/folium/dev/_static/switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             false;
         </script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Terminator" href="terminator.html" />
@@ -61,14 +62,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1.dev2114+gf9bd4988e" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
@@ -100,7 +105,7 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
@@ -360,7 +365,14 @@
   </div>
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar"><svg class="pst-icon svg-inline--fa" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
         <div class="sidebar-primary-item">
+
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
@@ -579,7 +591,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_356b823ccf462f64e0f013e03b75e48a {
+                #map_eef8d6b13d57d332e4a73ffe254ac28d {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -632,14 +644,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_356b823ccf462f64e0f013e03b75e48a&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_eef8d6b13d57d332e4a73ffe254ac28d&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_356b823ccf462f64e0f013e03b75e48a = L.map(
-                &quot;map_356b823ccf462f64e0f013e03b75e48a&quot;,
+            var map_eef8d6b13d57d332e4a73ffe254ac28d = L.map(
+                &quot;map_eef8d6b13d57d332e4a73ffe254ac28d&quot;,
                 {
                     center: [48.0, 5.0],
                     crs: L.CRS.EPSG3857,
@@ -656,7 +668,7 @@
 
 
 
-            var tile_layer_c0e6dc7ede03f00f88668990adaa09e1 = L.tileLayer(
+            var tile_layer_ea38e1128e381e4e40a37c62efbb398f = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -673,1010 +685,1010 @@
             );
 
 
-            tile_layer_c0e6dc7ede03f00f88668990adaa09e1.addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            tile_layer_ea38e1128e381e4e40a37c62efbb398f.addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_253f422b45c578ec7c5e9d706ceac753 = L.marker(
-                [48.85159701448486, 4.730142071289368],
+            var marker_1549c8851619fb26ae27052fcfed7bf3 = L.marker(
+                [49.233969999689194, 6.1651834678204445],
                 {
   &quot;tags&quot;: [
 &quot;category5&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_01cab405e9035e1d8c9a34f948da1c5a = L.marker(
-                [47.83059002297397, 8.402403763451254],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_848c21fa12ee400ad66bf547c9e1f9f3 = L.marker(
-                [48.371092861746355, 4.519744019933069],
-                {
-  &quot;tags&quot;: [
-&quot;category3&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_6c53beed3aef633acf355cb48172accb = L.marker(
-                [49.84693544804348, 4.07452551259899],
-                {
-  &quot;tags&quot;: [
-&quot;category3&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_d4498bb1316dc9fc54dc8bd0c69ed098 = L.marker(
-                [47.48752043367917, 5.416743914429095],
+            var marker_fd460d00fbe7fb1eb310dbeb2256dffd = L.marker(
+                [48.61081810551512, 6.5120158090121185],
                 {
   &quot;tags&quot;: [
 &quot;category5&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_ef0380981c0eda5b35fc1092cfeafc93 = L.marker(
-                [46.75035422555991, 3.3096479820851923],
+            var marker_553220c821539093640bbeea39a4c9a0 = L.marker(
+                [48.983016658783725, 5.705212247045103],
                 {
   &quot;tags&quot;: [
 &quot;category4&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_130667564d0f47a74c071d9e83c1ee25 = L.marker(
-                [48.962453899122885, 5.269217996019075],
+            var marker_1729f4e3af880fc01d1d77e76fbabebc = L.marker(
+                [48.33099833109813, 4.947159558797403],
+                {
+  &quot;tags&quot;: [
+&quot;category2&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_f60374defb313611e173a0a2d0aecb5b = L.marker(
+                [49.31664589242658, 5.476787703515705],
                 {
   &quot;tags&quot;: [
 &quot;category1&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_7efcb49b88005153351ec1b9a5145fbf = L.marker(
-                [47.32261373917906, 5.724625459833436],
+            var marker_0c198d3d76473c54aa7f9821b6cecb8b = L.marker(
+                [45.804357828036046, 4.382241945730827],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_f60b87816762eee11d67d272a5f696e7 = L.marker(
+                [48.319567549589415, 5.158513308703834],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_ec001ddb506f39a30d4b07aa00b53807 = L.marker(
+                [48.908056526545494, 4.823541819437091],
+                {
+  &quot;tags&quot;: [
+&quot;category2&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_124511e27998179cf12c20de1a7ccb56 = L.marker(
+                [47.48957477738724, 3.809759596944184],
+                {
+  &quot;tags&quot;: [
+&quot;category3&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_e5f019d40d359ec567840079254fd78d = L.marker(
+                [47.71124100074579, 3.3492540795403016],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_f46240073e5d4330a0f8e41025a32b5d = L.marker(
+                [46.89017762076102, 4.261226026296009],
                 {
   &quot;tags&quot;: [
 &quot;category1&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_503e46b31fe5e0049692b7ff46290f0c = L.marker(
-                [47.81995194417267, 3.408761015560657],
-                {
-  &quot;tags&quot;: [
-&quot;category3&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_4414602989ec9f77214c22d7f7e27a61 = L.marker(
-                [48.1236796803046, 3.355562715648576],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_2a9b309a56222b625ff7376851cb4cff = L.marker(
-                [48.57406671207464, 5.239782089074217],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_742f7ca7da5052ecf5256764825013a0 = L.marker(
-                [49.24554901902017, 6.908221768176317],
-                {
-  &quot;tags&quot;: [
-&quot;category3&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_5df87b32ae058b72a243c104282fc643 = L.marker(
-                [48.750130980448866, 5.090414413433157],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_4f8a2555f8ad44a4f5c671bd074fe517 = L.marker(
-                [48.02302909503244, 4.362018854852979],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_35850c0f658b6c6658d94242e3adf447 = L.marker(
-                [48.89444264749968, 4.537206842680724],
-                {
-  &quot;tags&quot;: [
-&quot;category3&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_085b6840268b15d99a9fc4cce0811fc3 = L.marker(
-                [46.3625855968884, 7.2264008742079575],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_3751424a57440243fb0229e59e15129b = L.marker(
-                [48.89208238306673, 4.029533431867356],
-                {
-  &quot;tags&quot;: [
-&quot;category3&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_a17371c0726af550d36e85801e1b4bed = L.marker(
-                [46.89278994725133, 4.540156268096948],
+            var marker_b5e4c80040622606c3d2a15a657816c1 = L.marker(
+                [46.059276174527135, 5.810104056084731],
                 {
   &quot;tags&quot;: [
 &quot;category1&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_f3ad8f2b85e2cd5aff3b9800277b139c = L.marker(
-                [48.061883596633976, 4.158764694147163],
+            var marker_23d23ee60956849200d7ba76e8ab3584 = L.marker(
+                [48.89410728059759, 4.0704513072275255],
+                {
+  &quot;tags&quot;: [
+&quot;category2&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_771c70def3357a1dfafb5912e1443687 = L.marker(
+                [48.02293136825302, 6.001429727748332],
+                {
+  &quot;tags&quot;: [
+&quot;category2&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_2a4bfb7d14a95dee0b4b7905503b5bb8 = L.marker(
+                [47.94031379765332, 6.877606493631746],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_48066a5a943118bec53652e66d32f33d = L.marker(
+                [48.30454364416615, 6.515234723304657],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_8c723e6305fe04cf464a8851ff66f303 = L.marker(
+                [48.10788289711511, 5.134563408774388],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_018de12b6fdf7f3ac40dc56015fea57b = L.marker(
+                [47.30208683428479, 6.3397434909157795],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_9c108b78411b3bc63e7eca8b28c9ece9 = L.marker(
+                [49.82438086329352, 4.628363115096853],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_dbc6ce840efd6ed36e284ec8112f98f0 = L.marker(
+                [49.51637556996163, 3.7791545524636474],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_bb1dade70c14d8353af39d769d00c1c0 = L.marker(
+                [47.41031761894177, 4.062525061489109],
+                {
+  &quot;tags&quot;: [
+&quot;category2&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_26cdf5c49d25e6930fd5d6c27d0df37f = L.marker(
+                [49.982521562505916, 3.5455586217488757],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_37dcf755fd54219338720741e76d44a9 = L.marker(
+                [48.94772792372944, 6.4789238247208765],
+                {
+  &quot;tags&quot;: [
+&quot;category2&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_79808602cd04ce239167830ac4f60b0b = L.marker(
+                [48.972236284696095, 5.499010470354607],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_667602af7cfac56459afa0007e4f91a6 = L.marker(
+                [49.64464796398106, 5.194672681499178],
                 {
   &quot;tags&quot;: [
 &quot;category3&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_7b90a9554051a82c70577eb5422211f2 = L.marker(
-                [50.03634688955591, 5.72670193376821],
+            var marker_cf4adde0df0c126a6a0cc6d4faf5b32c = L.marker(
+                [47.84339613566423, 5.537835183705273],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_3c85b5ed8e02571a4db8db7845e285ad = L.marker(
+                [47.4862508576959, 5.148392644898189],
+                {
+  &quot;tags&quot;: [
+&quot;category2&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_f3ba8b6808c6989023d685fd67266a01 = L.marker(
+                [48.25301416413587, 4.241830031678609],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_14b74282e9a8132215da7b202c44ad5a = L.marker(
+                [48.79534096915972, 5.006892709654551],
                 {
   &quot;tags&quot;: [
 &quot;category1&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_6e77ca3db65d1c4c1309e3df081017cf = L.marker(
-                [48.11348943385571, 4.952260050891123],
+            var marker_7297d56771b055fd7c7a1fe562ebfcde = L.marker(
+                [47.573694646360636, 4.77229400435396],
                 {
   &quot;tags&quot;: [
 &quot;category3&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_4b44aaeae07a08bf583cf75fff1c5096 = L.marker(
-                [48.45536359863066, 4.250635797706505],
+            var marker_80e239a9b0a6ff9a1cce2576a8e1f1e4 = L.marker(
+                [47.63080644802598, 3.602234392838885],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_23fa232bd092c1e4dae355cbcde585df = L.marker(
+                [47.87548845171585, 4.449760301180918],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_e3e2eba48abbd8974dd43b9ee103bfc9 = L.marker(
+                [48.264501293290174, 4.215953034602902],
                 {
   &quot;tags&quot;: [
 &quot;category3&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_6d5a451448b3d5470d0a53d4010e417e = L.marker(
-                [46.30085209745303, 5.692153473876304],
+            var marker_7c6e8f8481ae600bf1a6464bc3deb313 = L.marker(
+                [48.06892873888364, 5.066736363768426],
+                {
+  &quot;tags&quot;: [
+&quot;category2&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_1394d573afeab229117779f6d52831fe = L.marker(
+                [46.3359902487785, 4.073767203699747],
                 {
   &quot;tags&quot;: [
 &quot;category3&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_b0d0463db4bb7452e386046296f7bd86 = L.marker(
-                [47.967727073868936, 4.289210813071762],
+            var marker_31e66633597d8c43ed26a35fdf883763 = L.marker(
+                [48.81655080676654, 5.3956618649344525],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_a00f2f8dc250780d8ae7d620b92a9e61 = L.marker(
+                [49.094540936364425, 3.530438320767609],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_9dcd3431440957c8a30605daa42fecb5 = L.marker(
+                [48.78026367860755, 5.038321712415974],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_3ff4fb8b2e6a17067282d65fdfacf2d2 = L.marker(
+                [46.62334377159182, 4.96807798790162],
+                {
+  &quot;tags&quot;: [
+&quot;category3&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_b76a4eafe8eebb6bc0f9272671c4862b = L.marker(
+                [47.55202074246678, 2.1843828556704863],
+                {
+  &quot;tags&quot;: [
+&quot;category3&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_52b79356d3ffc00541321f0ff58f7884 = L.marker(
+                [49.51154398022906, 4.992067422947053],
+                {
+  &quot;tags&quot;: [
+&quot;category3&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_1b04415cf9799c6493e8d62a45d4b7b0 = L.marker(
+                [49.39405503954832, 5.728261562121094],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_f2d328993b5abf748475877aebad4fe9 = L.marker(
+                [47.53189231400543, 6.261517287176147],
                 {
   &quot;tags&quot;: [
 &quot;category1&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_b50eac9260bf0c9e65949414efb88378 = L.marker(
-                [47.528606306130776, 3.9987918237106195],
-                {
-  &quot;tags&quot;: [
-&quot;category5&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_9592d10a21a25ed876cd8f54e23c994b = L.marker(
-                [49.098973390239614, 5.989957007932305],
+            var marker_96647101395a2066bcc70fd33addea4a = L.marker(
+                [47.7290694413041, 4.6301595283102195],
                 {
   &quot;tags&quot;: [
 &quot;category3&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_dd516d84fdf76b5e9d4bb81878c2d56c = L.marker(
-                [47.18985536604186, 4.841090972618068],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_4d347483d4c7cb370bdb87878c119a60 = L.marker(
-                [46.5222664666758, 5.541430102868155],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_40a6cc8a6274fe1a13e59486fb4e5637 = L.marker(
-                [47.7277892364219, 4.000924932416954],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_1a812bc3621cd169f817e36acce281b3 = L.marker(
-                [46.7904625606387, 5.8908242468229375],
-                {
-  &quot;tags&quot;: [
-&quot;category5&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_6ebf8db3589fa0466802a1dc106a320f = L.marker(
-                [48.88949577302803, 6.367319941081249],
-                {
-  &quot;tags&quot;: [
-&quot;category5&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_d9b37743249b07c91d3f24f36c38d792 = L.marker(
-                [47.56216946547618, 3.6574504191775112],
-                {
-  &quot;tags&quot;: [
-&quot;category5&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_a2ef48a0c2426d95fd5a30b8d2183d25 = L.marker(
-                [50.14633047477704, 4.0317521406896315],
-                {
-  &quot;tags&quot;: [
-&quot;category3&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_72fb2f545eaa4cae612a62aa23d2c6f1 = L.marker(
-                [47.81838787841948, 3.0593975032947585],
+            var marker_3721559974fdca4c14e2f9c872796e9f = L.marker(
+                [47.676661065079465, 6.250137857545779],
                 {
   &quot;tags&quot;: [
 &quot;category2&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_83ecd0b898b317674eead48d46f782c0 = L.marker(
-                [48.41819787186204, 6.408652311737756],
-                {
-  &quot;tags&quot;: [
-&quot;category5&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_6ce82699e49a37b1864c95c2f07eb824 = L.marker(
-                [48.192209710058194, 6.011471166377241],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_7abd8a1e004d71a9483e9667dfa6f539 = L.marker(
-                [47.233395135342526, 6.694999015369047],
-                {
-  &quot;tags&quot;: [
-&quot;category3&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_375cff89d34001a8b999375f948fd068 = L.marker(
-                [47.73748802516221, 4.8040655418561276],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_d87473a4ae6b5a41a992b78bf4c7f3f8 = L.marker(
-                [47.46825468573056, 5.971096567076576],
-                {
-  &quot;tags&quot;: [
-&quot;category3&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_3e90a053325cb0f195f42bb8388fc55f = L.marker(
-                [47.16626699241886, 6.142520760585774],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_54eb2ce4fdc5d98745ef57e21a8cf5aa = L.marker(
-                [47.40978297605412, 5.638782107330449],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_574350be3d184828e3889389c3f5797f = L.marker(
-                [48.1338984790366, 6.225166577807024],
-                {
-  &quot;tags&quot;: [
-&quot;category3&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_dcaad2fad5141334382ac0318158a077 = L.marker(
-                [46.60898039054984, 5.597414850349102],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_076cf777267d4b2206a9360e2e8ae399 = L.marker(
-                [46.016626682491584, 3.5816409118164776],
-                {
-  &quot;tags&quot;: [
-&quot;category3&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_35b4d916007b12c42526d5b624378a6c = L.marker(
-                [47.7922361657287, 5.661235955691013],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_26b5c16ca5698a1517b92d989fc22a6c = L.marker(
-                [47.86656433423287, 3.724311609294685],
-                {
-  &quot;tags&quot;: [
-&quot;category3&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_a0fcb34c57f87f6413341ee64fa3254d = L.marker(
-                [48.94907841592793, 5.936298506598096],
-                {
-  &quot;tags&quot;: [
-&quot;category3&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_bf05807d06699eed3c22d551aad28636 = L.marker(
-                [46.51418940450644, 4.966065583653879],
+            var marker_0f7da3699d4e479f296149244921e535 = L.marker(
+                [48.65877572392617, 6.30416714263611],
                 {
   &quot;tags&quot;: [
 &quot;category1&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_0e1bd96af13af239a54ad1dcec9bf3d4 = L.marker(
-                [51.06486427069655, 3.6152826762678596],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_6a96fce6e2a282f7339a7678862187e6 = L.marker(
-                [49.15910999823829, 3.941155773473447],
+            var marker_290bcff8cac03f95693ebcded5d35c89 = L.marker(
+                [47.53874158008815, 4.249502255995996],
                 {
   &quot;tags&quot;: [
 &quot;category2&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_152f87b43be834d9b018917a2ff5995c = L.marker(
-                [49.08121413548678, 5.535380939625947],
+            var marker_96946ba775da89851e8988c7e8012d9d = L.marker(
+                [46.845802331659605, 4.476078709746129],
+                {
+  &quot;tags&quot;: [
+&quot;category2&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_be6fada1b239c96fd50675e63e5b85e9 = L.marker(
+                [47.77583360805304, 4.796437764464224],
+                {
+  &quot;tags&quot;: [
+&quot;category2&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_fa838d29e5a43d01fb74c497547307b7 = L.marker(
+                [48.58657611871688, 6.437754398090152],
                 {
   &quot;tags&quot;: [
 &quot;category1&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_24ed2e466010a5c348fed80d0cbb3a01 = L.marker(
-                [48.47779786570282, 4.4488591228143015],
+            var marker_9165bc0c6d84a0d7522dc6aa16395b67 = L.marker(
+                [47.238995075672086, 4.063438914918767],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_87206081fa630572e156c0812d93df0b = L.marker(
+                [47.50196420696227, 4.270401204576045],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_fd91c8d40753d8d0e72683463208a212 = L.marker(
+                [48.35248737508559, 4.266749920683143],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_3e1d9491104a66594ccc2b641e3dd616 = L.marker(
+                [47.68196163995467, 4.033112914926873],
+                {
+  &quot;tags&quot;: [
+&quot;category1&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_af2b9ed653c932cbd07bdae52c004c96 = L.marker(
+                [47.41338700663773, 4.798314568086373],
                 {
   &quot;tags&quot;: [
 &quot;category3&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_84250c25cb916268b45d4e9d91cda286 = L.marker(
-                [49.57086462044631, 3.801760234924928],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_7f0854ad80caac7f47cfa06fecde1201 = L.marker(
-                [46.79547463824439, 3.494060191289142],
+            var marker_76a5546a9d95f3db2e0d547fb6b49bdf = L.marker(
+                [47.9532136485818, 4.351800549894759],
                 {
   &quot;tags&quot;: [
 &quot;category5&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_5f48f7877227ff39ac73172abae9f6f6 = L.marker(
-                [47.675535845646, 5.209195330598159],
+            var marker_f0f2d5d25402d218e01c3a7f459406ec = L.marker(
+                [48.62964320646775, 6.437456318275792],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_3e38e694b6ea5e89c364cab1dd89d1ec = L.marker(
+                [46.84413789880144, 2.6507330659483914],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_037331b7942ff22a59720382560f5791 = L.marker(
+                [45.94269170031355, 4.478671179212031],
                 {
   &quot;tags&quot;: [
 &quot;category2&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_90bb14ed3c0bf63788adcfbda56a2352 = L.marker(
-                [46.19467506254658, 4.832124217013802],
+            var marker_e10b5d10f735f2ed6f8fbe3ed2280645 = L.marker(
+                [47.07023424585427, 4.794865148201797],
                 {
   &quot;tags&quot;: [
-&quot;category4&quot;,
+&quot;category5&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_04bf858fdffb43df04cc127922e6ea27 = L.marker(
-                [47.92190155123419, 4.457908792557788],
-                {
-  &quot;tags&quot;: [
-&quot;category1&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_696e6056d5aad58b81b34f36ce50078d = L.marker(
-                [49.381562472341386, 5.960828355561658],
-                {
-  &quot;tags&quot;: [
-&quot;category1&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_188c691b3e318f094cd91db97ac2b719 = L.marker(
-                [48.490560398354006, 4.228827174536401],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_784015a483dc43b52696f0458c7a33eb = L.marker(
-                [49.876242529441036, 4.684719553779119],
+            var marker_abfeebf194b3eadab0adfa3c2e8dcff5 = L.marker(
+                [49.698675412567724, 4.7638116144088665],
                 {
   &quot;tags&quot;: [
 &quot;category3&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_fa556589d81856da06b693caf73fcac8 = L.marker(
-                [46.172379128834585, 4.557396399688707],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_fb38a9766082ddf4e713afeb0bec05f9 = L.marker(
-                [48.27866510640078, 4.049231868610479],
+            var marker_98dc6b561abaf687d1c948e445d1e005 = L.marker(
+                [49.52077341625832, 4.480415844784853],
                 {
   &quot;tags&quot;: [
 &quot;category2&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_7d84281f738ccbcb04db8263350d5193 = L.marker(
-                [47.43158550425578, 3.57262477183996],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_48049aff847d528dffd073b98526e321 = L.marker(
-                [46.04193425496523, 6.071216977965907],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_d42221439d4a59a214259b05ab57fb76 = L.marker(
-                [46.179016878158805, 3.5495163903962883],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_109c768d7e96a7c3841c92e1242c2f9a = L.marker(
-                [45.35885559900805, 3.1572326730311424],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_b72086b2720b06962bd928ec2268a065 = L.marker(
-                [47.61649612886521, 4.402981436514685],
+            var marker_47a1531d7cfa56fb5923a4be656d0895 = L.marker(
+                [48.77657596555541, 4.958582283775903],
                 {
   &quot;tags&quot;: [
 &quot;category5&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_6e11b1696853a1441a919f52a2fc94f6 = L.marker(
-                [48.29576308407667, 6.490727012063769],
+            var marker_12b2fe38b238af5b4d712ef6254e0616 = L.marker(
+                [48.419562006720604, 4.446906376081672],
                 {
   &quot;tags&quot;: [
 &quot;category5&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_066b1b5f4ae5c9176d8a6674b4fdee18 = L.marker(
-                [47.02587098422684, 5.023228114223757],
+            var marker_d41884cb2132b05349360fd80527694e = L.marker(
+                [47.20385913504847, 5.198482672611257],
                 {
   &quot;tags&quot;: [
-&quot;category2&quot;,
+&quot;category5&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_6b8dab92402024bd4c5051c09db903c0 = L.marker(
-                [47.01049356620046, 5.093793075441842],
+            var marker_a31769c00b0462c9f1abb50c8c622bcd = L.marker(
+                [50.136253784536734, 3.495574123229873],
                 {
   &quot;tags&quot;: [
 &quot;category4&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_72951df3ab0a4ea5ef78265b547244b8 = L.marker(
-                [47.847001576260055, 4.751815162706375],
+            var marker_2063532f3b18bad5124f69098169bffa = L.marker(
+                [47.92174734252236, 4.961950647133614],
                 {
   &quot;tags&quot;: [
 &quot;category1&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_a69320fe94569358706f1c08bb2fc841 = L.marker(
-                [47.07638552066218, 3.61177152433744],
+            var marker_16340fce0975641823dc383e0ff8ceda = L.marker(
+                [47.948740532747024, 6.334626626507864],
+                {
+  &quot;tags&quot;: [
+&quot;category2&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_64f851b4792a39b0faf0dba9bcd0caca = L.marker(
+                [48.437813788854726, 3.973566191305064],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_704607a4f510cd7f13c76ad3de3e837f = L.marker(
+                [50.282645831503594, 5.008241279632429],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_1ef038422d4a77ec190696c8540f0e40 = L.marker(
+                [48.76749556347601, 6.471465306444826],
                 {
   &quot;tags&quot;: [
 &quot;category3&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_a85ddbd4a8a5c9a95920cdba9a1520b4 = L.marker(
-                [47.35926936285227, 6.083782756882217],
+            var marker_f55a25daa8cb2706a084e957c85e5427 = L.marker(
+                [49.347990941783046, 6.304780700499335],
                 {
   &quot;tags&quot;: [
 &quot;category3&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_846d5bc62ca42250f72428288b548e2b = L.marker(
-                [46.77046248479212, 3.926712256411444],
+            var marker_b429979aca4ae38fd668c23a92770927 = L.marker(
+                [46.6141271106498, 4.301546425310644],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_849bf4622ea6c51a2dbafb57c2ad24d3 = L.marker(
+                [47.40846421477774, 5.349878681043046],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_f1dfea6b0327de2af20a017fc6d87426 = L.marker(
+                [49.14566085033559, 6.22104934636082],
                 {
   &quot;tags&quot;: [
 &quot;category3&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_9d1a05699b0686b3480301f404e2d716 = L.marker(
-                [50.06574233903154, 4.460627177508157],
+            var marker_1e3facaa7c795713f01e6bfad22153f2 = L.marker(
+                [46.99445771132637, 5.388755760078039],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_0484a6b06a3d4354540af73e27878740 = L.marker(
+                [46.37024288275378, 4.992949375070925],
                 {
   &quot;tags&quot;: [
 &quot;category1&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_f7ba0ba8e6a8c13322202d0b82ebbe8d = L.marker(
-                [45.971149033228905, 5.261331395901259],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_4fb8aa1888b14379b427eb28ae8eb1b6 = L.marker(
-                [47.901330250449625, 4.229216701513505],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_74e2eb5a2a03f02cd35d0872b5c21373 = L.marker(
-                [47.208094340105944, 5.636351204853352],
+            var marker_5b1a1890ea38a1ffd7266d560db14b45 = L.marker(
+                [48.347621661283604, 4.219080275396411],
                 {
   &quot;tags&quot;: [
 &quot;category1&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_b477cc1a9e8d4b4190c1eb1bbfe4bd3c = L.marker(
-                [49.11666848321434, 4.0993052143623405],
+            var marker_ae97a7960fa85949c558e5c65144d38f = L.marker(
+                [47.7732752806564, 2.834618018286503],
                 {
   &quot;tags&quot;: [
-&quot;category5&quot;,
+&quot;category1&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_4ead46f370f297017ae06e23476d74e5 = L.marker(
-                [49.6336697791059, 5.138651770350699],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_e66b2880038a58d5ce51eb7497c91a55 = L.marker(
-                [48.84110282813415, 4.799288337899593],
-                {
-  &quot;tags&quot;: [
-&quot;category5&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_04c0c7b26486535c42e810f07088543f = L.marker(
-                [48.759102182460445, 7.029896020864884],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_c7d9307b93d826f949c0e3cb95dc9d85 = L.marker(
-                [47.18448946666274, 3.733033598092187],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_0d4eb51a92aa5d30b36b21efd89be3b0 = L.marker(
-                [48.49828686056691, 6.148903898397411],
-                {
-  &quot;tags&quot;: [
-&quot;category5&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_de7c7975042d943d52fb011c6b5f887a = L.marker(
-                [47.93521698340383, 3.7340968220100947],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_70237358614e5a6246a46c6cb5809287 = L.marker(
-                [48.204181834985604, 5.1572827892143644],
-                {
-  &quot;tags&quot;: [
-&quot;category5&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_2b357b869caec7c1ded0db1368d42ae3 = L.marker(
-                [49.29672207989828, 7.111131476783028],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_06974d5cc3cc61f70934afdef99d3541 = L.marker(
-                [49.26480162824689, 4.331621909228312],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_8b7403cc831339556d7d3fe169c27390 = L.marker(
-                [47.912875126736736, 6.407250074954886],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_00059e1afaf9ec724c4e1b623b8d951a = L.marker(
-                [47.4324742446012, 6.492709877190665],
-                {
-  &quot;tags&quot;: [
-&quot;category4&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_2815933bcc5bbacea09839db9bff9547 = L.marker(
-                [48.81561560442209, 7.0971717633547104],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_c2909374c5e9ae3296ea3473b838f296 = L.marker(
-                [47.431294891781995, 4.161615681291058],
+            var marker_ad8eeb9782ca517fced7ac0ddd82cfbc = L.marker(
+                [46.05313421935233, 4.4735745053587666],
                 {
   &quot;tags&quot;: [
 &quot;category3&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_d2ace78cf9b09c9899dfecbc63a95c2a = L.marker(
-                [48.874005778578685, 5.155738803847707],
-                {
-  &quot;tags&quot;: [
-&quot;category5&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_259591165a93458cf32c3c2c15d46fc2 = L.marker(
-                [48.63483751024832, 5.6348943984248026],
-                {
-  &quot;tags&quot;: [
-&quot;category5&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_b1bca51beb1cb7931a5832638e5a0e27 = L.marker(
-                [47.636100967172894, 4.087818363951593],
+            var marker_9d52ff6d42decc479479c4f5b7eee16d = L.marker(
+                [48.59941296723634, 4.234600392661095],
                 {
   &quot;tags&quot;: [
 &quot;category2&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_0fcea449c4dbef3a4971d64296640db8 = L.marker(
-                [48.789500116412036, 5.708397329942773],
-                {
-  &quot;tags&quot;: [
-&quot;category2&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_d0f3adaded510820670f6eed9c6c95bb = L.marker(
-                [48.12293666880031, 3.9548146637589907],
-                {
-  &quot;tags&quot;: [
-&quot;category1&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_5c3f3a08ad248ba6ff49e7907341c678 = L.marker(
-                [48.164605939970414, 5.262237876227334],
-                {
-  &quot;tags&quot;: [
-&quot;category1&quot;,
-],
-}
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
-
-
-            var marker_105d4964d1a2eabe1882c45882d489ed = L.marker(
-                [48.728236488824294, 5.85290862292232],
+            var marker_440cad7247e5207ddd11cccca8a42edc = L.marker(
+                [47.06213233076403, 4.066096376509391],
                 {
   &quot;tags&quot;: [
 &quot;category4&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var marker_e0c070387224a2781a8c8706ef92741a = L.marker(
-                [49.8324215691104, 3.26821225885433],
+            var marker_cdd872f3e15bb63b21356440bc44c97a = L.marker(
+                [46.39916156229196, 4.295834993139005],
+                {
+  &quot;tags&quot;: [
+&quot;category3&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_ad2ce58da4a7c07fa6eebf32358321d7 = L.marker(
+                [47.24879031375594, 6.940730025335169],
+                {
+  &quot;tags&quot;: [
+&quot;category1&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_6a519b4b11a1f4ed994e70aa77661d12 = L.marker(
+                [48.03017633993908, 5.186084468066146],
+                {
+  &quot;tags&quot;: [
+&quot;category1&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_74558fa40b93fed815afd607896f3ef4 = L.marker(
+                [48.18584555575528, 2.937404559272517],
+                {
+  &quot;tags&quot;: [
+&quot;category2&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_17f5acb9889897f42581c551dc73a141 = L.marker(
+                [47.97389533691367, 3.606464721971932],
                 {
   &quot;tags&quot;: [
 &quot;category5&quot;,
 ],
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 
-            var tag_filter_button_a0026038bb89b5cdca14e9c1ad59c4a3 = L.control.tagFilterButton(
+            var marker_aa1f2a0417eed3b3edff8635969a225f = L.marker(
+                [46.45998343092768, 4.895980154308785],
+                {
+  &quot;tags&quot;: [
+&quot;category3&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_2a36d460589bef2a21386ff16bf1bc2b = L.marker(
+                [47.01578566184708, 5.011898299195958],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_c8e95286d5aae2d6fba48fe9f3a8e217 = L.marker(
+                [46.309997349111235, 5.359035584590198],
+                {
+  &quot;tags&quot;: [
+&quot;category2&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_a42b6bcc236edf9d8dc960c242b7b000 = L.marker(
+                [48.6281242793642, 6.496668748833351],
+                {
+  &quot;tags&quot;: [
+&quot;category1&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_8a65a1e6cea6a933863a39d5bdd828c3 = L.marker(
+                [46.450045120296274, 4.1331844761235645],
+                {
+  &quot;tags&quot;: [
+&quot;category3&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_ff11e2cc364f6c961e3facf788cbf11a = L.marker(
+                [48.51809406380708, 4.204966756627842],
+                {
+  &quot;tags&quot;: [
+&quot;category1&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_3d69f77b39aa4bbe4739295aa443a874 = L.marker(
+                [47.87027827178281, 4.563369603195786],
+                {
+  &quot;tags&quot;: [
+&quot;category1&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_52762f03942ee8e46109c8c281c44727 = L.marker(
+                [47.41839090375065, 6.073416623675994],
+                {
+  &quot;tags&quot;: [
+&quot;category1&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_19a27442e677e5f283c0089a814d1dff = L.marker(
+                [46.731226038049776, 5.438106750985405],
+                {
+  &quot;tags&quot;: [
+&quot;category5&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_b73e121a409acf9f71f16c8511a242f8 = L.marker(
+                [48.40866688358834, 5.305719096427563],
+                {
+  &quot;tags&quot;: [
+&quot;category1&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_698f7f1c6c0eb07ddd5b826c3f13dbda = L.marker(
+                [47.898062259098396, 6.608927838755064],
+                {
+  &quot;tags&quot;: [
+&quot;category3&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_d65558fc087e33794beaea9f7c222195 = L.marker(
+                [46.64711854930948, 3.3321902855671617],
+                {
+  &quot;tags&quot;: [
+&quot;category3&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var marker_2254698de54b4c48c71cb3885dc16f94 = L.marker(
+                [48.820005855533964, 5.048549043677858],
+                {
+  &quot;tags&quot;: [
+&quot;category4&quot;,
+],
+}
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
+
+
+            var tag_filter_button_3da937c3c245ed168ed9245e5a6a04d5 = L.control.tagFilterButton(
                 {
   &quot;data&quot;: [
 &quot;category1&quot;,
@@ -1690,7 +1702,7 @@
   &quot;filterOnEveryClick&quot;: true,
   &quot;openPopupOnHover&quot;: false,
 }
-            ).addTo(map_356b823ccf462f64e0f013e03b75e48a);
+            ).addTo(map_eef8d6b13d57d332e4a73ffe254ac28d);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -1737,13 +1749,13 @@
 
 
   <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../../_sources/user_guide/plugins/tag_filter_button.md.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
+
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/user_guide/plugins/tag_filter_button.md.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
 
 </div></div>
               
@@ -1758,8 +1770,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1790,7 +1802,7 @@ Folium version 0.1.dev2114+gf9bd4988e</div>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.0.
 </p></div>
       
     </div>
@@ -1802,7 +1814,7 @@ Folium version 0.1.dev2114+gf9bd4988e</div>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.0.
 </p></div>
       
     </div>
