@@ -560,7 +560,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_bf174438feff09efa740ebd4ce7ff645 {
+                #map_9556c829e57356ef932b3db85de816eb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -599,7 +599,7 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_bf174438feff09efa740ebd4ce7ff645&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_9556c829e57356ef932b3db85de816eb&quot; &gt;&lt;/div&gt;
 
 
 
@@ -627,8 +627,8 @@
 &lt;script&gt;
 
 
-            var map_bf174438feff09efa740ebd4ce7ff645 = L.map(
-                &quot;map_bf174438feff09efa740ebd4ce7ff645&quot;,
+            var map_9556c829e57356ef932b3db85de816eb = L.map(
+                &quot;map_9556c829e57356ef932b3db85de816eb&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -645,7 +645,7 @@
 
 
 
-            var tile_layer_d7bc864674248d8ac108ce9f856e311b = L.tileLayer(
+            var tile_layer_7037811c176f8e50a449fefcac4030d5 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -662,7 +662,7 @@
             );
 
 
-            tile_layer_d7bc864674248d8ac108ce9f856e311b.addTo(map_bf174438feff09efa740ebd4ce7ff645);
+            tile_layer_7037811c176f8e50a449fefcac4030d5.addTo(map_9556c829e57356ef932b3db85de816eb);
 
 
             var options = {
@@ -671,16 +671,16 @@
               edit: {},
             }
                 // FeatureGroup is to store editable layers.
-                var drawnItems_draw_control_3ff3a9b16223faff5a04be62c1bec951 =
+                var drawnItems_draw_control_02c3df14b2d8bf3d179da72538c8edaa =
                     new L.featureGroup().addTo(
-                        map_bf174438feff09efa740ebd4ce7ff645
+                        map_9556c829e57356ef932b3db85de816eb
                     );
 
-            options.edit.featureGroup = drawnItems_draw_control_3ff3a9b16223faff5a04be62c1bec951;
-            var draw_control_3ff3a9b16223faff5a04be62c1bec951 = new L.Control.Draw(
+            options.edit.featureGroup = drawnItems_draw_control_02c3df14b2d8bf3d179da72538c8edaa;
+            var draw_control_02c3df14b2d8bf3d179da72538c8edaa = new L.Control.Draw(
                 options
-            ).addTo( map_bf174438feff09efa740ebd4ce7ff645 );
-            map_bf174438feff09efa740ebd4ce7ff645.on(L.Draw.Event.CREATED, function(e) {
+            ).addTo( map_9556c829e57356ef932b3db85de816eb );
+            map_9556c829e57356ef932b3db85de816eb.on(L.Draw.Event.CREATED, function(e) {
                 var layer = e.layer,
                     type = e.layerType;
                 var coords = JSON.stringify(layer.toGeoJSON());
@@ -688,15 +688,15 @@
                     alert(coords);
                     console.log(coords);
                 });
-                drawnItems_draw_control_3ff3a9b16223faff5a04be62c1bec951.addLayer(layer);
+                drawnItems_draw_control_02c3df14b2d8bf3d179da72538c8edaa.addLayer(layer);
             });
-            map_bf174438feff09efa740ebd4ce7ff645.on(&#x27;draw:created&#x27;, function(e) {
-                drawnItems_draw_control_3ff3a9b16223faff5a04be62c1bec951.addLayer(e.layer);
+            map_9556c829e57356ef932b3db85de816eb.on(&#x27;draw:created&#x27;, function(e) {
+                drawnItems_draw_control_02c3df14b2d8bf3d179da72538c8edaa.addLayer(e.layer);
             });
 
 
             document.getElementById(&#x27;export&#x27;).onclick = function(e) {
-                var data = drawnItems_draw_control_3ff3a9b16223faff5a04be62c1bec951.toGeoJSON();
+                var data = drawnItems_draw_control_02c3df14b2d8bf3d179da72538c8edaa.toGeoJSON();
                 var convertedData = &#x27;text/json;charset=utf-8,&#x27;
                     + encodeURIComponent(JSON.stringify(data));
                 document.getElementById(&#x27;export&#x27;).setAttribute(
