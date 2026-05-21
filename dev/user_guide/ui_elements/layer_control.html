@@ -27,18 +27,18 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=0790524f97105ba85085" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=0790524f97105ba85085" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/nbsphinx-code-cells.css?v=2aa19091" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=924e9346" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script defer src="../../_static/scripts/fontawesome.js?digest=0790524f97105ba85085"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=0790524f97105ba85085" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=0790524f97105ba85085" />
 
     <script src="../../_static/documentation_options.js?v=d3cb42ee"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
@@ -48,7 +48,7 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/ui_elements/layer_control';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.17.1';
+        DOCUMENTATION_OPTIONS.theme_version = '0.18.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://python-visualization.github.io/folium/dev/_static/switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
@@ -226,11 +226,18 @@
       
         <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
       
         <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -243,8 +250,7 @@
           
           
           
-          <a href="https://github.com/python-visualization/folium" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">GitHub</span></a>
+          <a href="https://github.com/python-visualization/folium" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
         </li>
 </ul></div>
       
@@ -340,11 +346,18 @@
         
           <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
         
           <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -357,8 +370,7 @@
           
           
           
-          <a href="https://github.com/python-visualization/folium" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">GitHub</span></a>
+          <a href="https://github.com/python-visualization/folium" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
         </li>
 </ul></div>
         
@@ -560,7 +572,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_265578d327c59e312adc8c87dd06e5fe {
+                #map_b8d0d36fe8848758002049d3a5a6b97c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -597,14 +609,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_265578d327c59e312adc8c87dd06e5fe&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_b8d0d36fe8848758002049d3a5a6b97c&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_265578d327c59e312adc8c87dd06e5fe = L.map(
-                &quot;map_265578d327c59e312adc8c87dd06e5fe&quot;,
+            var map_b8d0d36fe8848758002049d3a5a6b97c = L.map(
+                &quot;map_b8d0d36fe8848758002049d3a5a6b97c&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -621,7 +633,7 @@
 
 
 
-            var tile_layer_c9dff4a6bc845117bf9ca04b83d35cad = L.tileLayer(
+            var tile_layer_84889ec9c3365a97f766d881be882c5f = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -638,25 +650,25 @@
             );
 
 
-            tile_layer_c9dff4a6bc845117bf9ca04b83d35cad.addTo(map_265578d327c59e312adc8c87dd06e5fe);
+            tile_layer_84889ec9c3365a97f766d881be882c5f.addTo(map_b8d0d36fe8848758002049d3a5a6b97c);
 
 
-            var layer_control_99a1cdafab871ea16b630616404dfbc7_layers = {
+            var layer_control_7397b46c30c661954c286d1ea0a14f24_layers = {
                 base_layers : {
                 },
                 overlays :  {
-                    &quot;openstreetmap&quot; : tile_layer_c9dff4a6bc845117bf9ca04b83d35cad,
+                    &quot;openstreetmap&quot; : tile_layer_84889ec9c3365a97f766d881be882c5f,
                 },
             };
-            let layer_control_99a1cdafab871ea16b630616404dfbc7 = L.control.layers(
-                layer_control_99a1cdafab871ea16b630616404dfbc7_layers.base_layers,
-                layer_control_99a1cdafab871ea16b630616404dfbc7_layers.overlays,
+            let layer_control_7397b46c30c661954c286d1ea0a14f24 = L.control.layers(
+                layer_control_7397b46c30c661954c286d1ea0a14f24_layers.base_layers,
+                layer_control_7397b46c30c661954c286d1ea0a14f24_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_265578d327c59e312adc8c87dd06e5fe);
+            ).addTo(map_b8d0d36fe8848758002049d3a5a6b97c);
 
 
 &lt;/script&gt;
@@ -719,7 +731,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_e04ed7520009150ab52a0dd0f0237568 {
+                #map_55028ad94c784f53f96750d8ea129640 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -756,14 +768,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_e04ed7520009150ab52a0dd0f0237568&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_55028ad94c784f53f96750d8ea129640&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_e04ed7520009150ab52a0dd0f0237568 = L.map(
-                &quot;map_e04ed7520009150ab52a0dd0f0237568&quot;,
+            var map_55028ad94c784f53f96750d8ea129640 = L.map(
+                &quot;map_55028ad94c784f53f96750d8ea129640&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -780,7 +792,7 @@
 
 
 
-            var tile_layer_c914b9ea89e5b62737458738f3e7b7e6 = L.tileLayer(
+            var tile_layer_509ca61193addd20c8b3c1fe7be516fb = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -797,41 +809,41 @@
             );
 
 
-            tile_layer_c914b9ea89e5b62737458738f3e7b7e6.addTo(map_e04ed7520009150ab52a0dd0f0237568);
+            tile_layer_509ca61193addd20c8b3c1fe7be516fb.addTo(map_55028ad94c784f53f96750d8ea129640);
 
 
-            var feature_group_ed1297bd685da1e6ebc444fc71c65ff2 = L.featureGroup(
+            var feature_group_5700eb27d732f67678eb97148f07d89f = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_dd82bfcf3a19723a6c41b6b140cba448 = L.marker(
+            var marker_9f16fa4ae4ea891d51672737488a0667 = L.marker(
                 [0.0, 0.0],
                 {
 }
-            ).addTo(feature_group_ed1297bd685da1e6ebc444fc71c65ff2);
+            ).addTo(feature_group_5700eb27d732f67678eb97148f07d89f);
 
 
-            feature_group_ed1297bd685da1e6ebc444fc71c65ff2.addTo(map_e04ed7520009150ab52a0dd0f0237568);
+            feature_group_5700eb27d732f67678eb97148f07d89f.addTo(map_55028ad94c784f53f96750d8ea129640);
 
 
-            var layer_control_e9ba48ac600019f1f98f1756bc1a708a_layers = {
+            var layer_control_19329c81e345072ebadae769078cf640_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_c914b9ea89e5b62737458738f3e7b7e6,
+                    &quot;openstreetmap&quot; : tile_layer_509ca61193addd20c8b3c1fe7be516fb,
                 },
                 overlays :  {
                 },
             };
-            let layer_control_e9ba48ac600019f1f98f1756bc1a708a = L.control.layers(
-                layer_control_e9ba48ac600019f1f98f1756bc1a708a_layers.base_layers,
-                layer_control_e9ba48ac600019f1f98f1756bc1a708a_layers.overlays,
+            let layer_control_19329c81e345072ebadae769078cf640 = L.control.layers(
+                layer_control_19329c81e345072ebadae769078cf640_layers.base_layers,
+                layer_control_19329c81e345072ebadae769078cf640_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_e04ed7520009150ab52a0dd0f0237568);
+            ).addTo(map_55028ad94c784f53f96750d8ea129640);
 
 
 &lt;/script&gt;
@@ -879,7 +891,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_55e918661fc7802e3a8fac58b94a8b8c {
+                #map_c0b6964f985d6c79884f04c211b2ec82 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -916,14 +928,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_55e918661fc7802e3a8fac58b94a8b8c&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_c0b6964f985d6c79884f04c211b2ec82&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_55e918661fc7802e3a8fac58b94a8b8c = L.map(
-                &quot;map_55e918661fc7802e3a8fac58b94a8b8c&quot;,
+            var map_c0b6964f985d6c79884f04c211b2ec82 = L.map(
+                &quot;map_c0b6964f985d6c79884f04c211b2ec82&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -940,7 +952,7 @@
 
 
 
-            var tile_layer_7f79589eebf41ddd7be4e655b8c81e7e = L.tileLayer(
+            var tile_layer_1068519d5f470087a0cc2a34206be7aa = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -957,39 +969,39 @@
             );
 
 
-            tile_layer_7f79589eebf41ddd7be4e655b8c81e7e.addTo(map_55e918661fc7802e3a8fac58b94a8b8c);
+            tile_layer_1068519d5f470087a0cc2a34206be7aa.addTo(map_c0b6964f985d6c79884f04c211b2ec82);
 
 
-            var feature_group_ee70759aecf019b7b81d479f7af605fb = L.featureGroup(
+            var feature_group_1d8423393df8f04e32241578a48384b0 = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_dc9e0e21f5c092d6c4cd45c1ce11e058 = L.marker(
+            var marker_4ef9e2a346da67ad29655b169e61e30a = L.marker(
                 [0.0, 0.0],
                 {
 }
-            ).addTo(feature_group_ee70759aecf019b7b81d479f7af605fb);
+            ).addTo(feature_group_1d8423393df8f04e32241578a48384b0);
 
 
-            var layer_control_6df966b50acc7506096a2bf9e25aa347_layers = {
+            var layer_control_7709f08a7330264d696e6612c034d54a_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_7f79589eebf41ddd7be4e655b8c81e7e,
+                    &quot;openstreetmap&quot; : tile_layer_1068519d5f470087a0cc2a34206be7aa,
                 },
                 overlays :  {
-                    &quot;Icon collection&quot; : feature_group_ee70759aecf019b7b81d479f7af605fb,
+                    &quot;Icon collection&quot; : feature_group_1d8423393df8f04e32241578a48384b0,
                 },
             };
-            let layer_control_6df966b50acc7506096a2bf9e25aa347 = L.control.layers(
-                layer_control_6df966b50acc7506096a2bf9e25aa347_layers.base_layers,
-                layer_control_6df966b50acc7506096a2bf9e25aa347_layers.overlays,
+            let layer_control_7709f08a7330264d696e6612c034d54a = L.control.layers(
+                layer_control_7709f08a7330264d696e6612c034d54a_layers.base_layers,
+                layer_control_7709f08a7330264d696e6612c034d54a_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_55e918661fc7802e3a8fac58b94a8b8c);
+            ).addTo(map_c0b6964f985d6c79884f04c211b2ec82);
 
 
 &lt;/script&gt;
@@ -1073,8 +1085,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=0790524f97105ba85085"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=0790524f97105ba85085"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1105,7 +1117,7 @@ Folium version 0.1.dev2114+gf9bd4988e</div>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.1.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.18.0.
 </p></div>
       
     </div>
@@ -1117,7 +1129,7 @@ Folium version 0.1.dev2114+gf9bd4988e</div>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.1.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.18.0.
 </p></div>
       
     </div>
