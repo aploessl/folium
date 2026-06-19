@@ -27,18 +27,18 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=0790524f97105ba85085" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=0790524f97105ba85085" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/nbsphinx-code-cells.css?v=2aa19091" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=924e9346" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../../_static/scripts/fontawesome.js?digest=0790524f97105ba85085"></script>
+  <script defer src="../../_static/scripts/fontawesome.js?digest=a95f357e85573c9b56d5"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=0790524f97105ba85085" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=0790524f97105ba85085" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5" />
 
     <script src="../../_static/documentation_options.js?v=d3cb42ee"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
@@ -48,7 +48,7 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/features/click_related_classes';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.18.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.19.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://python-visualization.github.io/folium/dev/_static/switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
@@ -570,7 +570,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_96c851b617b686112f6a41bee5aa992d {
+                #map_dd3efb410bad5bbf20ca17b5ea1d2ab5 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -607,14 +607,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_96c851b617b686112f6a41bee5aa992d&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_dd3efb410bad5bbf20ca17b5ea1d2ab5&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_96c851b617b686112f6a41bee5aa992d = L.map(
-                &quot;map_96c851b617b686112f6a41bee5aa992d&quot;,
+            var map_dd3efb410bad5bbf20ca17b5ea1d2ab5 = L.map(
+                &quot;map_dd3efb410bad5bbf20ca17b5ea1d2ab5&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -631,7 +631,7 @@
 
 
 
-            var tile_layer_a363a3ffec485ab65f1d785e1ad7375e = L.tileLayer(
+            var tile_layer_5832e2b11bdf3f762aa3ad206bd831d6 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -648,18 +648,18 @@
             );
 
 
-            tile_layer_a363a3ffec485ab65f1d785e1ad7375e.addTo(map_96c851b617b686112f6a41bee5aa992d);
+            tile_layer_5832e2b11bdf3f762aa3ad206bd831d6.addTo(map_dd3efb410bad5bbf20ca17b5ea1d2ab5);
 
 
                 function newMarker(e){
-                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_96c851b617b686112f6a41bee5aa992d);
+                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_dd3efb410bad5bbf20ca17b5ea1d2ab5);
                     new_mark.dragging.enable();
-                    new_mark.on(&#x27;dblclick&#x27;, function(e){ map_96c851b617b686112f6a41bee5aa992d.removeLayer(e.target)})
+                    new_mark.on(&#x27;dblclick&#x27;, function(e){ map_dd3efb410bad5bbf20ca17b5ea1d2ab5.removeLayer(e.target)})
                     var lat = e.latlng.lat.toFixed(4),
                        lng = e.latlng.lng.toFixed(4);
                     new_mark.bindPopup(&quot;Latitude: &quot; + lat + &quot;&lt;br&gt;Longitude: &quot; + lng );
                     };
-                map_96c851b617b686112f6a41bee5aa992d.on(&#x27;click&#x27;, newMarker);
+                map_dd3efb410bad5bbf20ca17b5ea1d2ab5.on(&#x27;click&#x27;, newMarker);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -700,7 +700,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_d7a7b1f40917f974927aa2551f0b3aea {
+                #map_ba8068f1f3a641d05471bbccba5341dd {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -737,14 +737,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_d7a7b1f40917f974927aa2551f0b3aea&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_ba8068f1f3a641d05471bbccba5341dd&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_d7a7b1f40917f974927aa2551f0b3aea = L.map(
-                &quot;map_d7a7b1f40917f974927aa2551f0b3aea&quot;,
+            var map_ba8068f1f3a641d05471bbccba5341dd = L.map(
+                &quot;map_ba8068f1f3a641d05471bbccba5341dd&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -761,7 +761,7 @@
 
 
 
-            var tile_layer_83d953de1c4e47f56c97812644c3fa93 = L.tileLayer(
+            var tile_layer_efd7761a01f0de67532025435cd6f629 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -778,18 +778,18 @@
             );
 
 
-            tile_layer_83d953de1c4e47f56c97812644c3fa93.addTo(map_d7a7b1f40917f974927aa2551f0b3aea);
+            tile_layer_efd7761a01f0de67532025435cd6f629.addTo(map_ba8068f1f3a641d05471bbccba5341dd);
 
 
                 function newMarker(e){
-                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_d7a7b1f40917f974927aa2551f0b3aea);
+                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_ba8068f1f3a641d05471bbccba5341dd);
                     new_mark.dragging.enable();
-                    new_mark.on(&#x27;dblclick&#x27;, function(e){ map_d7a7b1f40917f974927aa2551f0b3aea.removeLayer(e.target)})
+                    new_mark.on(&#x27;dblclick&#x27;, function(e){ map_ba8068f1f3a641d05471bbccba5341dd.removeLayer(e.target)})
                     var lat = e.latlng.lat.toFixed(4),
                        lng = e.latlng.lng.toFixed(4);
                     new_mark.bindPopup(`&lt;b&gt;Lat:&lt;/b&gt; ${lat}&lt;br /&gt;&lt;b&gt;Lon:&lt;/b&gt; ${lng}`);
                     };
-                map_d7a7b1f40917f974927aa2551f0b3aea.on(&#x27;click&#x27;, newMarker);
+                map_ba8068f1f3a641d05471bbccba5341dd.on(&#x27;click&#x27;, newMarker);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -833,7 +833,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_20fc461ab8a4fc915516aee0e11a9da7 {
+                #map_e09f95041b6758b94b8a10f4a3b07e44 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -870,14 +870,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_20fc461ab8a4fc915516aee0e11a9da7&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_e09f95041b6758b94b8a10f4a3b07e44&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_20fc461ab8a4fc915516aee0e11a9da7 = L.map(
-                &quot;map_20fc461ab8a4fc915516aee0e11a9da7&quot;,
+            var map_e09f95041b6758b94b8a10f4a3b07e44 = L.map(
+                &quot;map_e09f95041b6758b94b8a10f4a3b07e44&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -894,7 +894,7 @@
 
 
 
-            var tile_layer_3aba01fdd5cc97410101651c764fadff = L.tileLayer(
+            var tile_layer_b66adf8fdc0cbc9af9a4b32073a7c462 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -911,18 +911,18 @@
             );
 
 
-            tile_layer_3aba01fdd5cc97410101651c764fadff.addTo(map_20fc461ab8a4fc915516aee0e11a9da7);
+            tile_layer_b66adf8fdc0cbc9af9a4b32073a7c462.addTo(map_e09f95041b6758b94b8a10f4a3b07e44);
 
 
-                var lat_lng_popup_3327cc4859dec7c26d0b05502cdff817 = L.popup();
+                var lat_lng_popup_2c2cf125a0bac579909e34e44563bf1c = L.popup();
                 function latLngPop(e) {
-                    lat_lng_popup_3327cc4859dec7c26d0b05502cdff817
+                    lat_lng_popup_2c2cf125a0bac579909e34e44563bf1c
                         .setLatLng(e.latlng)
                         .setContent(&quot;Latitude: &quot; + e.latlng.lat.toFixed(4) +
                                     &quot;&lt;br&gt;Longitude: &quot; + e.latlng.lng.toFixed(4))
-                        .openOn(map_20fc461ab8a4fc915516aee0e11a9da7);
+                        .openOn(map_e09f95041b6758b94b8a10f4a3b07e44);
                     }
-                map_20fc461ab8a4fc915516aee0e11a9da7.on(&#x27;click&#x27;, latLngPop);
+                map_e09f95041b6758b94b8a10f4a3b07e44.on(&#x27;click&#x27;, latLngPop);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -966,7 +966,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_5690566885ea774aebda616ed2236a0b {
+                #map_b2c01ee50564b90556d86335e9f1c4ea {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -1003,14 +1003,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_5690566885ea774aebda616ed2236a0b&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_b2c01ee50564b90556d86335e9f1c4ea&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_5690566885ea774aebda616ed2236a0b = L.map(
-                &quot;map_5690566885ea774aebda616ed2236a0b&quot;,
+            var map_b2c01ee50564b90556d86335e9f1c4ea = L.map(
+                &quot;map_b2c01ee50564b90556d86335e9f1c4ea&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -1027,7 +1027,7 @@
 
 
 
-            var tile_layer_a1bb8b20e55fb90442e19af11091d380 = L.tileLayer(
+            var tile_layer_1b9a1974deee939c7da567e82e574243 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -1044,7 +1044,7 @@
             );
 
 
-            tile_layer_a1bb8b20e55fb90442e19af11091d380.addTo(map_5690566885ea774aebda616ed2236a0b);
+            tile_layer_1b9a1974deee939c7da567e82e574243.addTo(map_b2c01ee50564b90556d86335e9f1c4ea);
 
 
                 function getLatLng(e){
@@ -1054,7 +1054,7 @@
                     navigator.clipboard.writeText(txt);
                     alert(&quot;Copied to clipboard : \n    &quot; + txt);
                     };
-                map_5690566885ea774aebda616ed2236a0b.on(&#x27;click&#x27;, getLatLng);
+                map_b2c01ee50564b90556d86335e9f1c4ea.on(&#x27;click&#x27;, getLatLng);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -1144,8 +1144,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=0790524f97105ba85085"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=0790524f97105ba85085"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1176,7 +1176,7 @@ Folium version 0.1.dev2114+gf9bd4988e</div>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.18.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.19.0.
 </p></div>
       
     </div>
@@ -1188,7 +1188,7 @@ Folium version 0.1.dev2114+gf9bd4988e</div>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.18.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.19.0.
 </p></div>
       
     </div>
