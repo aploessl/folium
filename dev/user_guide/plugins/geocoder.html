@@ -572,7 +572,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_77ad577270041e7f53706cc54185ad5b {
+                #map_3ce8d8b0cac9ba08b6ece5912f2dbec6 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -611,14 +611,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_77ad577270041e7f53706cc54185ad5b&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_3ce8d8b0cac9ba08b6ece5912f2dbec6&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_77ad577270041e7f53706cc54185ad5b = L.map(
-                &quot;map_77ad577270041e7f53706cc54185ad5b&quot;,
+            var map_3ce8d8b0cac9ba08b6ece5912f2dbec6 = L.map(
+                &quot;map_3ce8d8b0cac9ba08b6ece5912f2dbec6&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -635,7 +635,7 @@
 
 
 
-            var tile_layer_bc1ac3158318cd391397aa98accd0e56 = L.tileLayer(
+            var tile_layer_d54bb232d49cc798be0c00e457f8891d = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -652,11 +652,11 @@
             );
 
 
-            tile_layer_bc1ac3158318cd391397aa98accd0e56.addTo(map_77ad577270041e7f53706cc54185ad5b);
+            tile_layer_d54bb232d49cc798be0c00e457f8891d.addTo(map_3ce8d8b0cac9ba08b6ece5912f2dbec6);
 
 
 
-            var geocoderOpts_geocoder_de1bf3d19789b5b5e633908fd3a9458e = {
+            var geocoderOpts_geocoder_176f88ffc9e9de5f0830b630addff281 = {
   &quot;collapsed&quot;: false,
   &quot;position&quot;: &quot;topright&quot;,
   &quot;defaultMarkGeocode&quot;: true,
@@ -667,19 +667,19 @@
 };
 
             // note: geocoder name should start with lowercase
-            var geocoderName_geocoder_de1bf3d19789b5b5e633908fd3a9458e = geocoderOpts_geocoder_de1bf3d19789b5b5e633908fd3a9458e[&quot;provider&quot;];
+            var geocoderName_geocoder_176f88ffc9e9de5f0830b630addff281 = geocoderOpts_geocoder_176f88ffc9e9de5f0830b630addff281[&quot;provider&quot;];
 
-            var customGeocoder_geocoder_de1bf3d19789b5b5e633908fd3a9458e = L.Control.Geocoder[ geocoderName_geocoder_de1bf3d19789b5b5e633908fd3a9458e ](
-                geocoderOpts_geocoder_de1bf3d19789b5b5e633908fd3a9458e[&#x27;providerOptions&#x27;]
+            var customGeocoder_geocoder_176f88ffc9e9de5f0830b630addff281 = L.Control.Geocoder[ geocoderName_geocoder_176f88ffc9e9de5f0830b630addff281 ](
+                geocoderOpts_geocoder_176f88ffc9e9de5f0830b630addff281[&#x27;providerOptions&#x27;]
             );
-            geocoderOpts_geocoder_de1bf3d19789b5b5e633908fd3a9458e[&quot;geocoder&quot;] = customGeocoder_geocoder_de1bf3d19789b5b5e633908fd3a9458e;
+            geocoderOpts_geocoder_176f88ffc9e9de5f0830b630addff281[&quot;geocoder&quot;] = customGeocoder_geocoder_176f88ffc9e9de5f0830b630addff281;
 
             L.Control.geocoder(
-                geocoderOpts_geocoder_de1bf3d19789b5b5e633908fd3a9458e
+                geocoderOpts_geocoder_176f88ffc9e9de5f0830b630addff281
             ).on(&#x27;markgeocode&#x27;, function(e) {
-                var zoom = geocoderOpts_geocoder_de1bf3d19789b5b5e633908fd3a9458e[&#x27;zoom&#x27;] || map_77ad577270041e7f53706cc54185ad5b.getZoom();
-                map_77ad577270041e7f53706cc54185ad5b.setView(e.geocode.center, zoom);
-            }).addTo(map_77ad577270041e7f53706cc54185ad5b);
+                var zoom = geocoderOpts_geocoder_176f88ffc9e9de5f0830b630addff281[&#x27;zoom&#x27;] || map_3ce8d8b0cac9ba08b6ece5912f2dbec6.getZoom();
+                map_3ce8d8b0cac9ba08b6ece5912f2dbec6.setView(e.geocode.center, zoom);
+            }).addTo(map_3ce8d8b0cac9ba08b6ece5912f2dbec6);
 
 
 &lt;/script&gt;
