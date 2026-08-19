@@ -541,7 +541,7 @@
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">tiles</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
-<span class="n">folium</span><span class="o">.</span><span class="n">TileLayer</span><span class="p">(</span><span class="s2">&quot;OpenStreetMap&quot;</span><span class="p">,</span> <span class="n">overlay</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">folium</span><span class="o">.</span><span class="n">TileLayer</span><span class="p">(</span><span class="s2">"OpenStreetMap"</span><span class="p">,</span> <span class="n">overlay</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">LayerControl</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
@@ -573,7 +573,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_7c1e0530eb0dfe781aa0708319c22c9b {
+                #map_5b16813abd697321ff00bed97a631c9e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -610,14 +610,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_7c1e0530eb0dfe781aa0708319c22c9b&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_5b16813abd697321ff00bed97a631c9e&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_7c1e0530eb0dfe781aa0708319c22c9b = L.map(
-                &quot;map_7c1e0530eb0dfe781aa0708319c22c9b&quot;,
+            var map_5b16813abd697321ff00bed97a631c9e = L.map(
+                &quot;map_5b16813abd697321ff00bed97a631c9e&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -634,7 +634,7 @@
 
 
 
-            var tile_layer_7323c8c865c32c779e9be4861c9fe7e9 = L.tileLayer(
+            var tile_layer_c14ac3bcf9d9ebcf67dd2870364552d3 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -651,25 +651,25 @@
             );
 
 
-            tile_layer_7323c8c865c32c779e9be4861c9fe7e9.addTo(map_7c1e0530eb0dfe781aa0708319c22c9b);
+            tile_layer_c14ac3bcf9d9ebcf67dd2870364552d3.addTo(map_5b16813abd697321ff00bed97a631c9e);
 
 
-            var layer_control_7ea3f2be4e5bfeacdc442767f60b7264_layers = {
+            var layer_control_f55f72752cd02f6440e7457339a13e15_layers = {
                 base_layers : {
                 },
                 overlays :  {
-                    &quot;openstreetmap&quot; : tile_layer_7323c8c865c32c779e9be4861c9fe7e9,
+                    &quot;openstreetmap&quot; : tile_layer_c14ac3bcf9d9ebcf67dd2870364552d3,
                 },
             };
-            let layer_control_7ea3f2be4e5bfeacdc442767f60b7264 = L.control.layers(
-                layer_control_7ea3f2be4e5bfeacdc442767f60b7264_layers.base_layers,
-                layer_control_7ea3f2be4e5bfeacdc442767f60b7264_layers.overlays,
+            let layer_control_f55f72752cd02f6440e7457339a13e15 = L.control.layers(
+                layer_control_f55f72752cd02f6440e7457339a13e15_layers.base_layers,
+                layer_control_f55f72752cd02f6440e7457339a13e15_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_7c1e0530eb0dfe781aa0708319c22c9b);
+            ).addTo(map_5b16813abd697321ff00bed97a631c9e);
 
 
 &lt;/script&gt;
@@ -699,7 +699,7 @@
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
 
-<span class="n">fg</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Icon collection&quot;</span><span class="p">,</span> <span class="n">control</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">fg</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"Icon collection"</span><span class="p">,</span> <span class="n">control</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">fg</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">LayerControl</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
@@ -732,7 +732,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_4710d9c2d189109991d402b6b768cdb1 {
+                #map_5835d6f0eae81329a7559eea579090a7 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -769,14 +769,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_4710d9c2d189109991d402b6b768cdb1&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_5835d6f0eae81329a7559eea579090a7&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_4710d9c2d189109991d402b6b768cdb1 = L.map(
-                &quot;map_4710d9c2d189109991d402b6b768cdb1&quot;,
+            var map_5835d6f0eae81329a7559eea579090a7 = L.map(
+                &quot;map_5835d6f0eae81329a7559eea579090a7&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -793,7 +793,7 @@
 
 
 
-            var tile_layer_1cd74583c411c70a958b3f5b5e71dfb8 = L.tileLayer(
+            var tile_layer_fbf6d3b0d337a261a0ae7e6c17b813a6 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -810,41 +810,41 @@
             );
 
 
-            tile_layer_1cd74583c411c70a958b3f5b5e71dfb8.addTo(map_4710d9c2d189109991d402b6b768cdb1);
+            tile_layer_fbf6d3b0d337a261a0ae7e6c17b813a6.addTo(map_5835d6f0eae81329a7559eea579090a7);
 
 
-            var feature_group_52069560e401bcaae4963a3d630478bf = L.featureGroup(
+            var feature_group_e1c513f2d7db611b720513305addc972 = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_f07ee3c9a3ba7260b50e46f0160e500a = L.marker(
+            var marker_9ced0d342b64972d307eba143378a6d6 = L.marker(
                 [0.0, 0.0],
                 {
 }
-            ).addTo(feature_group_52069560e401bcaae4963a3d630478bf);
+            ).addTo(feature_group_e1c513f2d7db611b720513305addc972);
 
 
-            feature_group_52069560e401bcaae4963a3d630478bf.addTo(map_4710d9c2d189109991d402b6b768cdb1);
+            feature_group_e1c513f2d7db611b720513305addc972.addTo(map_5835d6f0eae81329a7559eea579090a7);
 
 
-            var layer_control_e2538b9dca59cbec6266095411ed64a1_layers = {
+            var layer_control_6f5533c2a3863d4c50bbf18fe5f423e9_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_1cd74583c411c70a958b3f5b5e71dfb8,
+                    &quot;openstreetmap&quot; : tile_layer_fbf6d3b0d337a261a0ae7e6c17b813a6,
                 },
                 overlays :  {
                 },
             };
-            let layer_control_e2538b9dca59cbec6266095411ed64a1 = L.control.layers(
-                layer_control_e2538b9dca59cbec6266095411ed64a1_layers.base_layers,
-                layer_control_e2538b9dca59cbec6266095411ed64a1_layers.overlays,
+            let layer_control_6f5533c2a3863d4c50bbf18fe5f423e9 = L.control.layers(
+                layer_control_6f5533c2a3863d4c50bbf18fe5f423e9_layers.base_layers,
+                layer_control_6f5533c2a3863d4c50bbf18fe5f423e9_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_4710d9c2d189109991d402b6b768cdb1);
+            ).addTo(map_5835d6f0eae81329a7559eea579090a7);
 
 
 &lt;/script&gt;
@@ -859,7 +859,7 @@
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
 
-<span class="n">fg</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Icon collection&quot;</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">fg</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"Icon collection"</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">fg</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">LayerControl</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
@@ -892,7 +892,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_58318f91277f9f310998f1549b215ca6 {
+                #map_c801db490614c0d89703cbc50320df34 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -929,14 +929,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_58318f91277f9f310998f1549b215ca6&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_c801db490614c0d89703cbc50320df34&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_58318f91277f9f310998f1549b215ca6 = L.map(
-                &quot;map_58318f91277f9f310998f1549b215ca6&quot;,
+            var map_c801db490614c0d89703cbc50320df34 = L.map(
+                &quot;map_c801db490614c0d89703cbc50320df34&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -953,7 +953,7 @@
 
 
 
-            var tile_layer_cf8aca5af27d1f70aaa9cb9d5479d827 = L.tileLayer(
+            var tile_layer_f0b2b2cd24d5439bb4b398439c9116be = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -970,39 +970,39 @@
             );
 
 
-            tile_layer_cf8aca5af27d1f70aaa9cb9d5479d827.addTo(map_58318f91277f9f310998f1549b215ca6);
+            tile_layer_f0b2b2cd24d5439bb4b398439c9116be.addTo(map_c801db490614c0d89703cbc50320df34);
 
 
-            var feature_group_5fbae14cc2cb2bac383145bf4d886eb2 = L.featureGroup(
+            var feature_group_a80907ca0a6005451acaeffa2d889ac1 = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_ea32a5c91bc51c9004e175bf1294aa6c = L.marker(
+            var marker_2d6b3175c5f273bd6019c7efe1828ce9 = L.marker(
                 [0.0, 0.0],
                 {
 }
-            ).addTo(feature_group_5fbae14cc2cb2bac383145bf4d886eb2);
+            ).addTo(feature_group_a80907ca0a6005451acaeffa2d889ac1);
 
 
-            var layer_control_40a5d45d34ce3b4ffe0883bc47289024_layers = {
+            var layer_control_ab6dfad47faf5a837814ff06a07146a6_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_cf8aca5af27d1f70aaa9cb9d5479d827,
+                    &quot;openstreetmap&quot; : tile_layer_f0b2b2cd24d5439bb4b398439c9116be,
                 },
                 overlays :  {
-                    &quot;Icon collection&quot; : feature_group_5fbae14cc2cb2bac383145bf4d886eb2,
+                    &quot;Icon collection&quot; : feature_group_a80907ca0a6005451acaeffa2d889ac1,
                 },
             };
-            let layer_control_40a5d45d34ce3b4ffe0883bc47289024 = L.control.layers(
-                layer_control_40a5d45d34ce3b4ffe0883bc47289024_layers.base_layers,
-                layer_control_40a5d45d34ce3b4ffe0883bc47289024_layers.overlays,
+            let layer_control_ab6dfad47faf5a837814ff06a07146a6 = L.control.layers(
+                layer_control_ab6dfad47faf5a837814ff06a07146a6_layers.base_layers,
+                layer_control_ab6dfad47faf5a837814ff06a07146a6_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_58318f91277f9f310998f1549b215ca6);
+            ).addTo(map_c801db490614c0d89703cbc50320df34);
 
 
 &lt;/script&gt;

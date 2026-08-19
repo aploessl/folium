@@ -547,8 +547,8 @@
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">folium</span><span class="w"> </span><span class="kn">import</span> <span class="n">JsCode</span>
 <span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">40.73</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.94</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
 <span class="n">rt</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">Realtime</span><span class="p">(</span>
-    <span class="s2">&quot;https://raw.githubusercontent.com/python-visualization/folium-example-data/main/subway_stations.geojson&quot;</span><span class="p">,</span>
-    <span class="n">get_feature_id</span><span class="o">=</span><span class="n">JsCode</span><span class="p">(</span><span class="s2">&quot;(f) =&gt; { return f.properties.objectid; }&quot;</span><span class="p">),</span>
+    <span class="s2">"https://raw.githubusercontent.com/python-visualization/folium-example-data/main/subway_stations.geojson"</span><span class="p">,</span>
+    <span class="n">get_feature_id</span><span class="o">=</span><span class="n">JsCode</span><span class="p">(</span><span class="s2">"(f) =&gt; { return f.properties.objectid; }"</span><span class="p">),</span>
     <span class="n">interval</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span>
 <span class="p">)</span>
 <span class="n">rt</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
@@ -580,7 +580,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_8a620dc7d3691d5d5c23e3a8f3a6d1a4 {
+                #map_1ae89ed161c95d57da29932b6ef57836 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -618,14 +618,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_8a620dc7d3691d5d5c23e3a8f3a6d1a4&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_1ae89ed161c95d57da29932b6ef57836&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_8a620dc7d3691d5d5c23e3a8f3a6d1a4 = L.map(
-                &quot;map_8a620dc7d3691d5d5c23e3a8f3a6d1a4&quot;,
+            var map_1ae89ed161c95d57da29932b6ef57836 = L.map(
+                &quot;map_1ae89ed161c95d57da29932b6ef57836&quot;,
                 {
                     center: [40.73, -73.94],
                     crs: L.CRS.EPSG3857,
@@ -642,7 +642,7 @@
 
 
 
-            var tile_layer_c61a3784acddc951dc28028b7dd7c510 = L.tileLayer(
+            var tile_layer_37816f9391d46524bf266ffd0be099f2 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -659,10 +659,10 @@
             );
 
 
-            tile_layer_c61a3784acddc951dc28028b7dd7c510.addTo(map_8a620dc7d3691d5d5c23e3a8f3a6d1a4);
+            tile_layer_37816f9391d46524bf266ffd0be099f2.addTo(map_1ae89ed161c95d57da29932b6ef57836);
 
 
-            var realtime_c314f38b377e8f0c0f2a4af21fa86da9 = L.realtime(
+            var realtime_604193f360ec3d34b6cbf3b4a8ba40b5 = L.realtime(
             &quot;https://raw.githubusercontent.com/python-visualization/folium-example-data/main/subway_stations.geojson&quot;,
             {
   &quot;start&quot;: true,
@@ -671,12 +671,12 @@
   &quot;removeMissing&quot;: false,
 }
             );
-            map_8a620dc7d3691d5d5c23e3a8f3a6d1a4.addLayer(
-                realtime_c314f38b377e8f0c0f2a4af21fa86da9._container
+            map_1ae89ed161c95d57da29932b6ef57836.addLayer(
+                realtime_604193f360ec3d34b6cbf3b4a8ba40b5._container
             );
 
 
-            realtime_c314f38b377e8f0c0f2a4af21fa86da9.addTo(map_8a620dc7d3691d5d5c23e3a8f3a6d1a4);
+            realtime_604193f360ec3d34b6cbf3b4a8ba40b5.addTo(map_1ae89ed161c95d57da29932b6ef57836);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -694,9 +694,9 @@
 
 <span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
 
-<span class="n">source</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">JsCode</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="n">source</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">JsCode</span><span class="p">(</span><span class="s2">"""</span>
 <span class="s2">    function(responseHandler, errorHandler) {</span>
-<span class="s2">        var url = &#39;https://api.wheretheiss.at/v1/satellites/25544&#39;;</span>
+<span class="s2">        var url = 'https://api.wheretheiss.at/v1/satellites/25544';</span>
 
 <span class="s2">        fetch(url)</span>
 <span class="s2">        .then((response) =&gt; {</span>
@@ -704,15 +704,15 @@
 <span class="s2">                var { id, longitude, latitude } = data;</span>
 
 <span class="s2">                return {</span>
-<span class="s2">                    &#39;type&#39;: &#39;FeatureCollection&#39;,</span>
-<span class="s2">                    &#39;features&#39;: [{</span>
-<span class="s2">                        &#39;type&#39;: &#39;Feature&#39;,</span>
-<span class="s2">                        &#39;geometry&#39;: {</span>
-<span class="s2">                            &#39;type&#39;: &#39;Point&#39;,</span>
-<span class="s2">                            &#39;coordinates&#39;: [longitude, latitude]</span>
+<span class="s2">                    'type': 'FeatureCollection',</span>
+<span class="s2">                    'features': [{</span>
+<span class="s2">                        'type': 'Feature',</span>
+<span class="s2">                        'geometry': {</span>
+<span class="s2">                            'type': 'Point',</span>
+<span class="s2">                            'coordinates': [longitude, latitude]</span>
 <span class="s2">                        },</span>
-<span class="s2">                        &#39;properties&#39;: {</span>
-<span class="s2">                            &#39;id&#39;: id</span>
+<span class="s2">                        'properties': {</span>
+<span class="s2">                            'id': id</span>
 <span class="s2">                        }</span>
 <span class="s2">                    }]</span>
 <span class="s2">                };</span>
@@ -721,7 +721,7 @@
 <span class="s2">        .then(responseHandler)</span>
 <span class="s2">        .catch(errorHandler);</span>
 <span class="s2">    }</span>
-<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+<span class="s2">"""</span><span class="p">)</span>
 
 <span class="n">rt</span> <span class="o">=</span> <span class="n">Realtime</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="mi">10000</span><span class="p">)</span>
 <span class="n">rt</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
@@ -754,7 +754,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_1db01723d523d710c529573bb6e432d3 {
+                #map_92262b1e790270673f519b15e1683821 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -792,14 +792,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_1db01723d523d710c529573bb6e432d3&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_92262b1e790270673f519b15e1683821&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_1db01723d523d710c529573bb6e432d3 = L.map(
-                &quot;map_1db01723d523d710c529573bb6e432d3&quot;,
+            var map_92262b1e790270673f519b15e1683821 = L.map(
+                &quot;map_92262b1e790270673f519b15e1683821&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -816,7 +816,7 @@
 
 
 
-            var tile_layer_00596ff75c227e8668437fe5c277e74a = L.tileLayer(
+            var tile_layer_a01ece3d795d753e611b4a32e769b6ff = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -833,10 +833,10 @@
             );
 
 
-            tile_layer_00596ff75c227e8668437fe5c277e74a.addTo(map_1db01723d523d710c529573bb6e432d3);
+            tile_layer_a01ece3d795d753e611b4a32e769b6ff.addTo(map_92262b1e790270673f519b15e1683821);
 
 
-            var realtime_38c0d3535e0273b71fae84a5d3650944 = L.realtime(
+            var realtime_1b4ce04f3d6c1fe46ff82e77e3844f98 = L.realtime(
 
     function(responseHandler, errorHandler) {
         var url = &#x27;https://api.wheretheiss.at/v1/satellites/25544&#x27;;
@@ -871,12 +871,12 @@
   &quot;removeMissing&quot;: false,
 }
             );
-            map_1db01723d523d710c529573bb6e432d3.addLayer(
-                realtime_38c0d3535e0273b71fae84a5d3650944._container
+            map_92262b1e790270673f519b15e1683821.addLayer(
+                realtime_1b4ce04f3d6c1fe46ff82e77e3844f98._container
             );
 
 
-            realtime_38c0d3535e0273b71fae84a5d3650944.addTo(map_1db01723d523d710c529573bb6e432d3);
+            realtime_1b4ce04f3d6c1fe46ff82e77e3844f98.addTo(map_92262b1e790270673f519b15e1683821);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -894,12 +894,12 @@
 <span class="kn">from</span><span class="w"> </span><span class="nn">folium.plugins</span><span class="w"> </span><span class="kn">import</span> <span class="n">Realtime</span>
 
 <span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">40.73</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.94</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-<span class="n">source</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/python-visualization/folium-example-data/main/subway_stations.geojson&quot;</span>
+<span class="n">source</span> <span class="o">=</span> <span class="s2">"https://raw.githubusercontent.com/python-visualization/folium-example-data/main/subway_stations.geojson"</span>
 
 <span class="n">Realtime</span><span class="p">(</span>
     <span class="n">source</span><span class="p">,</span>
-    <span class="n">get_feature_id</span><span class="o">=</span><span class="n">JsCode</span><span class="p">(</span><span class="s2">&quot;(f) =&gt; { return f.properties.objectid }&quot;</span><span class="p">),</span>
-    <span class="n">point_to_layer</span><span class="o">=</span><span class="n">JsCode</span><span class="p">(</span><span class="s2">&quot;(f, latlng) =&gt; { return L.circleMarker(latlng, {radius: 8, fillOpacity: 0.2})}&quot;</span><span class="p">),</span>
+    <span class="n">get_feature_id</span><span class="o">=</span><span class="n">JsCode</span><span class="p">(</span><span class="s2">"(f) =&gt; { return f.properties.objectid }"</span><span class="p">),</span>
+    <span class="n">point_to_layer</span><span class="o">=</span><span class="n">JsCode</span><span class="p">(</span><span class="s2">"(f, latlng) =&gt; { return L.circleMarker(latlng, {radius: 8, fillOpacity: 0.2})}"</span><span class="p">),</span>
     <span class="n">interval</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
@@ -931,7 +931,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_32f2fd31042cb3826f29471050901a95 {
+                #map_35e11454c3d830472c35037f3ff2a525 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -969,14 +969,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_32f2fd31042cb3826f29471050901a95&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_35e11454c3d830472c35037f3ff2a525&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_32f2fd31042cb3826f29471050901a95 = L.map(
-                &quot;map_32f2fd31042cb3826f29471050901a95&quot;,
+            var map_35e11454c3d830472c35037f3ff2a525 = L.map(
+                &quot;map_35e11454c3d830472c35037f3ff2a525&quot;,
                 {
                     center: [40.73, -73.94],
                     crs: L.CRS.EPSG3857,
@@ -993,7 +993,7 @@
 
 
 
-            var tile_layer_0dacfd1a39b0e5f54b4ce5747ab3944a = L.tileLayer(
+            var tile_layer_306f95e7ca4cdd4a92e620a484a7600c = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -1010,10 +1010,10 @@
             );
 
 
-            tile_layer_0dacfd1a39b0e5f54b4ce5747ab3944a.addTo(map_32f2fd31042cb3826f29471050901a95);
+            tile_layer_306f95e7ca4cdd4a92e620a484a7600c.addTo(map_35e11454c3d830472c35037f3ff2a525);
 
 
-            var realtime_66fa0f1c786e9aada994eb8d17111589 = L.realtime(
+            var realtime_0bacd10aba20c00eae5d16f49d78c054 = L.realtime(
             &quot;https://raw.githubusercontent.com/python-visualization/folium-example-data/main/subway_stations.geojson&quot;,
             {
   &quot;pointToLayer&quot;: (f, latlng) =&gt; { return L.circleMarker(latlng, {radius: 8, fillOpacity: 0.2})},
@@ -1023,12 +1023,12 @@
   &quot;removeMissing&quot;: false,
 }
             );
-            map_32f2fd31042cb3826f29471050901a95.addLayer(
-                realtime_66fa0f1c786e9aada994eb8d17111589._container
+            map_35e11454c3d830472c35037f3ff2a525.addLayer(
+                realtime_0bacd10aba20c00eae5d16f49d78c054._container
             );
 
 
-            realtime_66fa0f1c786e9aada994eb8d17111589.addTo(map_32f2fd31042cb3826f29471050901a95);
+            realtime_0bacd10aba20c00eae5d16f49d78c054.addTo(map_35e11454c3d830472c35037f3ff2a525);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -1046,13 +1046,13 @@
 <span class="kn">from</span><span class="w"> </span><span class="nn">folium.plugins</span><span class="w"> </span><span class="kn">import</span> <span class="n">Realtime</span><span class="p">,</span> <span class="n">MarkerCluster</span>
 
 <span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">40.73</span><span class="p">,</span> <span class="o">-</span><span class="mf">73.94</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-<span class="n">source</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/python-visualization/folium-example-data/main/subway_stations.geojson&quot;</span>
+<span class="n">source</span> <span class="o">=</span> <span class="s2">"https://raw.githubusercontent.com/python-visualization/folium-example-data/main/subway_stations.geojson"</span>
 
 <span class="n">container</span> <span class="o">=</span> <span class="n">MarkerCluster</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 <span class="n">Realtime</span><span class="p">(</span>
     <span class="n">source</span><span class="p">,</span>
-    <span class="n">get_feature_id</span><span class="o">=</span><span class="n">JsCode</span><span class="p">(</span><span class="s2">&quot;(f) =&gt; { return f.properties.objectid }&quot;</span><span class="p">),</span>
-    <span class="n">point_to_layer</span><span class="o">=</span><span class="n">JsCode</span><span class="p">(</span><span class="s2">&quot;(f, latlng) =&gt; { return L.circleMarker(latlng, {radius: 8, fillOpacity: 0.2})}&quot;</span><span class="p">),</span>
+    <span class="n">get_feature_id</span><span class="o">=</span><span class="n">JsCode</span><span class="p">(</span><span class="s2">"(f) =&gt; { return f.properties.objectid }"</span><span class="p">),</span>
+    <span class="n">point_to_layer</span><span class="o">=</span><span class="n">JsCode</span><span class="p">(</span><span class="s2">"(f, latlng) =&gt; { return L.circleMarker(latlng, {radius: 8, fillOpacity: 0.2})}"</span><span class="p">),</span>
     <span class="n">container</span><span class="o">=</span><span class="n">container</span><span class="p">,</span>
     <span class="n">interval</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
@@ -1085,7 +1085,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_65bb1bc0e36e3dc093b6301dff051c23 {
+                #map_408782b0b631450d58a655ec7f8c6353 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -1126,14 +1126,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_65bb1bc0e36e3dc093b6301dff051c23&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_408782b0b631450d58a655ec7f8c6353&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_65bb1bc0e36e3dc093b6301dff051c23 = L.map(
-                &quot;map_65bb1bc0e36e3dc093b6301dff051c23&quot;,
+            var map_408782b0b631450d58a655ec7f8c6353 = L.map(
+                &quot;map_408782b0b631450d58a655ec7f8c6353&quot;,
                 {
                     center: [40.73, -73.94],
                     crs: L.CRS.EPSG3857,
@@ -1150,7 +1150,7 @@
 
 
 
-            var tile_layer_8ec474e74e5b2512175096488809bad6 = L.tileLayer(
+            var tile_layer_8656311c695f8f9c7d3b70ddb7c07317 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -1167,19 +1167,19 @@
             );
 
 
-            tile_layer_8ec474e74e5b2512175096488809bad6.addTo(map_65bb1bc0e36e3dc093b6301dff051c23);
+            tile_layer_8656311c695f8f9c7d3b70ddb7c07317.addTo(map_408782b0b631450d58a655ec7f8c6353);
 
 
-            var marker_cluster_5f38b2c95c2f36ef4c86d72f870917da = L.markerClusterGroup(
+            var marker_cluster_ac9491c5e8cf227d288127b837fe85bb = L.markerClusterGroup(
                 {
 }
             );
 
 
-            marker_cluster_5f38b2c95c2f36ef4c86d72f870917da.addTo(map_65bb1bc0e36e3dc093b6301dff051c23);
+            marker_cluster_ac9491c5e8cf227d288127b837fe85bb.addTo(map_408782b0b631450d58a655ec7f8c6353);
 
 
-            var realtime_bb88209c3227ce6cac2f8f0ee1f04edd = L.realtime(
+            var realtime_0729afda4c72d3cfad3f9fe4d238f4cf = L.realtime(
             &quot;https://raw.githubusercontent.com/python-visualization/folium-example-data/main/subway_stations.geojson&quot;,
             {
   &quot;pointToLayer&quot;: (f, latlng) =&gt; { return L.circleMarker(latlng, {radius: 8, fillOpacity: 0.2})},
@@ -1187,15 +1187,15 @@
   &quot;interval&quot;: 10000,
   &quot;getFeatureId&quot;: (f) =&gt; { return f.properties.objectid },
   &quot;removeMissing&quot;: false,
-  &quot;container&quot;: marker_cluster_5f38b2c95c2f36ef4c86d72f870917da,
+  &quot;container&quot;: marker_cluster_ac9491c5e8cf227d288127b837fe85bb,
 }
             );
-            map_65bb1bc0e36e3dc093b6301dff051c23.addLayer(
-                realtime_bb88209c3227ce6cac2f8f0ee1f04edd._container
+            map_408782b0b631450d58a655ec7f8c6353.addLayer(
+                realtime_0729afda4c72d3cfad3f9fe4d238f4cf._container
             );
 
 
-            realtime_bb88209c3227ce6cac2f8f0ee1f04edd.addTo(map_65bb1bc0e36e3dc093b6301dff051c23);
+            realtime_0729afda4c72d3cfad3f9fe4d238f4cf.addTo(map_408782b0b631450d58a655ec7f8c6353);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>

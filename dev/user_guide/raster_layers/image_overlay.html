@@ -546,10 +546,10 @@
 <span class="kn">import</span><span class="w"> </span><span class="nn">folium</span>
 
 <span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">image_filepath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">,</span> <span class="s2">&quot;..&quot;</span><span class="p">,</span> <span class="s2">&quot;_static&quot;</span><span class="p">,</span> <span class="s2">&quot;folium_logo.png&quot;</span><span class="p">)</span>
+<span class="n">image_filepath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">".."</span><span class="p">,</span> <span class="s2">".."</span><span class="p">,</span> <span class="s2">"_static"</span><span class="p">,</span> <span class="s2">"folium_logo.png"</span><span class="p">)</span>
 
 <span class="n">img</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">raster_layers</span><span class="o">.</span><span class="n">ImageOverlay</span><span class="p">(</span>
-    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Folium logo&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">"Folium logo"</span><span class="p">,</span>
     <span class="n">image</span><span class="o">=</span><span class="n">image_filepath</span><span class="p">,</span>
     <span class="n">bounds</span><span class="o">=</span><span class="p">[[</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span> <span class="o">-</span><span class="mi">45</span><span class="p">],</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">45</span><span class="p">]],</span>
     <span class="n">opacity</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span>
@@ -558,7 +558,7 @@
     <span class="n">zindex</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="n">folium</span><span class="o">.</span><span class="n">Popup</span><span class="p">(</span><span class="s2">&quot;I am an image&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="n">folium</span><span class="o">.</span><span class="n">Popup</span><span class="p">(</span><span class="s2">"I am an image"</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
 
 <span class="n">img</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 <span class="n">folium</span><span class="o">.</span><span class="n">LayerControl</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
@@ -591,7 +591,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_8fdbde9e6fae1ff8fee90e0b556511c7 {
+                #map_e58d42f25ff12ae82c4460095db5bb81 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -643,14 +643,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_8fdbde9e6fae1ff8fee90e0b556511c7&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_e58d42f25ff12ae82c4460095db5bb81&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_8fdbde9e6fae1ff8fee90e0b556511c7 = L.map(
-                &quot;map_8fdbde9e6fae1ff8fee90e0b556511c7&quot;,
+            var map_e58d42f25ff12ae82c4460095db5bb81 = L.map(
+                &quot;map_e58d42f25ff12ae82c4460095db5bb81&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -667,7 +667,7 @@
 
 
 
-            var tile_layer_32cbc406b8f3cec1f9da79cda9f479da = L.tileLayer(
+            var tile_layer_e115d131dc712fd6a5a9bd4ce4a4fc46 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -684,10 +684,10 @@
             );
 
 
-            tile_layer_32cbc406b8f3cec1f9da79cda9f479da.addTo(map_8fdbde9e6fae1ff8fee90e0b556511c7);
+            tile_layer_e115d131dc712fd6a5a9bd4ce4a4fc46.addTo(map_e58d42f25ff12ae82c4460095db5bb81);
 
 
-            var image_overlay_bc6b28f9dda45269fa05c455ae73d86a = L.imageOverlay(
+            var image_overlay_c3ae3f31de0b4a01f8a7295507e5c347 = L.imageOverlay(
                 &quot;data:image/png;base64,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&quot;,
                 [[-50, -45], [50, 45]],
                 {
@@ -699,43 +699,43 @@
             );
 
 
-        var popup_5c1b2f2e8e5a3e9ffc9171cf44716dbc = L.popup({
+        var popup_74858995438be73f738372d3828f5dda = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
 
 
-                var html_2ccc87dbffb413742147ac542d5ae924 = $(`&lt;div id=&quot;html_2ccc87dbffb413742147ac542d5ae924&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;I am an image&lt;/div&gt;`)[0];
-                popup_5c1b2f2e8e5a3e9ffc9171cf44716dbc.setContent(html_2ccc87dbffb413742147ac542d5ae924);
+                var html_bbbff9a503fac61eb5777177ac8ecfcb = $(`&lt;div id=&quot;html_bbbff9a503fac61eb5777177ac8ecfcb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;I am an image&lt;/div&gt;`)[0];
+                popup_74858995438be73f738372d3828f5dda.setContent(html_bbbff9a503fac61eb5777177ac8ecfcb);
 
 
 
-        image_overlay_bc6b28f9dda45269fa05c455ae73d86a.bindPopup(popup_5c1b2f2e8e5a3e9ffc9171cf44716dbc)
+        image_overlay_c3ae3f31de0b4a01f8a7295507e5c347.bindPopup(popup_74858995438be73f738372d3828f5dda)
         ;
 
 
 
 
-            image_overlay_bc6b28f9dda45269fa05c455ae73d86a.addTo(map_8fdbde9e6fae1ff8fee90e0b556511c7);
+            image_overlay_c3ae3f31de0b4a01f8a7295507e5c347.addTo(map_e58d42f25ff12ae82c4460095db5bb81);
 
 
-            var layer_control_4258908985d2acf11677c45962262670_layers = {
+            var layer_control_6110a27a684d0c3895400f7f5b1881c2_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_32cbc406b8f3cec1f9da79cda9f479da,
+                    &quot;openstreetmap&quot; : tile_layer_e115d131dc712fd6a5a9bd4ce4a4fc46,
                 },
                 overlays :  {
-                    &quot;Folium logo&quot; : image_overlay_bc6b28f9dda45269fa05c455ae73d86a,
+                    &quot;Folium logo&quot; : image_overlay_c3ae3f31de0b4a01f8a7295507e5c347,
                 },
             };
-            let layer_control_4258908985d2acf11677c45962262670 = L.control.layers(
-                layer_control_4258908985d2acf11677c45962262670_layers.base_layers,
-                layer_control_4258908985d2acf11677c45962262670_layers.overlays,
+            let layer_control_6110a27a684d0c3895400f7f5b1881c2 = L.control.layers(
+                layer_control_6110a27a684d0c3895400f7f5b1881c2_layers.base_layers,
+                layer_control_6110a27a684d0c3895400f7f5b1881c2_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_8fdbde9e6fae1ff8fee90e0b556511c7);
+            ).addTo(map_e58d42f25ff12ae82c4460095db5bb81);
 
 
 &lt;/script&gt;
@@ -753,14 +753,14 @@
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">([</span><span class="mi">37</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">raster_layers</span><span class="o">.</span><span class="n">ImageOverlay</span><span class="p">(</span>
-    <span class="n">image</span><span class="o">=</span><span class="s2">&quot;https://upload.wikimedia.org/wikipedia/commons/f/f4/Mercator_projection_SW.jpg&quot;</span><span class="p">,</span>
-    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;I am a jpeg&quot;</span><span class="p">,</span>
+    <span class="n">image</span><span class="o">=</span><span class="s2">"https://upload.wikimedia.org/wikipedia/commons/f/f4/Mercator_projection_SW.jpg"</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">"I am a jpeg"</span><span class="p">,</span>
     <span class="n">bounds</span><span class="o">=</span><span class="p">[[</span><span class="o">-</span><span class="mi">82</span><span class="p">,</span> <span class="o">-</span><span class="mi">180</span><span class="p">],</span> <span class="p">[</span><span class="mi">82</span><span class="p">,</span> <span class="mi">180</span><span class="p">]],</span>
     <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
     <span class="n">interactive</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
     <span class="n">cross_origin</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
     <span class="n">zindex</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Wikipedia File:Mercator projection SW.jpg&quot;</span><span class="p">,</span>
+    <span class="n">alt</span><span class="o">=</span><span class="s2">"Wikipedia File:Mercator projection SW.jpg"</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">LayerControl</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
@@ -794,7 +794,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_387e9b0fbcd46935d21b69cfd32a31af {
+                #map_57fa5efb6178b6bb17b20ead9208a694 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -846,14 +846,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_387e9b0fbcd46935d21b69cfd32a31af&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_57fa5efb6178b6bb17b20ead9208a694&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_387e9b0fbcd46935d21b69cfd32a31af = L.map(
-                &quot;map_387e9b0fbcd46935d21b69cfd32a31af&quot;,
+            var map_57fa5efb6178b6bb17b20ead9208a694 = L.map(
+                &quot;map_57fa5efb6178b6bb17b20ead9208a694&quot;,
                 {
                     center: [37.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -870,7 +870,7 @@
 
 
 
-            var tile_layer_da5b42743e39c52a7cc77962d5edec4f = L.tileLayer(
+            var tile_layer_41ab39f0eccec82a14358835582e0d81 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -887,10 +887,10 @@
             );
 
 
-            tile_layer_da5b42743e39c52a7cc77962d5edec4f.addTo(map_387e9b0fbcd46935d21b69cfd32a31af);
+            tile_layer_41ab39f0eccec82a14358835582e0d81.addTo(map_57fa5efb6178b6bb17b20ead9208a694);
 
 
-            var image_overlay_2c7ab5ca0a6c2c754898ba1fcb26f56a = L.imageOverlay(
+            var image_overlay_7525e17e6c321db2983a70de078c01b4 = L.imageOverlay(
                 &quot;https://upload.wikimedia.org/wikipedia/commons/f/f4/Mercator_projection_SW.jpg&quot;,
                 [[-82, -180], [82, 180]],
                 {
@@ -903,26 +903,26 @@
             );
 
 
-            image_overlay_2c7ab5ca0a6c2c754898ba1fcb26f56a.addTo(map_387e9b0fbcd46935d21b69cfd32a31af);
+            image_overlay_7525e17e6c321db2983a70de078c01b4.addTo(map_57fa5efb6178b6bb17b20ead9208a694);
 
 
-            var layer_control_05a9a1be2d5ed2f0ce1f9f5752bd3993_layers = {
+            var layer_control_5319a854aeadcf3d57bbae15812c4b5f_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_da5b42743e39c52a7cc77962d5edec4f,
+                    &quot;openstreetmap&quot; : tile_layer_41ab39f0eccec82a14358835582e0d81,
                 },
                 overlays :  {
-                    &quot;I am a jpeg&quot; : image_overlay_2c7ab5ca0a6c2c754898ba1fcb26f56a,
+                    &quot;I am a jpeg&quot; : image_overlay_7525e17e6c321db2983a70de078c01b4,
                 },
             };
-            let layer_control_05a9a1be2d5ed2f0ce1f9f5752bd3993 = L.control.layers(
-                layer_control_05a9a1be2d5ed2f0ce1f9f5752bd3993_layers.base_layers,
-                layer_control_05a9a1be2d5ed2f0ce1f9f5752bd3993_layers.overlays,
+            let layer_control_5319a854aeadcf3d57bbae15812c4b5f = L.control.layers(
+                layer_control_5319a854aeadcf3d57bbae15812c4b5f_layers.base_layers,
+                layer_control_5319a854aeadcf3d57bbae15812c4b5f_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_387e9b0fbcd46935d21b69cfd32a31af);
+            ).addTo(map_57fa5efb6178b6bb17b20ead9208a694);
 
 
 &lt;/script&gt;
@@ -989,7 +989,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_2cc4e32c7b7d98c16623e3410174ecec {
+                #map_109d6578920f28183b5b2c21266f718c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -1041,14 +1041,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_2cc4e32c7b7d98c16623e3410174ecec&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_109d6578920f28183b5b2c21266f718c&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_2cc4e32c7b7d98c16623e3410174ecec = L.map(
-                &quot;map_2cc4e32c7b7d98c16623e3410174ecec&quot;,
+            var map_109d6578920f28183b5b2c21266f718c = L.map(
+                &quot;map_109d6578920f28183b5b2c21266f718c&quot;,
                 {
                     center: [37.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -1065,7 +1065,7 @@
 
 
 
-            var tile_layer_44cb94a78e943e7e62dbfa989c3cd6c0 = L.tileLayer(
+            var tile_layer_5c7c51466ae03a5112af096c2f2e2bf0 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -1082,10 +1082,10 @@
             );
 
 
-            tile_layer_44cb94a78e943e7e62dbfa989c3cd6c0.addTo(map_2cc4e32c7b7d98c16623e3410174ecec);
+            tile_layer_5c7c51466ae03a5112af096c2f2e2bf0.addTo(map_109d6578920f28183b5b2c21266f718c);
 
 
-            var image_overlay_92775e66cea1d479cdbef80bfe223a1e = L.imageOverlay(
+            var image_overlay_9167440f8c05a51933ff88ef5a5d7a35 = L.imageOverlay(
                 &quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA9CAYAAAAeYmHpAAAAW0lEQVR42u3PoQ0AAAzDsP7/9EaG90ANIoU6k0xbuUlR0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0C+6qgWzYWppA9g/7AAAAABJRU5ErkJggg==&quot;,
                 [[0, -60], [60, 60]],
                 {
@@ -1093,7 +1093,7 @@
             );
 
 
-            image_overlay_92775e66cea1d479cdbef80bfe223a1e.addTo(map_2cc4e32c7b7d98c16623e3410174ecec);
+            image_overlay_9167440f8c05a51933ff88ef5a5d7a35.addTo(map_109d6578920f28183b5b2c21266f718c);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -1117,7 +1117,7 @@
     <span class="n">image</span><span class="o">=</span><span class="n">image</span><span class="p">,</span>
     <span class="n">bounds</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">60</span><span class="p">],</span> <span class="p">[</span><span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">]],</span>
     <span class="n">colormap</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="p">),</span>
-    <span class="n">origin</span><span class="o">=</span><span class="s2">&quot;lower&quot;</span><span class="p">,</span>
+    <span class="n">origin</span><span class="o">=</span><span class="s2">"lower"</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">PolyLine</span><span class="p">([[</span><span class="mi">45</span><span class="p">,</span> <span class="o">-</span><span class="mi">60</span><span class="p">],</span> <span class="p">[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">60</span><span class="p">]])</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
@@ -1150,7 +1150,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_6a8217c7db25afcc768819b05a1b5b22 {
+                #map_8d8faef295e6ae74c6d741e6b0e2fc80 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -1202,14 +1202,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_6a8217c7db25afcc768819b05a1b5b22&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_8d8faef295e6ae74c6d741e6b0e2fc80&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_6a8217c7db25afcc768819b05a1b5b22 = L.map(
-                &quot;map_6a8217c7db25afcc768819b05a1b5b22&quot;,
+            var map_8d8faef295e6ae74c6d741e6b0e2fc80 = L.map(
+                &quot;map_8d8faef295e6ae74c6d741e6b0e2fc80&quot;,
                 {
                     center: [37.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -1226,7 +1226,7 @@
 
 
 
-            var tile_layer_6ebd88935ef9a90d0ecd46da7168e854 = L.tileLayer(
+            var tile_layer_b0516d78abd1fdfa789d866ebecc18e5 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -1243,10 +1243,10 @@
             );
 
 
-            tile_layer_6ebd88935ef9a90d0ecd46da7168e854.addTo(map_6a8217c7db25afcc768819b05a1b5b22);
+            tile_layer_b0516d78abd1fdfa789d866ebecc18e5.addTo(map_8d8faef295e6ae74c6d741e6b0e2fc80);
 
 
-            var image_overlay_ffbb6b63ef605c3a1b38b73d49f098a0 = L.imageOverlay(
+            var image_overlay_c3cebc84b0ed2c68b114bea36cfef4cf = L.imageOverlay(
                 &quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA9CAYAAABsrQNfAAAAFklEQVR42mP4zwAEVCP+M1DXvMFHAABxyD3DNwdSfAAAAABJRU5ErkJggg==&quot;,
                 [[0, -60], [60, 60]],
                 {
@@ -1254,13 +1254,13 @@
             );
 
 
-            image_overlay_ffbb6b63ef605c3a1b38b73d49f098a0.addTo(map_6a8217c7db25afcc768819b05a1b5b22);
+            image_overlay_c3cebc84b0ed2c68b114bea36cfef4cf.addTo(map_8d8faef295e6ae74c6d741e6b0e2fc80);
 
 
-            var poly_line_16405ed87895d84e1a495a031639045c = L.polyline(
+            var poly_line_f89c534968e27c47a48f37d2bc62aa2b = L.polyline(
                 [[45.0, -60.0], [45.0, 60.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_6a8217c7db25afcc768819b05a1b5b22);
+            ).addTo(map_8d8faef295e6ae74c6d741e6b0e2fc80);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -1278,7 +1278,7 @@
 <span class="n">folium</span><span class="o">.</span><span class="n">raster_layers</span><span class="o">.</span><span class="n">ImageOverlay</span><span class="p">(</span>
     <span class="n">image</span><span class="o">=</span><span class="n">image</span><span class="p">,</span>
     <span class="n">bounds</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">60</span><span class="p">],</span> <span class="p">[</span><span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">]],</span>
-    <span class="n">origin</span><span class="o">=</span><span class="s2">&quot;lower&quot;</span><span class="p">,</span>
+    <span class="n">origin</span><span class="o">=</span><span class="s2">"lower"</span><span class="p">,</span>
     <span class="n">colormap</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="p">),</span>
     <span class="n">mercator_project</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
@@ -1311,7 +1311,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_392d8aef34204664d6c7225061c6cddf {
+                #map_f6a63fbee39a154ab768677c1b4604e4 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -1363,14 +1363,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_392d8aef34204664d6c7225061c6cddf&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_f6a63fbee39a154ab768677c1b4604e4&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_392d8aef34204664d6c7225061c6cddf = L.map(
-                &quot;map_392d8aef34204664d6c7225061c6cddf&quot;,
+            var map_f6a63fbee39a154ab768677c1b4604e4 = L.map(
+                &quot;map_f6a63fbee39a154ab768677c1b4604e4&quot;,
                 {
                     center: [37.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -1387,7 +1387,7 @@
 
 
 
-            var tile_layer_65dad2385dac0e28fda4965872efedbc = L.tileLayer(
+            var tile_layer_d8d6cb1847e1ee025445c6bb59f778f4 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -1404,16 +1404,16 @@
             );
 
 
-            tile_layer_65dad2385dac0e28fda4965872efedbc.addTo(map_392d8aef34204664d6c7225061c6cddf);
+            tile_layer_d8d6cb1847e1ee025445c6bb59f778f4.addTo(map_f6a63fbee39a154ab768677c1b4604e4);
 
 
-            var poly_line_287349d3cf9cfff98173875d9a3b0981 = L.polyline(
+            var poly_line_e7a30fb18cb7172c633a9489c7d7c7d8 = L.polyline(
                 [[45.0, -60.0], [45.0, 60.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_392d8aef34204664d6c7225061c6cddf);
+            ).addTo(map_f6a63fbee39a154ab768677c1b4604e4);
 
 
-            var image_overlay_f6eb0771c6cc45b5939309588708297d = L.imageOverlay(
+            var image_overlay_afeee03d20bb73c39030b01feee2c169 = L.imageOverlay(
                 &quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA9CAYAAABsrQNfAAAAG0lEQVR42mP4zwAENCU0QMR/EMHPQHvbaE0AAISNPfostPrWAAAAAElFTkSuQmCC&quot;,
                 [[0, -60], [60, 60]],
                 {
@@ -1421,7 +1421,7 @@
             );
 
 
-            image_overlay_f6eb0771c6cc45b5939309588708297d.addTo(map_392d8aef34204664d6c7225061c6cddf);
+            image_overlay_afeee03d20bb73c39030b01feee2c169.addTo(map_f6a63fbee39a154ab768677c1b4604e4);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>

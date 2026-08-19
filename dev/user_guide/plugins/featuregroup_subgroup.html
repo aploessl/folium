@@ -543,13 +543,13 @@
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
 
-<span class="n">fg</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;groups&quot;</span><span class="p">)</span>
+<span class="n">fg</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"groups"</span><span class="p">)</span>
 <span class="n">m</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">fg</span><span class="p">)</span>
 
-<span class="n">g1</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">FeatureGroupSubGroup</span><span class="p">(</span><span class="n">fg</span><span class="p">,</span> <span class="s2">&quot;group1&quot;</span><span class="p">)</span>
+<span class="n">g1</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">FeatureGroupSubGroup</span><span class="p">(</span><span class="n">fg</span><span class="p">,</span> <span class="s2">"group1"</span><span class="p">)</span>
 <span class="n">m</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">g1</span><span class="p">)</span>
 
-<span class="n">g2</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">FeatureGroupSubGroup</span><span class="p">(</span><span class="n">fg</span><span class="p">,</span> <span class="s2">&quot;group2&quot;</span><span class="p">)</span>
+<span class="n">g2</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">FeatureGroupSubGroup</span><span class="p">(</span><span class="n">fg</span><span class="p">,</span> <span class="s2">"group2"</span><span class="p">)</span>
 <span class="n">m</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">g2</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">g1</span><span class="p">)</span>
@@ -588,7 +588,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_6447ae3f81d52dc36cd3bb7eb7deaffa {
+                #map_df6c40b73019de37353d72eac9382aba {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -626,14 +626,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_6447ae3f81d52dc36cd3bb7eb7deaffa&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_df6c40b73019de37353d72eac9382aba&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_6447ae3f81d52dc36cd3bb7eb7deaffa = L.map(
-                &quot;map_6447ae3f81d52dc36cd3bb7eb7deaffa&quot;,
+            var map_df6c40b73019de37353d72eac9382aba = L.map(
+                &quot;map_df6c40b73019de37353d72eac9382aba&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -650,7 +650,7 @@
 
 
 
-            var tile_layer_78e0778ab8b1c8d3e3a6484d8d79f85b = L.tileLayer(
+            var tile_layer_5b3d2e0eff6314b3bf7f09e920963514 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -667,81 +667,81 @@
             );
 
 
-            tile_layer_78e0778ab8b1c8d3e3a6484d8d79f85b.addTo(map_6447ae3f81d52dc36cd3bb7eb7deaffa);
+            tile_layer_5b3d2e0eff6314b3bf7f09e920963514.addTo(map_df6c40b73019de37353d72eac9382aba);
 
 
-            var feature_group_b5549fc0c2bd6c02ac8345e56cde9a1f = L.featureGroup(
+            var feature_group_39d85b6c95505a72734cf2d36f6fcc09 = L.featureGroup(
                 {
 }
             );
 
 
-            feature_group_b5549fc0c2bd6c02ac8345e56cde9a1f.addTo(map_6447ae3f81d52dc36cd3bb7eb7deaffa);
+            feature_group_39d85b6c95505a72734cf2d36f6fcc09.addTo(map_df6c40b73019de37353d72eac9382aba);
 
 
-            var feature_group_sub_group_89eee9210e0e7529261d164f3b415329 = L.featureGroup.subGroup(
-                feature_group_b5549fc0c2bd6c02ac8345e56cde9a1f
+            var feature_group_sub_group_6969b9eb43ed97dde6f913d01510837a = L.featureGroup.subGroup(
+                feature_group_39d85b6c95505a72734cf2d36f6fcc09
             );
 
 
-            var marker_72bd94ba6f424f2e36f675c3b65c8761 = L.marker(
+            var marker_93c0b9e417ef3a8f718f17e0d4f981b2 = L.marker(
                 [-1.0, -1.0],
                 {
 }
-            ).addTo(feature_group_sub_group_89eee9210e0e7529261d164f3b415329);
+            ).addTo(feature_group_sub_group_6969b9eb43ed97dde6f913d01510837a);
 
 
-            var marker_b903b60883aa6c706b6bfa8f23dc81c4 = L.marker(
+            var marker_4e5f3503c3df5ce50dbdfa186632f29c = L.marker(
                 [1.0, 1.0],
                 {
 }
-            ).addTo(feature_group_sub_group_89eee9210e0e7529261d164f3b415329);
+            ).addTo(feature_group_sub_group_6969b9eb43ed97dde6f913d01510837a);
 
 
-            feature_group_sub_group_89eee9210e0e7529261d164f3b415329.addTo(map_6447ae3f81d52dc36cd3bb7eb7deaffa);
+            feature_group_sub_group_6969b9eb43ed97dde6f913d01510837a.addTo(map_df6c40b73019de37353d72eac9382aba);
 
 
-            var feature_group_sub_group_497dda6ccf040e415424f3c037af4ab8 = L.featureGroup.subGroup(
-                feature_group_b5549fc0c2bd6c02ac8345e56cde9a1f
+            var feature_group_sub_group_756504e085a1dc658f1edd7de9ea9480 = L.featureGroup.subGroup(
+                feature_group_39d85b6c95505a72734cf2d36f6fcc09
             );
 
 
-            var marker_b950d2808f3910514485d187f6203271 = L.marker(
+            var marker_7626d4df0d15dd12452c7840a4e10663 = L.marker(
                 [-1.0, 1.0],
                 {
 }
-            ).addTo(feature_group_sub_group_497dda6ccf040e415424f3c037af4ab8);
+            ).addTo(feature_group_sub_group_756504e085a1dc658f1edd7de9ea9480);
 
 
-            var marker_5b6be2f01eed470a3eb7c23776f21da3 = L.marker(
+            var marker_e191916d04561fbfbd4d66ccea195c0a = L.marker(
                 [1.0, -1.0],
                 {
 }
-            ).addTo(feature_group_sub_group_497dda6ccf040e415424f3c037af4ab8);
+            ).addTo(feature_group_sub_group_756504e085a1dc658f1edd7de9ea9480);
 
 
-            feature_group_sub_group_497dda6ccf040e415424f3c037af4ab8.addTo(map_6447ae3f81d52dc36cd3bb7eb7deaffa);
+            feature_group_sub_group_756504e085a1dc658f1edd7de9ea9480.addTo(map_df6c40b73019de37353d72eac9382aba);
 
 
-            var layer_control_0625dbc60459c308f702129a7b22fe48_layers = {
+            var layer_control_eb99da87a0b260346ce42eac78f073a5_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_78e0778ab8b1c8d3e3a6484d8d79f85b,
+                    &quot;openstreetmap&quot; : tile_layer_5b3d2e0eff6314b3bf7f09e920963514,
                 },
                 overlays :  {
-                    &quot;groups&quot; : feature_group_b5549fc0c2bd6c02ac8345e56cde9a1f,
-                    &quot;group1&quot; : feature_group_sub_group_89eee9210e0e7529261d164f3b415329,
-                    &quot;group2&quot; : feature_group_sub_group_497dda6ccf040e415424f3c037af4ab8,
+                    &quot;groups&quot; : feature_group_39d85b6c95505a72734cf2d36f6fcc09,
+                    &quot;group1&quot; : feature_group_sub_group_6969b9eb43ed97dde6f913d01510837a,
+                    &quot;group2&quot; : feature_group_sub_group_756504e085a1dc658f1edd7de9ea9480,
                 },
             };
-            let layer_control_0625dbc60459c308f702129a7b22fe48 = L.control.layers(
-                layer_control_0625dbc60459c308f702129a7b22fe48_layers.base_layers,
-                layer_control_0625dbc60459c308f702129a7b22fe48_layers.overlays,
+            let layer_control_eb99da87a0b260346ce42eac78f073a5 = L.control.layers(
+                layer_control_eb99da87a0b260346ce42eac78f073a5_layers.base_layers,
+                layer_control_eb99da87a0b260346ce42eac78f073a5_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: false,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_6447ae3f81d52dc36cd3bb7eb7deaffa);
+            ).addTo(map_df6c40b73019de37353d72eac9382aba);
 
 
 &lt;/script&gt;
@@ -760,10 +760,10 @@
 <span class="n">mcg</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">MarkerCluster</span><span class="p">(</span><span class="n">control</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">m</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">mcg</span><span class="p">)</span>
 
-<span class="n">g1</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">FeatureGroupSubGroup</span><span class="p">(</span><span class="n">mcg</span><span class="p">,</span> <span class="s2">&quot;group1&quot;</span><span class="p">)</span>
+<span class="n">g1</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">FeatureGroupSubGroup</span><span class="p">(</span><span class="n">mcg</span><span class="p">,</span> <span class="s2">"group1"</span><span class="p">)</span>
 <span class="n">m</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">g1</span><span class="p">)</span>
 
-<span class="n">g2</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">FeatureGroupSubGroup</span><span class="p">(</span><span class="n">mcg</span><span class="p">,</span> <span class="s2">&quot;group2&quot;</span><span class="p">)</span>
+<span class="n">g2</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">FeatureGroupSubGroup</span><span class="p">(</span><span class="n">mcg</span><span class="p">,</span> <span class="s2">"group2"</span><span class="p">)</span>
 <span class="n">m</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">g2</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">g1</span><span class="p">)</span>
@@ -802,7 +802,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_17d6aa363a4b439c1f5060f7aae01010 {
+                #map_22bd584fea4b4c48688a1d25e2cd821a {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -843,14 +843,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_17d6aa363a4b439c1f5060f7aae01010&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_22bd584fea4b4c48688a1d25e2cd821a&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_17d6aa363a4b439c1f5060f7aae01010 = L.map(
-                &quot;map_17d6aa363a4b439c1f5060f7aae01010&quot;,
+            var map_22bd584fea4b4c48688a1d25e2cd821a = L.map(
+                &quot;map_22bd584fea4b4c48688a1d25e2cd821a&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -867,7 +867,7 @@
 
 
 
-            var tile_layer_a75aafeef442fcecc63129682ae3d75e = L.tileLayer(
+            var tile_layer_693bbb41bf70c417d6d36f22a8ad7cfb = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -884,80 +884,80 @@
             );
 
 
-            tile_layer_a75aafeef442fcecc63129682ae3d75e.addTo(map_17d6aa363a4b439c1f5060f7aae01010);
+            tile_layer_693bbb41bf70c417d6d36f22a8ad7cfb.addTo(map_22bd584fea4b4c48688a1d25e2cd821a);
 
 
-            var marker_cluster_f522409e9d7f4a9f8096f2de7e039761 = L.markerClusterGroup(
+            var marker_cluster_92444762addadd2032498d11ffa096b2 = L.markerClusterGroup(
                 {
 }
             );
 
 
-            marker_cluster_f522409e9d7f4a9f8096f2de7e039761.addTo(map_17d6aa363a4b439c1f5060f7aae01010);
+            marker_cluster_92444762addadd2032498d11ffa096b2.addTo(map_22bd584fea4b4c48688a1d25e2cd821a);
 
 
-            var feature_group_sub_group_2fad5818f6d6e8ee6e37008d666aed2f = L.featureGroup.subGroup(
-                marker_cluster_f522409e9d7f4a9f8096f2de7e039761
+            var feature_group_sub_group_70b1dbadec3764f8d975c9487f3f6c2b = L.featureGroup.subGroup(
+                marker_cluster_92444762addadd2032498d11ffa096b2
             );
 
 
-            var marker_04bc064f03781a406f77f7f9a21f430e = L.marker(
+            var marker_5ec789fc8d9e256ceaef65a1d174ba59 = L.marker(
                 [-1.0, -1.0],
                 {
 }
-            ).addTo(feature_group_sub_group_2fad5818f6d6e8ee6e37008d666aed2f);
+            ).addTo(feature_group_sub_group_70b1dbadec3764f8d975c9487f3f6c2b);
 
 
-            var marker_b21f72c1d9dd54cf51a3f36c8a2c0638 = L.marker(
+            var marker_5085743a8f05cc1d8baa8a69cd89440d = L.marker(
                 [1.0, 1.0],
                 {
 }
-            ).addTo(feature_group_sub_group_2fad5818f6d6e8ee6e37008d666aed2f);
+            ).addTo(feature_group_sub_group_70b1dbadec3764f8d975c9487f3f6c2b);
 
 
-            feature_group_sub_group_2fad5818f6d6e8ee6e37008d666aed2f.addTo(map_17d6aa363a4b439c1f5060f7aae01010);
+            feature_group_sub_group_70b1dbadec3764f8d975c9487f3f6c2b.addTo(map_22bd584fea4b4c48688a1d25e2cd821a);
 
 
-            var feature_group_sub_group_9dac9df65e4ccc9a1c5cf955c0bb98d7 = L.featureGroup.subGroup(
-                marker_cluster_f522409e9d7f4a9f8096f2de7e039761
+            var feature_group_sub_group_6189ed47a7d6af3b754a418690686f84 = L.featureGroup.subGroup(
+                marker_cluster_92444762addadd2032498d11ffa096b2
             );
 
 
-            var marker_14f86f24a80ac65da3ac11cc2e5f9f5b = L.marker(
+            var marker_4497022c4fb9ae32536155a253949b83 = L.marker(
                 [-1.0, 1.0],
                 {
 }
-            ).addTo(feature_group_sub_group_9dac9df65e4ccc9a1c5cf955c0bb98d7);
+            ).addTo(feature_group_sub_group_6189ed47a7d6af3b754a418690686f84);
 
 
-            var marker_3412ea533da94d77bc1d547dbd0d369d = L.marker(
+            var marker_1dee718e0706db7588a05b621a0955e2 = L.marker(
                 [1.0, -1.0],
                 {
 }
-            ).addTo(feature_group_sub_group_9dac9df65e4ccc9a1c5cf955c0bb98d7);
+            ).addTo(feature_group_sub_group_6189ed47a7d6af3b754a418690686f84);
 
 
-            feature_group_sub_group_9dac9df65e4ccc9a1c5cf955c0bb98d7.addTo(map_17d6aa363a4b439c1f5060f7aae01010);
+            feature_group_sub_group_6189ed47a7d6af3b754a418690686f84.addTo(map_22bd584fea4b4c48688a1d25e2cd821a);
 
 
-            var layer_control_1a1292d8b7d48456c4d29dbe5be1853c_layers = {
+            var layer_control_ece131e68c732ea5c44e6b47dccce039_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_a75aafeef442fcecc63129682ae3d75e,
+                    &quot;openstreetmap&quot; : tile_layer_693bbb41bf70c417d6d36f22a8ad7cfb,
                 },
                 overlays :  {
-                    &quot;group1&quot; : feature_group_sub_group_2fad5818f6d6e8ee6e37008d666aed2f,
-                    &quot;group2&quot; : feature_group_sub_group_9dac9df65e4ccc9a1c5cf955c0bb98d7,
+                    &quot;group1&quot; : feature_group_sub_group_70b1dbadec3764f8d975c9487f3f6c2b,
+                    &quot;group2&quot; : feature_group_sub_group_6189ed47a7d6af3b754a418690686f84,
                 },
             };
-            let layer_control_1a1292d8b7d48456c4d29dbe5be1853c = L.control.layers(
-                layer_control_1a1292d8b7d48456c4d29dbe5be1853c_layers.base_layers,
-                layer_control_1a1292d8b7d48456c4d29dbe5be1853c_layers.overlays,
+            let layer_control_ece131e68c732ea5c44e6b47dccce039 = L.control.layers(
+                layer_control_ece131e68c732ea5c44e6b47dccce039_layers.base_layers,
+                layer_control_ece131e68c732ea5c44e6b47dccce039_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: false,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_17d6aa363a4b439c1f5060f7aae01010);
+            ).addTo(map_22bd584fea4b4c48688a1d25e2cd821a);
 
 
 &lt;/script&gt;

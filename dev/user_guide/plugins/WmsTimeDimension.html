@@ -544,11 +544,11 @@
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">owslib.wms</span><span class="w"> </span><span class="kn">import</span> <span class="n">WebMapService</span>
 
 
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://pae-paha.pacioos.hawaii.edu/thredds/wms/dhw_5km?service=WMS&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://pae-paha.pacioos.hawaii.edu/thredds/wms/dhw_5km?service=WMS"</span>
 
 <span class="n">web_map_services</span> <span class="o">=</span> <span class="n">WebMapService</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">web_map_services</span><span class="o">.</span><span class="n">contents</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">web_map_services</span><span class="o">.</span><span class="n">contents</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
 </pre></div>
 </div>
 </div>
@@ -578,7 +578,7 @@ CRW_SST
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">layer</span> <span class="o">=</span> <span class="s2">&quot;CRW_SST&quot;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">layer</span> <span class="o">=</span> <span class="s2">"CRW_SST"</span>
 <span class="n">wms</span> <span class="o">=</span> <span class="n">web_map_services</span><span class="o">.</span><span class="n">contents</span><span class="p">[</span><span class="n">layer</span><span class="p">]</span>
 
 <span class="n">name</span> <span class="o">=</span> <span class="n">wms</span><span class="o">.</span><span class="n">title</span>
@@ -587,10 +587,10 @@ CRW_SST
 <span class="n">lat</span> <span class="o">=</span> <span class="p">(</span><span class="n">wms</span><span class="o">.</span><span class="n">boundingBox</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">wms</span><span class="o">.</span><span class="n">boundingBox</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="o">/</span> <span class="mf">2.0</span>
 <span class="n">center</span> <span class="o">=</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span>
 
-<span class="n">time_interval</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}</span><span class="s2">/</span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+<span class="n">time_interval</span> <span class="o">=</span> <span class="s2">"</span><span class="si">{0}</span><span class="s2">/</span><span class="si">{1}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
     <span class="n">wms</span><span class="o">.</span><span class="n">timepositions</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">wms</span><span class="o">.</span><span class="n">timepositions</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 <span class="p">)</span>
-<span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;boxfill/sst_36&quot;</span>
+<span class="n">style</span> <span class="o">=</span> <span class="s2">"boxfill/sst_36"</span>
 
 <span class="k">if</span> <span class="n">style</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">wms</span><span class="o">.</span><span class="n">styles</span><span class="p">:</span>
     <span class="n">style</span> <span class="o">=</span> <span class="kc">None</span>
@@ -613,16 +613,16 @@ CRW_SST
     <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
     <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
     <span class="n">styles</span><span class="o">=</span><span class="n">style</span><span class="p">,</span>
-    <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;image/png&quot;</span><span class="p">,</span>
+    <span class="n">fmt</span><span class="o">=</span><span class="s2">"image/png"</span><span class="p">,</span>
     <span class="n">transparent</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
     <span class="n">layers</span><span class="o">=</span><span class="n">layer</span><span class="p">,</span>
     <span class="n">overlay</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-    <span class="n">COLORSCALERANGE</span><span class="o">=</span><span class="s2">&quot;1.2,28&quot;</span><span class="p">,</span>
+    <span class="n">COLORSCALERANGE</span><span class="o">=</span><span class="s2">"1.2,28"</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">TimestampedWmsTileLayers</span><span class="p">(</span>
     <span class="n">wms_tile_layer</span><span class="p">,</span>
-    <span class="n">period</span><span class="o">=</span><span class="s2">&quot;PT1H&quot;</span><span class="p">,</span>
+    <span class="n">period</span><span class="o">=</span><span class="s2">"PT1H"</span><span class="p">,</span>
     <span class="n">time_interval</span><span class="o">=</span><span class="n">time_interval</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
@@ -656,7 +656,7 @@ CRW_SST
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_b00ceb06bfb164fc8b35f1000e9ec0d3 {
+                #map_a1cf1a22ab9b5f1e3535e1dcffac3945 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -699,14 +699,14 @@ CRW_SST
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_b00ceb06bfb164fc8b35f1000e9ec0d3&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_a1cf1a22ab9b5f1e3535e1dcffac3945&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_b00ceb06bfb164fc8b35f1000e9ec0d3 = L.map(
-                &quot;map_b00ceb06bfb164fc8b35f1000e9ec0d3&quot;,
+            var map_a1cf1a22ab9b5f1e3535e1dcffac3945 = L.map(
+                &quot;map_a1cf1a22ab9b5f1e3535e1dcffac3945&quot;,
                 {
                     center: [-40.0, -50.0],
                     crs: L.CRS.EPSG3857,
@@ -723,7 +723,7 @@ CRW_SST
 
 
 
-            var tile_layer_705fb2e6f53b1058fa3e1f0a9e9c8d64 = L.tileLayer(
+            var tile_layer_7a5445389e71b7583cf0a69d6c564c0a = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -740,25 +740,25 @@ CRW_SST
             );
 
 
-            tile_layer_705fb2e6f53b1058fa3e1f0a9e9c8d64.addTo(map_b00ceb06bfb164fc8b35f1000e9ec0d3);
+            tile_layer_7a5445389e71b7583cf0a69d6c564c0a.addTo(map_a1cf1a22ab9b5f1e3535e1dcffac3945);
 
 
-            var macro_element_072a346fe7452683f39288bcae0e830a = L.tileLayer.wms(
+            var macro_element_b7a05d348f7bf5b783e923b963cf978c = L.tileLayer.wms(
                 &quot;https://pae-paha.pacioos.hawaii.edu/thredds/wms/dhw_5km?service=WMS&quot;,
                 {&quot;COLORSCALERANGE&quot;: &quot;1.2,28&quot;, &quot;attribution&quot;: &quot;&quot;, &quot;format&quot;: &quot;image/png&quot;, &quot;layers&quot;: &quot;CRW_SST&quot;, &quot;styles&quot;: &quot;boxfill/sst_36&quot;, &quot;transparent&quot;: true, &quot;version&quot;: &quot;1.1.1&quot;}
             );
 
 
-            macro_element_072a346fe7452683f39288bcae0e830a.addTo(map_b00ceb06bfb164fc8b35f1000e9ec0d3);
+            macro_element_b7a05d348f7bf5b783e923b963cf978c.addTo(map_a1cf1a22ab9b5f1e3535e1dcffac3945);
 
 
-            map_b00ceb06bfb164fc8b35f1000e9ec0d3.timeDimension = L.timeDimension(
+            map_a1cf1a22ab9b5f1e3535e1dcffac3945.timeDimension = L.timeDimension(
                 {
   &quot;period&quot;: &quot;PT1H&quot;,
-  &quot;timeInterval&quot;: &quot;2023-08-16T12:00:00.000Z/2026-08-15T12:00:00.000Z&quot;,
+  &quot;timeInterval&quot;: &quot;2023-08-18T12:00:00.000Z/2026-08-17T12:00:00.000Z&quot;,
 }
             );
-            map_b00ceb06bfb164fc8b35f1000e9ec0d3.timeDimensionControl =
+            map_a1cf1a22ab9b5f1e3535e1dcffac3945.timeDimensionControl =
                 L.control.timeDimension(
                     {
   &quot;position&quot;: &quot;bottomleft&quot;,
@@ -769,38 +769,38 @@ CRW_SST
 },
 }
                 );
-            map_b00ceb06bfb164fc8b35f1000e9ec0d3.addControl(
-                map_b00ceb06bfb164fc8b35f1000e9ec0d3.timeDimensionControl
+            map_a1cf1a22ab9b5f1e3535e1dcffac3945.addControl(
+                map_a1cf1a22ab9b5f1e3535e1dcffac3945.timeDimensionControl
             );
 
 
-            var macro_element_072a346fe7452683f39288bcae0e830a = L.timeDimension.layer.wms(
-                macro_element_072a346fe7452683f39288bcae0e830a,
+            var macro_element_b7a05d348f7bf5b783e923b963cf978c = L.timeDimension.layer.wms(
+                macro_element_b7a05d348f7bf5b783e923b963cf978c,
                 {
                     updateTimeDimension: false,
                     wmsVersion: &quot;1.1.1&quot;,
                 }
-            ).addTo(map_b00ceb06bfb164fc8b35f1000e9ec0d3);
+            ).addTo(map_a1cf1a22ab9b5f1e3535e1dcffac3945);
 
 
 
-            var layer_control_1b0ad97aba37b9af4fe8fd5981dad623_layers = {
+            var layer_control_bf23df1db9fc9e85f7a903300f8e793a_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_705fb2e6f53b1058fa3e1f0a9e9c8d64,
+                    &quot;openstreetmap&quot; : tile_layer_7a5445389e71b7583cf0a69d6c564c0a,
                 },
                 overlays :  {
-                    &quot;sea_surface_temperature&quot; : macro_element_072a346fe7452683f39288bcae0e830a,
+                    &quot;sea_surface_temperature&quot; : macro_element_b7a05d348f7bf5b783e923b963cf978c,
                 },
             };
-            let layer_control_1b0ad97aba37b9af4fe8fd5981dad623 = L.control.layers(
-                layer_control_1b0ad97aba37b9af4fe8fd5981dad623_layers.base_layers,
-                layer_control_1b0ad97aba37b9af4fe8fd5981dad623_layers.overlays,
+            let layer_control_bf23df1db9fc9e85f7a903300f8e793a = L.control.layers(
+                layer_control_bf23df1db9fc9e85f7a903300f8e793a_layers.base_layers,
+                layer_control_bf23df1db9fc9e85f7a903300f8e793a_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_b00ceb06bfb164fc8b35f1000e9ec0d3);
+            ).addTo(map_a1cf1a22ab9b5f1e3535e1dcffac3945);
 
 
 &lt;/script&gt;
