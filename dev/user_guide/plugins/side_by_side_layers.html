@@ -556,6 +556,15 @@
 </pre></div>
 </div>
 </div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/home/runner/work/folium/folium/folium/raster_layers.py:128: UserWarning: CartoDB tiles now require an API key. Please provide one to continue using the tiles. You can request the key at https://carto.com/basemaps/apikey/.
+  tiles = tiles.build_url(fill_subdomain=False, scale_factor=&#34;{r}&#34;)  # type: ignore
+</pre></div></div>
+</div>
 <div class="nboutput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -580,7 +589,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_b3e286864e26414a91995ce8f0041e58 {
+                #map_38add7498e212ba84fc3e31efd865e3f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -618,14 +627,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_b3e286864e26414a91995ce8f0041e58&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_38add7498e212ba84fc3e31efd865e3f&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_b3e286864e26414a91995ce8f0041e58 = L.map(
-                &quot;map_b3e286864e26414a91995ce8f0041e58&quot;,
+            var map_38add7498e212ba84fc3e31efd865e3f = L.map(
+                &quot;map_38add7498e212ba84fc3e31efd865e3f&quot;,
                 {
                     center: [30.0, 20.0],
                     crs: L.CRS.EPSG3857,
@@ -642,7 +651,7 @@
 
 
 
-            var tile_layer_8d4618daef89f0a383a154d7e16bd859 = L.tileLayer(
+            var tile_layer_4b9005a3bd3e3845f6af24b6f5a7ae27 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -659,10 +668,10 @@
             );
 
 
-            tile_layer_8d4618daef89f0a383a154d7e16bd859.addTo(map_b3e286864e26414a91995ce8f0041e58);
+            tile_layer_4b9005a3bd3e3845f6af24b6f5a7ae27.addTo(map_38add7498e212ba84fc3e31efd865e3f);
 
 
-            var tile_layer_54134e22a00beb4dfb9e2fa74658057b = L.tileLayer(
+            var tile_layer_2341db801af71c687f1d01dc8c98a788 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -679,10 +688,10 @@
             );
 
 
-            tile_layer_54134e22a00beb4dfb9e2fa74658057b.addTo(map_b3e286864e26414a91995ce8f0041e58);
+            tile_layer_2341db801af71c687f1d01dc8c98a788.addTo(map_38add7498e212ba84fc3e31efd865e3f);
 
 
-            var tile_layer_2e93d040109943e00c1b311e434dd141 = L.tileLayer(
+            var tile_layer_40b146a71de0a82a19855035c948db58 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -699,12 +708,12 @@
             );
 
 
-            tile_layer_2e93d040109943e00c1b311e434dd141.addTo(map_b3e286864e26414a91995ce8f0041e58);
+            tile_layer_40b146a71de0a82a19855035c948db58.addTo(map_38add7498e212ba84fc3e31efd865e3f);
 
 
-            var side_by_side_layers_565a8faaf5e11a3e1c33100b520ec334 = L.control.sideBySide(
-                tile_layer_54134e22a00beb4dfb9e2fa74658057b, tile_layer_2e93d040109943e00c1b311e434dd141
-            ).addTo(map_b3e286864e26414a91995ce8f0041e58);
+            var side_by_side_layers_a1073f14a2ae8dcaa38e570e9af4b56d = L.control.sideBySide(
+                tile_layer_2341db801af71c687f1d01dc8c98a788, tile_layer_40b146a71de0a82a19855035c948db58
+            ).addTo(map_38add7498e212ba84fc3e31efd865e3f);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
