@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 
@@ -27,18 +26,18 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=cb8930eaaf36d9849b67" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=cb8930eaaf36d9849b67" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=64cc4de3f052d77215f0" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=64cc4de3f052d77215f0" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css?v=2aa19091" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=924e9346" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../_static/scripts/fontawesome.js?digest=cb8930eaaf36d9849b67"></script>
+  <script defer src="../_static/scripts/fontawesome.js?digest=64cc4de3f052d77215f0"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=cb8930eaaf36d9849b67" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=cb8930eaaf36d9849b67" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=64cc4de3f052d77215f0" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=64cc4de3f052d77215f0" />
 
     <script src="../_static/documentation_options.js?v=d3cb42ee"></script>
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
@@ -48,7 +47,7 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'advanced_guide/subplots';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.21.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.22.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://python-visualization.github.io/folium/dev/_static/switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
@@ -109,7 +108,7 @@
   
     <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
   </button>
   
@@ -216,7 +215,7 @@
         <div class="navbar-item navbar-persistent--container">
           
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
  <i class="fa-solid fa-magnifying-glass"></i>
  <span class="search-button__default-text">Search</span>
  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -227,15 +226,15 @@
         <div class="navbar-item">
 
 <div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
     <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
     <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
     <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
-    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
-    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
-    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
   </ul>
 </div></div>
       
@@ -261,7 +260,7 @@
   
     <div class="navbar-persistent--mobile">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
  <i class="fa-solid fa-magnifying-glass"></i>
  <span class="search-button__default-text">Search</span>
  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -270,7 +269,7 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
       <span class="fa-solid fa-outdent"></span>
     </button>
   
@@ -347,15 +346,15 @@
           <div class="navbar-item">
 
 <div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
     <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
     <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
     <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
-    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
-    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
-    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
   </ul>
 </div></div>
         
@@ -379,7 +378,7 @@
   </div>
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item pst-sidebar-collapse"><button id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button type="button" id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
   <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
     <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
   </svg>
@@ -394,7 +393,7 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="flask.html">Using folium with flask</a></li>
 <li class="toctree-l1"><a class="reference internal" href="choropleth%20with%20Jenks%20natural%20breaks%20optimization.html">Integrating Jenks Natural Break Optimization with choropleth</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Subplots</a></li>
+<li class="toctree-l1 current active"><a aria-current="page" class="current reference internal" href="#">Subplots</a></li>
 <li class="toctree-l1"><a class="reference internal" href="colormaps.html">Using colormaps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="world_copy.html">Scrolling beyond the world edge</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom_panes.html">Panes and CustomPane</a></li>
@@ -513,7 +512,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_130a41ce7bff016ff108ad58c995989b {
+                #map_bdb8653e7d0eeb6e4f68c5765aff1f24 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -546,7 +545,7 @@
             &lt;/script&gt;
 
 
-    &lt;style&gt; #div_011580dcdc228d237ee65430afcb0088 {
+    &lt;style&gt; #div_aecaa7bb53dbe2d24d3f2e64d13d247c {
         position : absolute;
         width : 45.0%;
         height: 90.0%;
@@ -557,7 +556,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_355bd656eba94ae2ca6cd5662bd3785c {
+                #map_466528f9341345dfec3e2b742e9b6917 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -590,7 +589,7 @@
             &lt;/script&gt;
 
 
-    &lt;style&gt; #div_4aace7f629c839ac26ad803cabbd7a6d {
+    &lt;style&gt; #div_523fd542dd7fb1585294f958194a31f9 {
         position : absolute;
         width : 45.0%;
         height: 90.0%;
@@ -600,18 +599,18 @@
 &lt;/head&gt;
 &lt;body&gt;
 
-    &lt;div id=&quot;div_011580dcdc228d237ee65430afcb0088&quot;&gt;
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_130a41ce7bff016ff108ad58c995989b&quot; &gt;&lt;/div&gt;
+    &lt;div id=&quot;div_aecaa7bb53dbe2d24d3f2e64d13d247c&quot;&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_bdb8653e7d0eeb6e4f68c5765aff1f24&quot; &gt;&lt;/div&gt;
         &lt;/div&gt;
-    &lt;div id=&quot;div_4aace7f629c839ac26ad803cabbd7a6d&quot;&gt;
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_355bd656eba94ae2ca6cd5662bd3785c&quot; &gt;&lt;/div&gt;
+    &lt;div id=&quot;div_523fd542dd7fb1585294f958194a31f9&quot;&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_466528f9341345dfec3e2b742e9b6917&quot; &gt;&lt;/div&gt;
         &lt;/div&gt;
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_130a41ce7bff016ff108ad58c995989b = L.map(
-                &quot;map_130a41ce7bff016ff108ad58c995989b&quot;,
+            var map_bdb8653e7d0eeb6e4f68c5765aff1f24 = L.map(
+                &quot;map_bdb8653e7d0eeb6e4f68c5765aff1f24&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -628,7 +627,7 @@
 
 
 
-            var tile_layer_d038e3913141e584561a742135bd06ba = L.tileLayer(
+            var tile_layer_0f53c934340f78f73a25c1a8cfb2a051 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -645,11 +644,11 @@
             );
 
 
-            tile_layer_d038e3913141e584561a742135bd06ba.addTo(map_130a41ce7bff016ff108ad58c995989b);
+            tile_layer_0f53c934340f78f73a25c1a8cfb2a051.addTo(map_bdb8653e7d0eeb6e4f68c5765aff1f24);
 
 
-            var map_355bd656eba94ae2ca6cd5662bd3785c = L.map(
-                &quot;map_355bd656eba94ae2ca6cd5662bd3785c&quot;,
+            var map_466528f9341345dfec3e2b742e9b6917 = L.map(
+                &quot;map_466528f9341345dfec3e2b742e9b6917&quot;,
                 {
                     center: [46.0, 3.0],
                     crs: L.CRS.EPSG3857,
@@ -666,7 +665,7 @@
 
 
 
-            var tile_layer_1bf54924545f126a9ac0c35eea3f7ce3 = L.tileLayer(
+            var tile_layer_b4486f1ae5a80f0269b8df045c046076 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -683,7 +682,7 @@
             );
 
 
-            tile_layer_1bf54924545f126a9ac0c35eea3f7ce3.addTo(map_355bd656eba94ae2ca6cd5662bd3785c);
+            tile_layer_b4486f1ae5a80f0269b8df045c046076.addTo(map_466528f9341345dfec3e2b742e9b6917);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -781,7 +780,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_fb85a9339e99a0f61f9f70f8361b59d1 {
+                #map_3d5d0b2dde322e5307b0d0df28a6d142 {
                     position: absolute;
                     width: 50.0%;
                     height: 50.0%;
@@ -818,7 +817,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_e791e341c1802058d5e2ba811f06161d {
+                #map_4c3eb6174c5114eb4312a3dd1eda96d3 {
                     position: absolute;
                     width: 50.0%;
                     height: 50.0%;
@@ -854,7 +853,7 @@
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/vega/1.4.3/vega.min.js&quot;&gt;&lt;/script&gt;
 
-            &lt;style&gt; #vega_882476e53640082413e29a2a684ad4f4 {
+            &lt;style&gt; #vega_99b8a29a14bb5dfd920f3de5964bfc69 {
                 position : absolute;
                 width : 50.0%;
                 height: 50.0%;
@@ -863,7 +862,7 @@
             &lt;/style&gt;
 
 
-            &lt;style&gt; #vega_81478ac039bcfed51fbab0042ebe398e {
+            &lt;style&gt; #vega_7de87947199ecb4136256f2418dcbccb {
                 position : absolute;
                 width : 50.0%;
                 height: 50.0%;
@@ -875,23 +874,23 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_fb85a9339e99a0f61f9f70f8361b59d1&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_3d5d0b2dde322e5307b0d0df28a6d142&quot; &gt;&lt;/div&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_e791e341c1802058d5e2ba811f06161d&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_4c3eb6174c5114eb4312a3dd1eda96d3&quot; &gt;&lt;/div&gt;
 
 
-            &lt;div id=&quot;vega_882476e53640082413e29a2a684ad4f4&quot;&gt;&lt;/div&gt;
+            &lt;div id=&quot;vega_99b8a29a14bb5dfd920f3de5964bfc69&quot;&gt;&lt;/div&gt;
 
 
-            &lt;div id=&quot;vega_81478ac039bcfed51fbab0042ebe398e&quot;&gt;&lt;/div&gt;
+            &lt;div id=&quot;vega_7de87947199ecb4136256f2418dcbccb&quot;&gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_fb85a9339e99a0f61f9f70f8361b59d1 = L.map(
-                &quot;map_fb85a9339e99a0f61f9f70f8361b59d1&quot;,
+            var map_3d5d0b2dde322e5307b0d0df28a6d142 = L.map(
+                &quot;map_3d5d0b2dde322e5307b0d0df28a6d142&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -908,7 +907,7 @@
 
 
 
-            var tile_layer_b77ee306f6c1225d6cb034af93e9cac1 = L.tileLayer(
+            var tile_layer_1130e2bcea622b272e385caa6c5416c8 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -925,11 +924,11 @@
             );
 
 
-            tile_layer_b77ee306f6c1225d6cb034af93e9cac1.addTo(map_fb85a9339e99a0f61f9f70f8361b59d1);
+            tile_layer_1130e2bcea622b272e385caa6c5416c8.addTo(map_3d5d0b2dde322e5307b0d0df28a6d142);
 
 
-            var map_e791e341c1802058d5e2ba811f06161d = L.map(
-                &quot;map_e791e341c1802058d5e2ba811f06161d&quot;,
+            var map_4c3eb6174c5114eb4312a3dd1eda96d3 = L.map(
+                &quot;map_4c3eb6174c5114eb4312a3dd1eda96d3&quot;,
                 {
                     center: [46.0, 3.0],
                     crs: L.CRS.EPSG3857,
@@ -946,7 +945,7 @@
 
 
 
-            var tile_layer_238b252fbff8ff3f4f78e4311cb708a9 = L.tileLayer(
+            var tile_layer_91cf1a16abf53c636007da6ae2871432 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -963,15 +962,15 @@
             );
 
 
-            tile_layer_238b252fbff8ff3f4f78e4311cb708a9.addTo(map_e791e341c1802058d5e2ba811f06161d);
+            tile_layer_91cf1a16abf53c636007da6ae2871432.addTo(map_4c3eb6174c5114eb4312a3dd1eda96d3);
 
 
-            vega_parse({&quot;axes&quot;: [{&quot;scale&quot;: &quot;x&quot;, &quot;type&quot;: &quot;x&quot;}, {&quot;scale&quot;: &quot;y&quot;, &quot;type&quot;: &quot;y&quot;}], &quot;data&quot;: [{&quot;name&quot;: &quot;table&quot;, &quot;values&quot;: [{&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.16969082605164454, &quot;val&quot;: 0.5292386211590501}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.07188913380521778, &quot;val&quot;: 0.8133622743591673}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6573164164304445, &quot;val&quot;: 0.24232232790240815}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.046227111701597656, &quot;val&quot;: 0.3452896492853985}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8754557761726395, &quot;val&quot;: 0.9313509963751471}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.02439203440000015, &quot;val&quot;: 0.2149635756453563}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.16946917143665052, &quot;val&quot;: 0.5593530119224298}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.14508074553798622, &quot;val&quot;: 0.7741909626228374}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.29369302040495837, &quot;val&quot;: 0.425814662586382}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8262831544445775, &quot;val&quot;: 0.810405725563599}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8989340626111526, &quot;val&quot;: 0.17434214490979583}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8617562432029748, &quot;val&quot;: 0.8321510674410538}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3329573898912229, &quot;val&quot;: 0.14508660614021307}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7487319270083018, &quot;val&quot;: 0.13875521997211648}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.13007136631752414, &quot;val&quot;: 0.4072704522839229}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3520229158274961, &quot;val&quot;: 0.09681735158022342}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.45935211037364654, &quot;val&quot;: 0.5739112893908059}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.11764347351542948, &quot;val&quot;: 0.6523734088187316}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7221643855426435, &quot;val&quot;: 0.8276476643043849}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.19150784204905824, &quot;val&quot;: 0.3355226777752812}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.16553939975671483, &quot;val&quot;: 0.7036504405827256}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5150787955357699, &quot;val&quot;: 0.278688787215396}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2699216081493271, &quot;val&quot;: 0.23883906859788184}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7508430941751975, &quot;val&quot;: 0.327496195986422}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5870767802273168, &quot;val&quot;: 0.0969218831700307}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4127538778685833, &quot;val&quot;: 0.6464126767680812}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.18504466226816563, &quot;val&quot;: 0.9665772253950176}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9412644225284142, &quot;val&quot;: 0.9446718621907483}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4228749574567806, &quot;val&quot;: 0.956992178266589}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9996822393804685, &quot;val&quot;: 0.6469758733728256}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5582028345013138, &quot;val&quot;: 0.8358524082166293}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.556817588617912, &quot;val&quot;: 0.4627608554750521}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.03341380465121391, &quot;val&quot;: 0.8471209815964756}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.541503570056895, &quot;val&quot;: 0.9641399733565369}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.017233555037175274, &quot;val&quot;: 0.7505821273939505}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5856623100240368, &quot;val&quot;: 0.8727003226069169}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.025721737670334255, &quot;val&quot;: 0.691768765469724}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7160330038882616, &quot;val&quot;: 0.8338378180696211}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9183967179447229, &quot;val&quot;: 0.21795443470874243}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6229067534197504, &quot;val&quot;: 0.22384040806123717}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.09387808540187303, &quot;val&quot;: 0.06981531704523658}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8940621984138815, &quot;val&quot;: 0.9829100815111428}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7449073981864703, &quot;val&quot;: 0.1656850966521991}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2506071118773091, &quot;val&quot;: 0.25386118141519076}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2426774036120155, &quot;val&quot;: 0.241023332985023}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.07713526534106097, &quot;val&quot;: 0.47960200104169903}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6244765972500306, &quot;val&quot;: 0.9793428702471403}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8677862689410595, &quot;val&quot;: 0.7032649917701576}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8979141167508657, &quot;val&quot;: 0.307321948510081}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8261942547785688, &quot;val&quot;: 0.3334431578854157}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2005326752293609, &quot;val&quot;: 0.7991226871259973}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7220264804152452, &quot;val&quot;: 0.6469554833766059}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6706248069956582, &quot;val&quot;: 0.25731140948420583}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.49262157769124626, &quot;val&quot;: 0.5306078207884207}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.22963399536748885, &quot;val&quot;: 0.9224472539791215}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.0039443936174671235, &quot;val&quot;: 0.42435128160540636}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.16045699545541503, &quot;val&quot;: 0.8561144271271377}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6904193038102009, &quot;val&quot;: 0.4500230233493123}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3469429302641973, &quot;val&quot;: 0.9942339050764125}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9999911001643172, &quot;val&quot;: 0.4913249678971713}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9259725382734239, &quot;val&quot;: 0.3256652497340342}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.0335542089763734, &quot;val&quot;: 0.5692394223887195}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4207949693370896, &quot;val&quot;: 0.5813351550983665}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5345289063513239, &quot;val&quot;: 0.4957680865995273}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7902340805586446, &quot;val&quot;: 0.41453127428118486}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.12403777949918626, &quot;val&quot;: 0.19415240584245397}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3517887841639048, &quot;val&quot;: 0.3114691389875397}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.15849492745619853, &quot;val&quot;: 0.8011039789087167}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.08208819204141782, &quot;val&quot;: 0.22885302206631664}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.017880341151030432, &quot;val&quot;: 0.9193320892859393}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.562258244984759, &quot;val&quot;: 0.6321824173261114}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7003714570626126, &quot;val&quot;: 0.6105436560337776}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2731994801053743, &quot;val&quot;: 0.17117322162428672}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7064603754027824, &quot;val&quot;: 0.2536021084127107}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7957816780032602, &quot;val&quot;: 0.3018257944411039}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.36301931504971485, &quot;val&quot;: 0.3055269385421754}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.05375093848105328, &quot;val&quot;: 0.6335084768700726}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7569311566254872, &quot;val&quot;: 0.8849332317522719}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.16397056476847016, &quot;val&quot;: 0.06851148567624843}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.01399899979324648, &quot;val&quot;: 0.9358132781165415}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.00039325836299441974, &quot;val&quot;: 0.8129688431458661}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.39196426291124187, &quot;val&quot;: 0.9556252970056802}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.013880830562675972, &quot;val&quot;: 0.6122236574777717}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4926701571683033, &quot;val&quot;: 0.4657907118425435}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6823981593393641, &quot;val&quot;: 0.9520161034251796}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.1758073728526156, &quot;val&quot;: 0.6141509282106129}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5960830486121579, &quot;val&quot;: 0.48055420005603544}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.44679233661475426, &quot;val&quot;: 0.6533771437335681}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.20527408861130314, &quot;val&quot;: 0.5338058978441872}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8820546226498778, &quot;val&quot;: 0.3257223138088666}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9733950442424509, &quot;val&quot;: 0.28382754482688033}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7417197931702159, &quot;val&quot;: 0.389529661468085}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6208683911750724, &quot;val&quot;: 0.847270670121277}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.13829281500475532, &quot;val&quot;: 0.9360048630526409}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5904126548630757, &quot;val&quot;: 0.8888096396743388}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.47336028051421586, &quot;val&quot;: 0.2508934840581799}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7573535644507259, &quot;val&quot;: 0.6816837884651439}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.43513826464168404, &quot;val&quot;: 0.4633895254378857}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6761740566075999, &quot;val&quot;: 0.6347479961463206}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8754831995605913, &quot;val&quot;: 0.5992201029282708}]}], &quot;height&quot;: 250, &quot;legends&quot;: [], &quot;marks&quot;: [{&quot;from&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;transform&quot;: [{&quot;keys&quot;: [&quot;data.col&quot;], &quot;type&quot;: &quot;facet&quot;}]}, &quot;marks&quot;: [{&quot;properties&quot;: {&quot;enter&quot;: {&quot;fill&quot;: {&quot;field&quot;: &quot;data.col&quot;, &quot;scale&quot;: &quot;color&quot;}, &quot;size&quot;: {&quot;value&quot;: 100}, &quot;x&quot;: {&quot;field&quot;: &quot;data.idx&quot;, &quot;scale&quot;: &quot;x&quot;}, &quot;y&quot;: {&quot;field&quot;: &quot;data.val&quot;, &quot;scale&quot;: &quot;y&quot;}}}, &quot;type&quot;: &quot;symbol&quot;}], &quot;type&quot;: &quot;group&quot;}], &quot;padding&quot;: &quot;auto&quot;, &quot;scales&quot;: [{&quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;data.idx&quot;}, &quot;name&quot;: &quot;x&quot;, &quot;range&quot;: &quot;width&quot;, &quot;type&quot;: &quot;linear&quot;}, {&quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;data.val&quot;}, &quot;name&quot;: &quot;y&quot;, &quot;nice&quot;: true, &quot;range&quot;: &quot;height&quot;}, {&quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;data.col&quot;}, &quot;name&quot;: &quot;color&quot;, &quot;range&quot;: &quot;category20&quot;, &quot;type&quot;: &quot;ordinal&quot;}], &quot;width&quot;: 420},vega_882476e53640082413e29a2a684ad4f4);
+            vega_parse({&quot;axes&quot;: [{&quot;scale&quot;: &quot;x&quot;, &quot;type&quot;: &quot;x&quot;}, {&quot;scale&quot;: &quot;y&quot;, &quot;type&quot;: &quot;y&quot;}], &quot;data&quot;: [{&quot;name&quot;: &quot;table&quot;, &quot;values&quot;: [{&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.02900342783974963, &quot;val&quot;: 0.1570661290313805}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.029960677161137594, &quot;val&quot;: 0.008919251879790813}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.050493617438392646, &quot;val&quot;: 0.15594259276124733}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2619383933992103, &quot;val&quot;: 0.8598684344573513}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2439315247478323, &quot;val&quot;: 0.7195364074184911}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8890079719909387, &quot;val&quot;: 0.8337210988177929}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.05256318959222761, &quot;val&quot;: 0.6519872679595696}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.004055069492021723, &quot;val&quot;: 0.32832587941018687}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3329034708108488, &quot;val&quot;: 0.8082255655204823}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.23738929120221708, &quot;val&quot;: 0.4882309786725385}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.08536219878162732, &quot;val&quot;: 0.04861150094988165}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.43054779233695273, &quot;val&quot;: 0.6481177148381152}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.1402815555271556, &quot;val&quot;: 0.7871970995263372}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7567476767942777, &quot;val&quot;: 0.7702143522264546}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7485886187280868, &quot;val&quot;: 0.3304575334668256}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7516509421872982, &quot;val&quot;: 0.2486284087142131}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9210214836509606, &quot;val&quot;: 0.5478476707805447}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3040905403115771, &quot;val&quot;: 0.9658900226148527}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3576466097872203, &quot;val&quot;: 0.9612121836068432}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3171755512648311, &quot;val&quot;: 0.6459280413959458}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7283371949308429, &quot;val&quot;: 0.4634966219452874}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5067459986824937, &quot;val&quot;: 0.5666988015275486}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.452241676610617, &quot;val&quot;: 0.6126581777329035}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7888060929854886, &quot;val&quot;: 0.6701051919048424}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.689650399968178, &quot;val&quot;: 0.27138921211514944}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9688749391794674, &quot;val&quot;: 0.6786702162601098}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3177933198739529, &quot;val&quot;: 0.6741472276794823}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.41046156135462053, &quot;val&quot;: 0.7913143446013123}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6205499752431178, &quot;val&quot;: 0.885721223053281}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.24098149034031646, &quot;val&quot;: 0.32746955166612224}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5504642533671686, &quot;val&quot;: 0.11583427087228582}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9028629135379455, &quot;val&quot;: 0.8125552430030629}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4236078324373739, &quot;val&quot;: 0.9503519516665159}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5891636658234399, &quot;val&quot;: 0.0814311008703752}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9528652639359763, &quot;val&quot;: 0.2919273597833243}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6063078500063257, &quot;val&quot;: 0.6834113346882957}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.14341884016371098, &quot;val&quot;: 0.16443063919572054}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7221297729219665, &quot;val&quot;: 0.12203495544136256}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.29299242899678035, &quot;val&quot;: 0.7231880953571148}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.029663617653421404, &quot;val&quot;: 0.7946187803820499}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.03616087628241216, &quot;val&quot;: 0.24005604890809074}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6857874586737432, &quot;val&quot;: 0.4061595299044064}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3950964851393821, &quot;val&quot;: 0.7405694765341138}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6042564320595443, &quot;val&quot;: 0.058390660902639224}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2557208209600361, &quot;val&quot;: 0.9939420554730901}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.29230580738691825, &quot;val&quot;: 0.07476487766388829}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5171111196342288, &quot;val&quot;: 0.8458581806548502}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8930877487376462, &quot;val&quot;: 0.13584273846204864}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3745729958494848, &quot;val&quot;: 0.5656798498391018}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4736678902843483, &quot;val&quot;: 0.2583825462357884}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7447649661941652, &quot;val&quot;: 0.7256601281066859}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6179897581020557, &quot;val&quot;: 0.28399032758434595}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.11408026242991609, &quot;val&quot;: 0.25406320127141735}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8518907008268947, &quot;val&quot;: 0.8322681160303692}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9428683792203141, &quot;val&quot;: 0.9958153609222521}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.129210296418094, &quot;val&quot;: 0.5677936730606034}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8622710126559824, &quot;val&quot;: 0.4236277578558164}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8105552213386238, &quot;val&quot;: 0.7044772429405235}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.11534986832877392, &quot;val&quot;: 0.6910561220672816}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5853981870270661, &quot;val&quot;: 0.8325067990783853}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7078470295244177, &quot;val&quot;: 0.8544531267699175}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.28694240563542106, &quot;val&quot;: 0.845946943687476}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.021123348892981952, &quot;val&quot;: 0.37711736110977523}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8162623296954986, &quot;val&quot;: 0.7033372137494803}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.13632574003428422, &quot;val&quot;: 0.34890481097858705}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6051577172756613, &quot;val&quot;: 0.20961629220632894}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.045490206712870074, &quot;val&quot;: 0.026453433052472386}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.43297777854390906, &quot;val&quot;: 0.1017249173089193}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.03000962085779546, &quot;val&quot;: 0.268518586564487}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6857912403996207, &quot;val&quot;: 0.023981388934910197}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.21825294135240791, &quot;val&quot;: 0.27143645328550803}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5485338605196683, &quot;val&quot;: 0.567929159185531}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.29302949215352225, &quot;val&quot;: 0.29230919914579023}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5748705657439297, &quot;val&quot;: 0.6888833547333129}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.20805738647718464, &quot;val&quot;: 0.3690060106202063}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.45355389272842317, &quot;val&quot;: 0.8439579335969264}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.058492918194544496, &quot;val&quot;: 0.18822737237161202}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.1971292131750293, &quot;val&quot;: 0.6238648286426197}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.27180563719772033, &quot;val&quot;: 0.5050802202090212}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.98031062810362, &quot;val&quot;: 0.5791611813776288}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6605994736245843, &quot;val&quot;: 0.36010246436289306}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.047781613673930745, &quot;val&quot;: 0.49517599579487803}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7447042174750108, &quot;val&quot;: 0.8701134440325022}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.10239829635040976, &quot;val&quot;: 0.2122351741562225}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.48100590699405177, &quot;val&quot;: 0.5441706959410428}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2857036667689611, &quot;val&quot;: 0.5504105093751206}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4516921005893455, &quot;val&quot;: 0.4026860626619406}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7015017278818537, &quot;val&quot;: 0.27755342178239273}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.32904325246986743, &quot;val&quot;: 0.6362349677986651}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6171396613659188, &quot;val&quot;: 0.7916615525837291}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.16997323426446387, &quot;val&quot;: 0.5801275066950031}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7700137037266047, &quot;val&quot;: 0.3161464333140003}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.563936654459393, &quot;val&quot;: 0.8906691099098447}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.47150867705291266, &quot;val&quot;: 0.26469269022566333}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5067100677712794, &quot;val&quot;: 0.9731332509310122}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8191649588072797, &quot;val&quot;: 0.014660958804549984}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.20682461578389366, &quot;val&quot;: 0.07169358349686505}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7860314263229606, &quot;val&quot;: 0.4627015380819799}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9509728009611224, &quot;val&quot;: 0.9486143141586344}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7062646320743285, &quot;val&quot;: 0.37441062419160887}]}], &quot;height&quot;: 250, &quot;legends&quot;: [], &quot;marks&quot;: [{&quot;from&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;transform&quot;: [{&quot;keys&quot;: [&quot;data.col&quot;], &quot;type&quot;: &quot;facet&quot;}]}, &quot;marks&quot;: [{&quot;properties&quot;: {&quot;enter&quot;: {&quot;fill&quot;: {&quot;field&quot;: &quot;data.col&quot;, &quot;scale&quot;: &quot;color&quot;}, &quot;size&quot;: {&quot;value&quot;: 100}, &quot;x&quot;: {&quot;field&quot;: &quot;data.idx&quot;, &quot;scale&quot;: &quot;x&quot;}, &quot;y&quot;: {&quot;field&quot;: &quot;data.val&quot;, &quot;scale&quot;: &quot;y&quot;}}}, &quot;type&quot;: &quot;symbol&quot;}], &quot;type&quot;: &quot;group&quot;}], &quot;padding&quot;: &quot;auto&quot;, &quot;scales&quot;: [{&quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;data.idx&quot;}, &quot;name&quot;: &quot;x&quot;, &quot;range&quot;: &quot;width&quot;, &quot;type&quot;: &quot;linear&quot;}, {&quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;data.val&quot;}, &quot;name&quot;: &quot;y&quot;, &quot;nice&quot;: true, &quot;range&quot;: &quot;height&quot;}, {&quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;data.col&quot;}, &quot;name&quot;: &quot;color&quot;, &quot;range&quot;: &quot;category20&quot;, &quot;type&quot;: &quot;ordinal&quot;}], &quot;width&quot;: 420},vega_99b8a29a14bb5dfd920f3de5964bfc69);
 
     function vega_parse(spec, div) {
             vg.parse.spec(spec, function(chart) { chart({el:div}).update(); });}
 
-            vega_parse({&quot;axes&quot;: [{&quot;scale&quot;: &quot;x&quot;, &quot;type&quot;: &quot;x&quot;}, {&quot;scale&quot;: &quot;y&quot;, &quot;type&quot;: &quot;y&quot;}], &quot;data&quot;: [{&quot;name&quot;: &quot;table&quot;, &quot;values&quot;: [{&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.16969082605164454, &quot;val&quot;: 0.5292386211590501}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.07188913380521778, &quot;val&quot;: 0.8133622743591673}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6573164164304445, &quot;val&quot;: 0.24232232790240815}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.046227111701597656, &quot;val&quot;: 0.3452896492853985}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8754557761726395, &quot;val&quot;: 0.9313509963751471}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.02439203440000015, &quot;val&quot;: 0.2149635756453563}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.16946917143665052, &quot;val&quot;: 0.5593530119224298}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.14508074553798622, &quot;val&quot;: 0.7741909626228374}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.29369302040495837, &quot;val&quot;: 0.425814662586382}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8262831544445775, &quot;val&quot;: 0.810405725563599}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8989340626111526, &quot;val&quot;: 0.17434214490979583}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8617562432029748, &quot;val&quot;: 0.8321510674410538}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3329573898912229, &quot;val&quot;: 0.14508660614021307}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7487319270083018, &quot;val&quot;: 0.13875521997211648}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.13007136631752414, &quot;val&quot;: 0.4072704522839229}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3520229158274961, &quot;val&quot;: 0.09681735158022342}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.45935211037364654, &quot;val&quot;: 0.5739112893908059}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.11764347351542948, &quot;val&quot;: 0.6523734088187316}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7221643855426435, &quot;val&quot;: 0.8276476643043849}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.19150784204905824, &quot;val&quot;: 0.3355226777752812}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.16553939975671483, &quot;val&quot;: 0.7036504405827256}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5150787955357699, &quot;val&quot;: 0.278688787215396}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2699216081493271, &quot;val&quot;: 0.23883906859788184}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7508430941751975, &quot;val&quot;: 0.327496195986422}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5870767802273168, &quot;val&quot;: 0.0969218831700307}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4127538778685833, &quot;val&quot;: 0.6464126767680812}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.18504466226816563, &quot;val&quot;: 0.9665772253950176}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9412644225284142, &quot;val&quot;: 0.9446718621907483}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4228749574567806, &quot;val&quot;: 0.956992178266589}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9996822393804685, &quot;val&quot;: 0.6469758733728256}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5582028345013138, &quot;val&quot;: 0.8358524082166293}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.556817588617912, &quot;val&quot;: 0.4627608554750521}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.03341380465121391, &quot;val&quot;: 0.8471209815964756}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.541503570056895, &quot;val&quot;: 0.9641399733565369}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.017233555037175274, &quot;val&quot;: 0.7505821273939505}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5856623100240368, &quot;val&quot;: 0.8727003226069169}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.025721737670334255, &quot;val&quot;: 0.691768765469724}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7160330038882616, &quot;val&quot;: 0.8338378180696211}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9183967179447229, &quot;val&quot;: 0.21795443470874243}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6229067534197504, &quot;val&quot;: 0.22384040806123717}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.09387808540187303, &quot;val&quot;: 0.06981531704523658}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8940621984138815, &quot;val&quot;: 0.9829100815111428}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7449073981864703, &quot;val&quot;: 0.1656850966521991}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2506071118773091, &quot;val&quot;: 0.25386118141519076}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2426774036120155, &quot;val&quot;: 0.241023332985023}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.07713526534106097, &quot;val&quot;: 0.47960200104169903}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6244765972500306, &quot;val&quot;: 0.9793428702471403}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8677862689410595, &quot;val&quot;: 0.7032649917701576}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8979141167508657, &quot;val&quot;: 0.307321948510081}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8261942547785688, &quot;val&quot;: 0.3334431578854157}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2005326752293609, &quot;val&quot;: 0.7991226871259973}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7220264804152452, &quot;val&quot;: 0.6469554833766059}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6706248069956582, &quot;val&quot;: 0.25731140948420583}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.49262157769124626, &quot;val&quot;: 0.5306078207884207}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.22963399536748885, &quot;val&quot;: 0.9224472539791215}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.0039443936174671235, &quot;val&quot;: 0.42435128160540636}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.16045699545541503, &quot;val&quot;: 0.8561144271271377}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6904193038102009, &quot;val&quot;: 0.4500230233493123}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3469429302641973, &quot;val&quot;: 0.9942339050764125}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9999911001643172, &quot;val&quot;: 0.4913249678971713}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9259725382734239, &quot;val&quot;: 0.3256652497340342}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.0335542089763734, &quot;val&quot;: 0.5692394223887195}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4207949693370896, &quot;val&quot;: 0.5813351550983665}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5345289063513239, &quot;val&quot;: 0.4957680865995273}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7902340805586446, &quot;val&quot;: 0.41453127428118486}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.12403777949918626, &quot;val&quot;: 0.19415240584245397}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3517887841639048, &quot;val&quot;: 0.3114691389875397}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.15849492745619853, &quot;val&quot;: 0.8011039789087167}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.08208819204141782, &quot;val&quot;: 0.22885302206631664}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.017880341151030432, &quot;val&quot;: 0.9193320892859393}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.562258244984759, &quot;val&quot;: 0.6321824173261114}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7003714570626126, &quot;val&quot;: 0.6105436560337776}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2731994801053743, &quot;val&quot;: 0.17117322162428672}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7064603754027824, &quot;val&quot;: 0.2536021084127107}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7957816780032602, &quot;val&quot;: 0.3018257944411039}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.36301931504971485, &quot;val&quot;: 0.3055269385421754}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.05375093848105328, &quot;val&quot;: 0.6335084768700726}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7569311566254872, &quot;val&quot;: 0.8849332317522719}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.16397056476847016, &quot;val&quot;: 0.06851148567624843}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.01399899979324648, &quot;val&quot;: 0.9358132781165415}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.00039325836299441974, &quot;val&quot;: 0.8129688431458661}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.39196426291124187, &quot;val&quot;: 0.9556252970056802}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.013880830562675972, &quot;val&quot;: 0.6122236574777717}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4926701571683033, &quot;val&quot;: 0.4657907118425435}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6823981593393641, &quot;val&quot;: 0.9520161034251796}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.1758073728526156, &quot;val&quot;: 0.6141509282106129}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5960830486121579, &quot;val&quot;: 0.48055420005603544}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.44679233661475426, &quot;val&quot;: 0.6533771437335681}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.20527408861130314, &quot;val&quot;: 0.5338058978441872}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8820546226498778, &quot;val&quot;: 0.3257223138088666}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9733950442424509, &quot;val&quot;: 0.28382754482688033}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7417197931702159, &quot;val&quot;: 0.389529661468085}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6208683911750724, &quot;val&quot;: 0.847270670121277}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.13829281500475532, &quot;val&quot;: 0.9360048630526409}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5904126548630757, &quot;val&quot;: 0.8888096396743388}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.47336028051421586, &quot;val&quot;: 0.2508934840581799}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7573535644507259, &quot;val&quot;: 0.6816837884651439}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.43513826464168404, &quot;val&quot;: 0.4633895254378857}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6761740566075999, &quot;val&quot;: 0.6347479961463206}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8754831995605913, &quot;val&quot;: 0.5992201029282708}]}], &quot;height&quot;: 250, &quot;legends&quot;: [], &quot;marks&quot;: [{&quot;from&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;transform&quot;: [{&quot;keys&quot;: [&quot;data.col&quot;], &quot;type&quot;: &quot;facet&quot;}]}, &quot;marks&quot;: [{&quot;properties&quot;: {&quot;enter&quot;: {&quot;fill&quot;: {&quot;field&quot;: &quot;data.col&quot;, &quot;scale&quot;: &quot;color&quot;}, &quot;size&quot;: {&quot;value&quot;: 100}, &quot;x&quot;: {&quot;field&quot;: &quot;data.idx&quot;, &quot;scale&quot;: &quot;x&quot;}, &quot;y&quot;: {&quot;field&quot;: &quot;data.val&quot;, &quot;scale&quot;: &quot;y&quot;}}}, &quot;type&quot;: &quot;symbol&quot;}], &quot;type&quot;: &quot;group&quot;}], &quot;padding&quot;: &quot;auto&quot;, &quot;scales&quot;: [{&quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;data.idx&quot;}, &quot;name&quot;: &quot;x&quot;, &quot;range&quot;: &quot;width&quot;, &quot;type&quot;: &quot;linear&quot;}, {&quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;data.val&quot;}, &quot;name&quot;: &quot;y&quot;, &quot;nice&quot;: true, &quot;range&quot;: &quot;height&quot;}, {&quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;data.col&quot;}, &quot;name&quot;: &quot;color&quot;, &quot;range&quot;: &quot;category20&quot;, &quot;type&quot;: &quot;ordinal&quot;}], &quot;width&quot;: 420},vega_81478ac039bcfed51fbab0042ebe398e);
+            vega_parse({&quot;axes&quot;: [{&quot;scale&quot;: &quot;x&quot;, &quot;type&quot;: &quot;x&quot;}, {&quot;scale&quot;: &quot;y&quot;, &quot;type&quot;: &quot;y&quot;}], &quot;data&quot;: [{&quot;name&quot;: &quot;table&quot;, &quot;values&quot;: [{&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.02900342783974963, &quot;val&quot;: 0.1570661290313805}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.029960677161137594, &quot;val&quot;: 0.008919251879790813}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.050493617438392646, &quot;val&quot;: 0.15594259276124733}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2619383933992103, &quot;val&quot;: 0.8598684344573513}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2439315247478323, &quot;val&quot;: 0.7195364074184911}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8890079719909387, &quot;val&quot;: 0.8337210988177929}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.05256318959222761, &quot;val&quot;: 0.6519872679595696}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.004055069492021723, &quot;val&quot;: 0.32832587941018687}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3329034708108488, &quot;val&quot;: 0.8082255655204823}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.23738929120221708, &quot;val&quot;: 0.4882309786725385}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.08536219878162732, &quot;val&quot;: 0.04861150094988165}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.43054779233695273, &quot;val&quot;: 0.6481177148381152}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.1402815555271556, &quot;val&quot;: 0.7871970995263372}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7567476767942777, &quot;val&quot;: 0.7702143522264546}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7485886187280868, &quot;val&quot;: 0.3304575334668256}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7516509421872982, &quot;val&quot;: 0.2486284087142131}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9210214836509606, &quot;val&quot;: 0.5478476707805447}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3040905403115771, &quot;val&quot;: 0.9658900226148527}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3576466097872203, &quot;val&quot;: 0.9612121836068432}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3171755512648311, &quot;val&quot;: 0.6459280413959458}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7283371949308429, &quot;val&quot;: 0.4634966219452874}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5067459986824937, &quot;val&quot;: 0.5666988015275486}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.452241676610617, &quot;val&quot;: 0.6126581777329035}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7888060929854886, &quot;val&quot;: 0.6701051919048424}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.689650399968178, &quot;val&quot;: 0.27138921211514944}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9688749391794674, &quot;val&quot;: 0.6786702162601098}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3177933198739529, &quot;val&quot;: 0.6741472276794823}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.41046156135462053, &quot;val&quot;: 0.7913143446013123}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6205499752431178, &quot;val&quot;: 0.885721223053281}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.24098149034031646, &quot;val&quot;: 0.32746955166612224}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5504642533671686, &quot;val&quot;: 0.11583427087228582}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9028629135379455, &quot;val&quot;: 0.8125552430030629}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4236078324373739, &quot;val&quot;: 0.9503519516665159}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5891636658234399, &quot;val&quot;: 0.0814311008703752}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9528652639359763, &quot;val&quot;: 0.2919273597833243}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6063078500063257, &quot;val&quot;: 0.6834113346882957}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.14341884016371098, &quot;val&quot;: 0.16443063919572054}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7221297729219665, &quot;val&quot;: 0.12203495544136256}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.29299242899678035, &quot;val&quot;: 0.7231880953571148}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.029663617653421404, &quot;val&quot;: 0.7946187803820499}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.03616087628241216, &quot;val&quot;: 0.24005604890809074}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6857874586737432, &quot;val&quot;: 0.4061595299044064}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3950964851393821, &quot;val&quot;: 0.7405694765341138}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6042564320595443, &quot;val&quot;: 0.058390660902639224}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2557208209600361, &quot;val&quot;: 0.9939420554730901}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.29230580738691825, &quot;val&quot;: 0.07476487766388829}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5171111196342288, &quot;val&quot;: 0.8458581806548502}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8930877487376462, &quot;val&quot;: 0.13584273846204864}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.3745729958494848, &quot;val&quot;: 0.5656798498391018}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4736678902843483, &quot;val&quot;: 0.2583825462357884}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7447649661941652, &quot;val&quot;: 0.7256601281066859}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6179897581020557, &quot;val&quot;: 0.28399032758434595}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.11408026242991609, &quot;val&quot;: 0.25406320127141735}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8518907008268947, &quot;val&quot;: 0.8322681160303692}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9428683792203141, &quot;val&quot;: 0.9958153609222521}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.129210296418094, &quot;val&quot;: 0.5677936730606034}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8622710126559824, &quot;val&quot;: 0.4236277578558164}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8105552213386238, &quot;val&quot;: 0.7044772429405235}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.11534986832877392, &quot;val&quot;: 0.6910561220672816}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5853981870270661, &quot;val&quot;: 0.8325067990783853}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7078470295244177, &quot;val&quot;: 0.8544531267699175}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.28694240563542106, &quot;val&quot;: 0.845946943687476}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.021123348892981952, &quot;val&quot;: 0.37711736110977523}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8162623296954986, &quot;val&quot;: 0.7033372137494803}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.13632574003428422, &quot;val&quot;: 0.34890481097858705}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6051577172756613, &quot;val&quot;: 0.20961629220632894}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.045490206712870074, &quot;val&quot;: 0.026453433052472386}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.43297777854390906, &quot;val&quot;: 0.1017249173089193}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.03000962085779546, &quot;val&quot;: 0.268518586564487}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6857912403996207, &quot;val&quot;: 0.023981388934910197}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.21825294135240791, &quot;val&quot;: 0.27143645328550803}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5485338605196683, &quot;val&quot;: 0.567929159185531}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.29302949215352225, &quot;val&quot;: 0.29230919914579023}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5748705657439297, &quot;val&quot;: 0.6888833547333129}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.20805738647718464, &quot;val&quot;: 0.3690060106202063}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.45355389272842317, &quot;val&quot;: 0.8439579335969264}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.058492918194544496, &quot;val&quot;: 0.18822737237161202}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.1971292131750293, &quot;val&quot;: 0.6238648286426197}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.27180563719772033, &quot;val&quot;: 0.5050802202090212}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.98031062810362, &quot;val&quot;: 0.5791611813776288}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6605994736245843, &quot;val&quot;: 0.36010246436289306}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.047781613673930745, &quot;val&quot;: 0.49517599579487803}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7447042174750108, &quot;val&quot;: 0.8701134440325022}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.10239829635040976, &quot;val&quot;: 0.2122351741562225}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.48100590699405177, &quot;val&quot;: 0.5441706959410428}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.2857036667689611, &quot;val&quot;: 0.5504105093751206}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.4516921005893455, &quot;val&quot;: 0.4026860626619406}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7015017278818537, &quot;val&quot;: 0.27755342178239273}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.32904325246986743, &quot;val&quot;: 0.6362349677986651}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.6171396613659188, &quot;val&quot;: 0.7916615525837291}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.16997323426446387, &quot;val&quot;: 0.5801275066950031}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7700137037266047, &quot;val&quot;: 0.3161464333140003}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.563936654459393, &quot;val&quot;: 0.8906691099098447}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.47150867705291266, &quot;val&quot;: 0.26469269022566333}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.5067100677712794, &quot;val&quot;: 0.9731332509310122}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.8191649588072797, &quot;val&quot;: 0.014660958804549984}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.20682461578389366, &quot;val&quot;: 0.07169358349686505}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7860314263229606, &quot;val&quot;: 0.4627015380819799}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.9509728009611224, &quot;val&quot;: 0.9486143141586344}, {&quot;col&quot;: &quot;y&quot;, &quot;idx&quot;: 0.7062646320743285, &quot;val&quot;: 0.37441062419160887}]}], &quot;height&quot;: 250, &quot;legends&quot;: [], &quot;marks&quot;: [{&quot;from&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;transform&quot;: [{&quot;keys&quot;: [&quot;data.col&quot;], &quot;type&quot;: &quot;facet&quot;}]}, &quot;marks&quot;: [{&quot;properties&quot;: {&quot;enter&quot;: {&quot;fill&quot;: {&quot;field&quot;: &quot;data.col&quot;, &quot;scale&quot;: &quot;color&quot;}, &quot;size&quot;: {&quot;value&quot;: 100}, &quot;x&quot;: {&quot;field&quot;: &quot;data.idx&quot;, &quot;scale&quot;: &quot;x&quot;}, &quot;y&quot;: {&quot;field&quot;: &quot;data.val&quot;, &quot;scale&quot;: &quot;y&quot;}}}, &quot;type&quot;: &quot;symbol&quot;}], &quot;type&quot;: &quot;group&quot;}], &quot;padding&quot;: &quot;auto&quot;, &quot;scales&quot;: [{&quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;data.idx&quot;}, &quot;name&quot;: &quot;x&quot;, &quot;range&quot;: &quot;width&quot;, &quot;type&quot;: &quot;linear&quot;}, {&quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;data.val&quot;}, &quot;name&quot;: &quot;y&quot;, &quot;nice&quot;: true, &quot;range&quot;: &quot;height&quot;}, {&quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;data.col&quot;}, &quot;name&quot;: &quot;color&quot;, &quot;range&quot;: &quot;category20&quot;, &quot;type&quot;: &quot;ordinal&quot;}], &quot;width&quot;: 420},vega_7de87947199ecb4136256f2418dcbccb);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -1053,8 +1052,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=cb8930eaaf36d9849b67"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=cb8930eaaf36d9849b67"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=64cc4de3f052d77215f0"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=64cc4de3f052d77215f0"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1078,14 +1077,13 @@ Folium version 0.1.dev2114+gf9bd4988e</div>
 
   <p class="sphinx-version">
     Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
-    <br/>
   </p>
 </div>
       
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.21.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.22.0.
 </p></div>
       
     </div>
@@ -1097,7 +1095,7 @@ Folium version 0.1.dev2114+gf9bd4988e</div>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.21.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.22.0.
 </p></div>
       
     </div>
