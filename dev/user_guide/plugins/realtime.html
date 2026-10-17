@@ -26,18 +26,18 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=64cc4de3f052d77215f0" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=64cc4de3f052d77215f0" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/nbsphinx-code-cells.css?v=2aa19091" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=924e9346" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../../_static/scripts/fontawesome.js?digest=64cc4de3f052d77215f0"></script>
+  <script defer src="../../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=64cc4de3f052d77215f0" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=64cc4de3f052d77215f0" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
 
     <script src="../../_static/documentation_options.js?v=d3cb42ee"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
@@ -47,7 +47,7 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/plugins/realtime';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.22.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.23.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://python-visualization.github.io/folium/dev/_static/switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
@@ -59,6 +59,7 @@
     <link rel="next" title="ScrollZoomToggler" href="scroll_zoom_toggler.html" />
     <link rel="prev" title="PolyLineTextPath" href="polyline_textpath.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1.dev2114+gf9bd4988e" />
   
@@ -579,7 +580,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_214bd666be8d3189a39c3c72b85a7f68 {
+                #map_9b1e2150f9e8838fa5c2aadece6a7756 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -617,14 +618,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_214bd666be8d3189a39c3c72b85a7f68&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_9b1e2150f9e8838fa5c2aadece6a7756&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_214bd666be8d3189a39c3c72b85a7f68 = L.map(
-                &quot;map_214bd666be8d3189a39c3c72b85a7f68&quot;,
+            var map_9b1e2150f9e8838fa5c2aadece6a7756 = L.map(
+                &quot;map_9b1e2150f9e8838fa5c2aadece6a7756&quot;,
                 {
                     center: [40.73, -73.94],
                     crs: L.CRS.EPSG3857,
@@ -641,7 +642,7 @@
 
 
 
-            var tile_layer_1b6a4b8319bd50d139abdc916283930f = L.tileLayer(
+            var tile_layer_5b73bd83de2361ad53130bb5f4fd4e7e = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -658,10 +659,10 @@
             );
 
 
-            tile_layer_1b6a4b8319bd50d139abdc916283930f.addTo(map_214bd666be8d3189a39c3c72b85a7f68);
+            tile_layer_5b73bd83de2361ad53130bb5f4fd4e7e.addTo(map_9b1e2150f9e8838fa5c2aadece6a7756);
 
 
-            var realtime_fd0f23713f075c99f63bdff33c977928 = L.realtime(
+            var realtime_4ccac11c87751f7b10bf65fe847f7520 = L.realtime(
             &quot;https://raw.githubusercontent.com/python-visualization/folium-example-data/main/subway_stations.geojson&quot;,
             {
   &quot;start&quot;: true,
@@ -670,12 +671,12 @@
   &quot;removeMissing&quot;: false,
 }
             );
-            map_214bd666be8d3189a39c3c72b85a7f68.addLayer(
-                realtime_fd0f23713f075c99f63bdff33c977928._container
+            map_9b1e2150f9e8838fa5c2aadece6a7756.addLayer(
+                realtime_4ccac11c87751f7b10bf65fe847f7520._container
             );
 
 
-            realtime_fd0f23713f075c99f63bdff33c977928.addTo(map_214bd666be8d3189a39c3c72b85a7f68);
+            realtime_4ccac11c87751f7b10bf65fe847f7520.addTo(map_9b1e2150f9e8838fa5c2aadece6a7756);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -753,7 +754,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_169d2a2ebdffcbb6f63feaba23ae799f {
+                #map_e9f500b68f70270e36dd8af49656f702 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -791,14 +792,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_169d2a2ebdffcbb6f63feaba23ae799f&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_e9f500b68f70270e36dd8af49656f702&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_169d2a2ebdffcbb6f63feaba23ae799f = L.map(
-                &quot;map_169d2a2ebdffcbb6f63feaba23ae799f&quot;,
+            var map_e9f500b68f70270e36dd8af49656f702 = L.map(
+                &quot;map_e9f500b68f70270e36dd8af49656f702&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -815,7 +816,7 @@
 
 
 
-            var tile_layer_be546a708c39951df579c8664b1d20e8 = L.tileLayer(
+            var tile_layer_10a87ff71a857442c0a7db4cbfc755a6 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -832,10 +833,10 @@
             );
 
 
-            tile_layer_be546a708c39951df579c8664b1d20e8.addTo(map_169d2a2ebdffcbb6f63feaba23ae799f);
+            tile_layer_10a87ff71a857442c0a7db4cbfc755a6.addTo(map_e9f500b68f70270e36dd8af49656f702);
 
 
-            var realtime_ec959d1410daaa92554b8706006f67e4 = L.realtime(
+            var realtime_74a8cf19bce39ef9a9cc42bca3058548 = L.realtime(
 
     function(responseHandler, errorHandler) {
         var url = &#x27;https://api.wheretheiss.at/v1/satellites/25544&#x27;;
@@ -870,12 +871,12 @@
   &quot;removeMissing&quot;: false,
 }
             );
-            map_169d2a2ebdffcbb6f63feaba23ae799f.addLayer(
-                realtime_ec959d1410daaa92554b8706006f67e4._container
+            map_e9f500b68f70270e36dd8af49656f702.addLayer(
+                realtime_74a8cf19bce39ef9a9cc42bca3058548._container
             );
 
 
-            realtime_ec959d1410daaa92554b8706006f67e4.addTo(map_169d2a2ebdffcbb6f63feaba23ae799f);
+            realtime_74a8cf19bce39ef9a9cc42bca3058548.addTo(map_e9f500b68f70270e36dd8af49656f702);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -930,7 +931,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_f483c8a5152dd1163d5ce371249e70a7 {
+                #map_1ec92e86a9d90c4b3ed651cd11742cd8 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -968,14 +969,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_f483c8a5152dd1163d5ce371249e70a7&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_1ec92e86a9d90c4b3ed651cd11742cd8&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_f483c8a5152dd1163d5ce371249e70a7 = L.map(
-                &quot;map_f483c8a5152dd1163d5ce371249e70a7&quot;,
+            var map_1ec92e86a9d90c4b3ed651cd11742cd8 = L.map(
+                &quot;map_1ec92e86a9d90c4b3ed651cd11742cd8&quot;,
                 {
                     center: [40.73, -73.94],
                     crs: L.CRS.EPSG3857,
@@ -992,7 +993,7 @@
 
 
 
-            var tile_layer_0da22114d9ac288b51831e2222e21834 = L.tileLayer(
+            var tile_layer_436796052bdcfada1f99e1c2c1274ae9 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -1009,10 +1010,10 @@
             );
 
 
-            tile_layer_0da22114d9ac288b51831e2222e21834.addTo(map_f483c8a5152dd1163d5ce371249e70a7);
+            tile_layer_436796052bdcfada1f99e1c2c1274ae9.addTo(map_1ec92e86a9d90c4b3ed651cd11742cd8);
 
 
-            var realtime_09c71ea3d0a9df0531180320bb5c3084 = L.realtime(
+            var realtime_8a6ff11e8956c8991898f8b3d69dab3c = L.realtime(
             &quot;https://raw.githubusercontent.com/python-visualization/folium-example-data/main/subway_stations.geojson&quot;,
             {
   &quot;pointToLayer&quot;: (f, latlng) =&gt; { return L.circleMarker(latlng, {radius: 8, fillOpacity: 0.2})},
@@ -1022,12 +1023,12 @@
   &quot;removeMissing&quot;: false,
 }
             );
-            map_f483c8a5152dd1163d5ce371249e70a7.addLayer(
-                realtime_09c71ea3d0a9df0531180320bb5c3084._container
+            map_1ec92e86a9d90c4b3ed651cd11742cd8.addLayer(
+                realtime_8a6ff11e8956c8991898f8b3d69dab3c._container
             );
 
 
-            realtime_09c71ea3d0a9df0531180320bb5c3084.addTo(map_f483c8a5152dd1163d5ce371249e70a7);
+            realtime_8a6ff11e8956c8991898f8b3d69dab3c.addTo(map_1ec92e86a9d90c4b3ed651cd11742cd8);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -1084,7 +1085,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_cf9f7ba7859e6e333907513950e9e7e0 {
+                #map_8c68f13edcefbd101e83396ee535e54f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -1125,14 +1126,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_cf9f7ba7859e6e333907513950e9e7e0&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_8c68f13edcefbd101e83396ee535e54f&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_cf9f7ba7859e6e333907513950e9e7e0 = L.map(
-                &quot;map_cf9f7ba7859e6e333907513950e9e7e0&quot;,
+            var map_8c68f13edcefbd101e83396ee535e54f = L.map(
+                &quot;map_8c68f13edcefbd101e83396ee535e54f&quot;,
                 {
                     center: [40.73, -73.94],
                     crs: L.CRS.EPSG3857,
@@ -1149,7 +1150,7 @@
 
 
 
-            var tile_layer_ed1b0fdd5337bf56f5f6c5f37ed1c72c = L.tileLayer(
+            var tile_layer_bc504d0a80a868491713a5a80ccd1736 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -1166,19 +1167,19 @@
             );
 
 
-            tile_layer_ed1b0fdd5337bf56f5f6c5f37ed1c72c.addTo(map_cf9f7ba7859e6e333907513950e9e7e0);
+            tile_layer_bc504d0a80a868491713a5a80ccd1736.addTo(map_8c68f13edcefbd101e83396ee535e54f);
 
 
-            var marker_cluster_27217d1184fef8692fcd04e12371551e = L.markerClusterGroup(
+            var marker_cluster_226f98fa167c802271e26b06825c415e = L.markerClusterGroup(
                 {
 }
             );
 
 
-            marker_cluster_27217d1184fef8692fcd04e12371551e.addTo(map_cf9f7ba7859e6e333907513950e9e7e0);
+            marker_cluster_226f98fa167c802271e26b06825c415e.addTo(map_8c68f13edcefbd101e83396ee535e54f);
 
 
-            var realtime_b0b9aba2164e9dae95bf051be174d5c0 = L.realtime(
+            var realtime_c8fb8b94ef27a4022e6c7c5f06be1522 = L.realtime(
             &quot;https://raw.githubusercontent.com/python-visualization/folium-example-data/main/subway_stations.geojson&quot;,
             {
   &quot;pointToLayer&quot;: (f, latlng) =&gt; { return L.circleMarker(latlng, {radius: 8, fillOpacity: 0.2})},
@@ -1186,15 +1187,15 @@
   &quot;interval&quot;: 10000,
   &quot;getFeatureId&quot;: (f) =&gt; { return f.properties.objectid },
   &quot;removeMissing&quot;: false,
-  &quot;container&quot;: marker_cluster_27217d1184fef8692fcd04e12371551e,
+  &quot;container&quot;: marker_cluster_226f98fa167c802271e26b06825c415e,
 }
             );
-            map_cf9f7ba7859e6e333907513950e9e7e0.addLayer(
-                realtime_b0b9aba2164e9dae95bf051be174d5c0._container
+            map_8c68f13edcefbd101e83396ee535e54f.addLayer(
+                realtime_c8fb8b94ef27a4022e6c7c5f06be1522._container
             );
 
 
-            realtime_b0b9aba2164e9dae95bf051be174d5c0.addTo(map_cf9f7ba7859e6e333907513950e9e7e0);
+            realtime_c8fb8b94ef27a4022e6c7c5f06be1522.addTo(map_8c68f13edcefbd101e83396ee535e54f);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -1278,8 +1279,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=64cc4de3f052d77215f0"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=64cc4de3f052d77215f0"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1309,7 +1310,7 @@ Folium version 0.1.dev2114+gf9bd4988e</div>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.22.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0.
 </p></div>
       
     </div>
@@ -1321,7 +1322,7 @@ Folium version 0.1.dev2114+gf9bd4988e</div>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.22.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0.
 </p></div>
       
     </div>

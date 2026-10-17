@@ -26,18 +26,18 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=64cc4de3f052d77215f0" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=64cc4de3f052d77215f0" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/nbsphinx-code-cells.css?v=2aa19091" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=924e9346" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../../_static/scripts/fontawesome.js?digest=64cc4de3f052d77215f0"></script>
+  <script defer src="../../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=64cc4de3f052d77215f0" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=64cc4de3f052d77215f0" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
 
     <script src="../../_static/documentation_options.js?v=d3cb42ee"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
@@ -47,7 +47,7 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/plugins/WmsTimeDimension';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.22.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.23.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://python-visualization.github.io/folium/dev/_static/switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
@@ -59,6 +59,7 @@
     <link rel="next" title="Advanced guide" href="../../advanced_guide.html" />
     <link rel="prev" title="Vector tiles using VectorGridProtobuf" href="vector_tiles.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1.dev2114+gf9bd4988e" />
   
@@ -655,7 +656,7 @@ CRW_SST
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_0b438f4bc42b03e92892d0d7c415982c {
+                #map_358ee5f9cbebfd9376294bc39f60e10a {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -698,14 +699,14 @@ CRW_SST
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_0b438f4bc42b03e92892d0d7c415982c&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_358ee5f9cbebfd9376294bc39f60e10a&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_0b438f4bc42b03e92892d0d7c415982c = L.map(
-                &quot;map_0b438f4bc42b03e92892d0d7c415982c&quot;,
+            var map_358ee5f9cbebfd9376294bc39f60e10a = L.map(
+                &quot;map_358ee5f9cbebfd9376294bc39f60e10a&quot;,
                 {
                     center: [-40.0, -50.0],
                     crs: L.CRS.EPSG3857,
@@ -722,7 +723,7 @@ CRW_SST
 
 
 
-            var tile_layer_1c86a9d8c70426a6f2c1eddad3de8d6f = L.tileLayer(
+            var tile_layer_767e4e9f40d6c6ed9f6fa2926dadc8d2 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -739,25 +740,25 @@ CRW_SST
             );
 
 
-            tile_layer_1c86a9d8c70426a6f2c1eddad3de8d6f.addTo(map_0b438f4bc42b03e92892d0d7c415982c);
+            tile_layer_767e4e9f40d6c6ed9f6fa2926dadc8d2.addTo(map_358ee5f9cbebfd9376294bc39f60e10a);
 
 
-            var macro_element_d71ea575c0dc11c8f0046cb561e79265 = L.tileLayer.wms(
+            var macro_element_4654f0d47c57a5b5b5c6c460b87b7287 = L.tileLayer.wms(
                 &quot;https://pae-paha.pacioos.hawaii.edu/thredds/wms/dhw_5km?service=WMS&quot;,
                 {&quot;COLORSCALERANGE&quot;: &quot;1.2,28&quot;, &quot;attribution&quot;: &quot;&quot;, &quot;format&quot;: &quot;image/png&quot;, &quot;layers&quot;: &quot;CRW_SST&quot;, &quot;styles&quot;: &quot;boxfill/sst_36&quot;, &quot;transparent&quot;: true, &quot;version&quot;: &quot;1.1.1&quot;}
             );
 
 
-            macro_element_d71ea575c0dc11c8f0046cb561e79265.addTo(map_0b438f4bc42b03e92892d0d7c415982c);
+            macro_element_4654f0d47c57a5b5b5c6c460b87b7287.addTo(map_358ee5f9cbebfd9376294bc39f60e10a);
 
 
-            map_0b438f4bc42b03e92892d0d7c415982c.timeDimension = L.timeDimension(
+            map_358ee5f9cbebfd9376294bc39f60e10a.timeDimension = L.timeDimension(
                 {
   &quot;period&quot;: &quot;PT1H&quot;,
-  &quot;timeInterval&quot;: &quot;2023-10-01T12:00:00.000Z/2026-09-30T12:00:00.000Z&quot;,
+  &quot;timeInterval&quot;: &quot;2023-10-16T12:00:00.000Z/2026-10-15T12:00:00.000Z&quot;,
 }
             );
-            map_0b438f4bc42b03e92892d0d7c415982c.timeDimensionControl =
+            map_358ee5f9cbebfd9376294bc39f60e10a.timeDimensionControl =
                 L.control.timeDimension(
                     {
   &quot;position&quot;: &quot;bottomleft&quot;,
@@ -768,38 +769,38 @@ CRW_SST
 },
 }
                 );
-            map_0b438f4bc42b03e92892d0d7c415982c.addControl(
-                map_0b438f4bc42b03e92892d0d7c415982c.timeDimensionControl
+            map_358ee5f9cbebfd9376294bc39f60e10a.addControl(
+                map_358ee5f9cbebfd9376294bc39f60e10a.timeDimensionControl
             );
 
 
-            var macro_element_d71ea575c0dc11c8f0046cb561e79265 = L.timeDimension.layer.wms(
-                macro_element_d71ea575c0dc11c8f0046cb561e79265,
+            var macro_element_4654f0d47c57a5b5b5c6c460b87b7287 = L.timeDimension.layer.wms(
+                macro_element_4654f0d47c57a5b5b5c6c460b87b7287,
                 {
                     updateTimeDimension: false,
                     wmsVersion: &quot;1.1.1&quot;,
                 }
-            ).addTo(map_0b438f4bc42b03e92892d0d7c415982c);
+            ).addTo(map_358ee5f9cbebfd9376294bc39f60e10a);
 
 
 
-            var layer_control_7626f17248c050255693875fb3ffa83b_layers = {
+            var layer_control_e05ce9a82c55eef91a80af5eb4941f8c_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_1c86a9d8c70426a6f2c1eddad3de8d6f,
+                    &quot;openstreetmap&quot; : tile_layer_767e4e9f40d6c6ed9f6fa2926dadc8d2,
                 },
                 overlays :  {
-                    &quot;sea_surface_temperature&quot; : macro_element_d71ea575c0dc11c8f0046cb561e79265,
+                    &quot;sea_surface_temperature&quot; : macro_element_4654f0d47c57a5b5b5c6c460b87b7287,
                 },
             };
-            let layer_control_7626f17248c050255693875fb3ffa83b = L.control.layers(
-                layer_control_7626f17248c050255693875fb3ffa83b_layers.base_layers,
-                layer_control_7626f17248c050255693875fb3ffa83b_layers.overlays,
+            let layer_control_e05ce9a82c55eef91a80af5eb4941f8c = L.control.layers(
+                layer_control_e05ce9a82c55eef91a80af5eb4941f8c_layers.base_layers,
+                layer_control_e05ce9a82c55eef91a80af5eb4941f8c_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_0b438f4bc42b03e92892d0d7c415982c);
+            ).addTo(map_358ee5f9cbebfd9376294bc39f60e10a);
 
 
 &lt;/script&gt;
@@ -883,8 +884,8 @@ CRW_SST
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=64cc4de3f052d77215f0"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=64cc4de3f052d77215f0"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -914,7 +915,7 @@ Folium version 0.1.dev2114+gf9bd4988e</div>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.22.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0.
 </p></div>
       
     </div>
@@ -926,7 +927,7 @@ Folium version 0.1.dev2114+gf9bd4988e</div>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.22.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0.
 </p></div>
       
     </div>
