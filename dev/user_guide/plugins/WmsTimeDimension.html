@@ -656,7 +656,7 @@ CRW_SST
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_358ee5f9cbebfd9376294bc39f60e10a {
+                #map_8c44cd5781b679a8760a142c0581c6fb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -699,14 +699,14 @@ CRW_SST
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_358ee5f9cbebfd9376294bc39f60e10a&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_8c44cd5781b679a8760a142c0581c6fb&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_358ee5f9cbebfd9376294bc39f60e10a = L.map(
-                &quot;map_358ee5f9cbebfd9376294bc39f60e10a&quot;,
+            var map_8c44cd5781b679a8760a142c0581c6fb = L.map(
+                &quot;map_8c44cd5781b679a8760a142c0581c6fb&quot;,
                 {
                     center: [-40.0, -50.0],
                     crs: L.CRS.EPSG3857,
@@ -723,7 +723,7 @@ CRW_SST
 
 
 
-            var tile_layer_767e4e9f40d6c6ed9f6fa2926dadc8d2 = L.tileLayer(
+            var tile_layer_133d47f14f6a4d80b957e140e2235306 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -740,25 +740,25 @@ CRW_SST
             );
 
 
-            tile_layer_767e4e9f40d6c6ed9f6fa2926dadc8d2.addTo(map_358ee5f9cbebfd9376294bc39f60e10a);
+            tile_layer_133d47f14f6a4d80b957e140e2235306.addTo(map_8c44cd5781b679a8760a142c0581c6fb);
 
 
-            var macro_element_4654f0d47c57a5b5b5c6c460b87b7287 = L.tileLayer.wms(
+            var macro_element_041fe9fc295dbda27da18fde63223dfb = L.tileLayer.wms(
                 &quot;https://pae-paha.pacioos.hawaii.edu/thredds/wms/dhw_5km?service=WMS&quot;,
                 {&quot;COLORSCALERANGE&quot;: &quot;1.2,28&quot;, &quot;attribution&quot;: &quot;&quot;, &quot;format&quot;: &quot;image/png&quot;, &quot;layers&quot;: &quot;CRW_SST&quot;, &quot;styles&quot;: &quot;boxfill/sst_36&quot;, &quot;transparent&quot;: true, &quot;version&quot;: &quot;1.1.1&quot;}
             );
 
 
-            macro_element_4654f0d47c57a5b5b5c6c460b87b7287.addTo(map_358ee5f9cbebfd9376294bc39f60e10a);
+            macro_element_041fe9fc295dbda27da18fde63223dfb.addTo(map_8c44cd5781b679a8760a142c0581c6fb);
 
 
-            map_358ee5f9cbebfd9376294bc39f60e10a.timeDimension = L.timeDimension(
+            map_8c44cd5781b679a8760a142c0581c6fb.timeDimension = L.timeDimension(
                 {
   &quot;period&quot;: &quot;PT1H&quot;,
   &quot;timeInterval&quot;: &quot;2023-10-16T12:00:00.000Z/2026-10-15T12:00:00.000Z&quot;,
 }
             );
-            map_358ee5f9cbebfd9376294bc39f60e10a.timeDimensionControl =
+            map_8c44cd5781b679a8760a142c0581c6fb.timeDimensionControl =
                 L.control.timeDimension(
                     {
   &quot;position&quot;: &quot;bottomleft&quot;,
@@ -769,38 +769,38 @@ CRW_SST
 },
 }
                 );
-            map_358ee5f9cbebfd9376294bc39f60e10a.addControl(
-                map_358ee5f9cbebfd9376294bc39f60e10a.timeDimensionControl
+            map_8c44cd5781b679a8760a142c0581c6fb.addControl(
+                map_8c44cd5781b679a8760a142c0581c6fb.timeDimensionControl
             );
 
 
-            var macro_element_4654f0d47c57a5b5b5c6c460b87b7287 = L.timeDimension.layer.wms(
-                macro_element_4654f0d47c57a5b5b5c6c460b87b7287,
+            var macro_element_041fe9fc295dbda27da18fde63223dfb = L.timeDimension.layer.wms(
+                macro_element_041fe9fc295dbda27da18fde63223dfb,
                 {
                     updateTimeDimension: false,
                     wmsVersion: &quot;1.1.1&quot;,
                 }
-            ).addTo(map_358ee5f9cbebfd9376294bc39f60e10a);
+            ).addTo(map_8c44cd5781b679a8760a142c0581c6fb);
 
 
 
-            var layer_control_e05ce9a82c55eef91a80af5eb4941f8c_layers = {
+            var layer_control_0ba6239f1b65b766dc6733e0d7902707_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_767e4e9f40d6c6ed9f6fa2926dadc8d2,
+                    &quot;openstreetmap&quot; : tile_layer_133d47f14f6a4d80b957e140e2235306,
                 },
                 overlays :  {
-                    &quot;sea_surface_temperature&quot; : macro_element_4654f0d47c57a5b5b5c6c460b87b7287,
+                    &quot;sea_surface_temperature&quot; : macro_element_041fe9fc295dbda27da18fde63223dfb,
                 },
             };
-            let layer_control_e05ce9a82c55eef91a80af5eb4941f8c = L.control.layers(
-                layer_control_e05ce9a82c55eef91a80af5eb4941f8c_layers.base_layers,
-                layer_control_e05ce9a82c55eef91a80af5eb4941f8c_layers.overlays,
+            let layer_control_0ba6239f1b65b766dc6733e0d7902707 = L.control.layers(
+                layer_control_0ba6239f1b65b766dc6733e0d7902707_layers.base_layers,
+                layer_control_0ba6239f1b65b766dc6733e0d7902707_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_358ee5f9cbebfd9376294bc39f60e10a);
+            ).addTo(map_8c44cd5781b679a8760a142c0581c6fb);
 
 
 &lt;/script&gt;
